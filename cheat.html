@@ -1,0 +1,201 @@
+<!doctype html><html lang="lv"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="apple-mobile-web-app-capable" content="yes"><meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="TS Akadēmija"><meta name="theme-color" content="#14161c">
+<link rel="apple-touch-icon" href="icon-180.png"><link rel="icon" href="icon-192.png"><link rel="manifest" href="manifest.webmanifest">
+<link rel="stylesheet" href="fonts.css">
+<style>*,*::before,*::after{box-sizing:border-box}html,body{margin:0}body{padding:env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left)}</style>
+<title>TS špikeris</title></head><body>
+<style>
+/* Layout: rulebook reference card — starred red/blue band, cream panels, condensed caps headings. Single light theme on purpose. */
+:root{--paper:#f7efe4;--panel:#f6e3cc;--ink:#231f1d;--ink2:#5b524b;--red:#c1272d;--blue:#1d6fae;--navy:#13304d;--gold:#f3c623;--purple:#57549f;--line:#d9c6ad;
+ --f-disp:"Bebas Neue","Oswald","Arial Narrow",sans-serif;--f-ui:"Barlow Condensed","Arial Narrow",sans-serif;--f-body:"Crimson Pro",Georgia,serif;color-scheme:light}
+html,body{background:var(--paper)}body{color:var(--ink);font-family:var(--f-body);font-size:18px;line-height:1.45}*{box-sizing:border-box}
+.wrap{max-width:980px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+.band{background:linear-gradient(90deg,var(--red) 0 50%,#1f6f93 50%);color:#fff}.band .wrap{padding-block:12px}
+.band h1{font-family:var(--f-disp);font-weight:400;font-size:36px;letter-spacing:.04em;margin:0}.band .s{color:#f3dfb8;letter-spacing:10px;font-size:14px}
+.band p{font-family:var(--f-ui);margin:2px 0 0;font-size:17px}
+h2{font-family:var(--f-disp);font-weight:400;font-size:30px;color:var(--blue);margin:22px 0 6px;letter-spacing:.02em}
+.panel{background:var(--panel);border-radius:12px;padding:12px 14px}
+input{width:100%;font:inherit;font-family:var(--f-ui);font-size:20px;padding:10px 12px;border:2px solid var(--navy);border-radius:10px;background:#fff;color:var(--ink)}
+input:focus-visible{outline:3px solid var(--gold)}
+.terms{display:grid;gap:6px;margin-top:10px}
+.term{background:#fbf4ea;border:1px solid var(--line);border-radius:8px;padding:8px 10px;display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:4px 12px}
+.term b{font-family:var(--f-ui);font-size:19px;color:var(--navy)}.term .en{font-family:var(--f-ui);color:var(--ink2);font-size:15px;display:block}
+.term .ch{font-family:var(--f-ui);font-size:13px;color:var(--red)}
+@media(max-width:600px){.term{grid-template-columns:1fr}}
+ol,ul{margin:4px 0;padding-left:1.3em}
+table{border-collapse:collapse;font-family:var(--f-ui);font-size:17px;width:100%}td,th{border:1px solid var(--line);padding:4px 8px;text-align:left;vertical-align:top}th{background:#efe0cb}
+.scroll{overflow-x:auto}.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px}
+.us{color:var(--blue);font-weight:700}.su{color:var(--red);font-weight:700}.bg{color:var(--purple);font-weight:700}
+.src{font-family:var(--f-ui);font-size:14px;color:var(--ink2)}
+.tag{font-family:var(--f-ui);font-size:13px;background:#e8dccb;border-radius:8px;padding:1px 6px;color:var(--ink2)}
+footer{font-family:var(--f-ui);color:var(--ink2);font-size:15px;padding-block:24px 40px}
+</style>
+<header class="band"><div class="wrap"><div class="s">★★★★★★★</div><h1>Noteikumu un terminu špikeris</h1><p>Twilight Struggle · 20th Anniversary Hall of Fame Edition · bāzes spēle 2 spēlētājiem · aptver 1.–5. nodaļu</p></div></header>
+<main class="wrap">
+<h2>Terminu vārdnīca</h2>
+<input id="q" type="search" placeholder="Meklē terminu latviski vai angliski…" aria-label="Meklēt terminu">
+<div class="terms" id="terms"></div>
+
+<h2>Zelta likumi</h2>
+<div class="panel"><ol>
+<li><b>Kārts teksts</b> ir svarīgāks par noteikumiem. Izņēmums: notikums nevar piespiest paturēt vērtēšanas kārti. <span class="src">RB 5.5, 10.1.5</span></li>
+<li><b>Gājienu nevar izlaist</b>, un kārti nevar pats izmest. <span class="src">RB 5.1</span></li>
+<li><b>Pretinieka kārti</b> drīkst izspēlēt tikai operācijas punktiem, bet tās notikums notiek, un to izpilda pretinieks. <span class="src">RB 5.1–5.2</span></li>
+<li><b>DEFCON 1</b>: zaudē aktīvais spēlētājs (Phasing Player). <span class="src">RB 8.1.3</span></li>
+<li><b>Vērtēšanas kārti</b> nedrīkst paturēt līdz gājiena beigām, citādi zaudē. <span class="src">RB 4.5 F</span></li>
+<li><b>Ietekme ir atklāta</b> un maināma kā nauda. Žetonu skaits nav ierobežots. <span class="src">RB 6.1.5–6.1.6</span></li>
+<li>Izmestas kārts notikums <b>nenotiek</b> (arī vērtēšanas kārtīm). <span class="src">RB 5.4</span></li></ol></div>
+
+<h2>Kā uzvarēt</h2>
+<div class="grid2"><div class="panel"><b>Automātiskā uzvara (uzreiz)</b><ul><li>20 VP</li><li>Europe Scoring brīdī kontrolē Eiropu</li><li>DEFCON 1 pretinieka kārtā</li><li>Pretinieks patur vērtēšanas kārti gājiena beigās</li><li>20 VP fāzē Check Military Operations Status ar vērtēšanas kārti rokā: zaudē</li><li>Ja VP saņem abi, vispirms starpība, tad pārbauda 20</li></ul><span class="src">RB 10.3.1</span></div>
+<div class="panel"><b>Gala vērtēšana (pēc 10. gājiena)</b><ul><li>Vērtē visus reģionus, sāk ar Eiropu</li><li>Dienvidaustrumāzija ietilpst Āzijā</li><li>China Card turētājam +1 VP</li><li>Marķieris uz 0 nozīmē neizšķirtu</li><li>Abu VP no vienas kārts: kustina par starpību</li></ul><span class="src">RB 10.2.3, 10.3.2</span></div></div>
+
+<h2>Kontrole</h2>
+<div class="panel"><p><b>Kontrolē</b>, ja tava ietekme ≥ stabilitāte <b>un</b> tava ietekme − pretinieka ietekme ≥ stabilitāte. Citādi nekontrolē neviens. Kontrolētu valsti rāda žetona tumšā puse.</p>
+<p>Piemērs: Izraēla (4): ASV 5, PSRS 1 → ASV kontrolē. ASV 5, PSRS 2 → neviens. <span class="src">RB 2.1.7</span></p></div>
+
+<h2>Kārts uzbūve un ikonas</h2>
+<div class="scroll"><table><tr><th>Ko redzi</th><th>Nozīme</th></tr>
+<tr><td>Skaitlis zvaigznē (augšā pa kreisi)</td><td>Operācijas vērtība (Operations)</td></tr>
+<tr><td><span class="su">Sarkana</span> / <span class="us">zila</span> / pelēka zvaigzne</td><td>Notikums pieder PSRS / ASV / abiem</td></tr>
+<tr><td>EARLY / MID / LATE WAR</td><td>Kava: no sākuma / no 4. gājiena / no 8. gājiena</td></tr>
+<tr><td>Nosaukums ar *</td><td>Pēc notikuma kārti liek Trash kavā (tikai ja notikums notika)</td></tr>
+<tr><td>Pasvītrots nosaukums</td><td>Ilgstošs efekts: kārti noliek blakus laukumam</td></tr>
+<tr><td>☢ apakšā pa labi</td><td>DEFCON brīdinājums: nepareizā brīdī var maksāt spēli (14 kārtis)</td></tr>
+<tr><td>"Scoring" nosaukumā</td><td>Vērtēšanas kārts, bez operācijas vērtības</td></tr>
+<tr><td>Numurs apakšā</td><td>Kārts ID (1–110)</td></tr></table></div>
+<p class="src">RB 2.2, 8.1.3 piezīme</p>
+
+<h2>Karte</h2>
+<div class="grid2"><div class="panel"><b>Reģioni (6)</b><ul><li>Eiropa: Rietumeiropa + Austrumeiropa. <b>Austrija un Somija</b> ir abās.</li><li>Āzija, ieskaitot Dienvidaustrumāziju</li><li>Tuvie Austrumi (ar Lībiju un Ēģipti)</li><li>Āfrika · Centrālamerika · Dienvidamerika</li><li>Kanāda un Turcija ir Eiropā</li></ul><span class="src">RB 2.1.1–2.1.2</span></div>
+<div class="panel"><b>Līnijas</b><ul><li>Brūna: kaimiņi viena reģiona iekšienē</li><li>Sarkana raustīta: kaimiņi dažādos reģionos</li><li>Melna: kaimiņš lielvarai</li></ul><b>Lielvaru kaimiņi</b><ul><li class="us">ASV: Kanāda, Meksika, Kuba, Japāna</li><li class="su">PSRS: Somija, Polija, Rumānija, Afganistāna, Ziemeļkoreja</li></ul><span class="src">RB 2.1.5–2.1.6, karte</span></div></div>
+<div class="panel" style="margin-top:12px"><b class="bg">Battleground valstis (29)</b> · violeta josla, sarkans stabilitātes lodziņš
+<div class="scroll"><table><tr><th>Reģions</th><th>Battleground</th></tr>
+<tr><td>Eiropa</td><td>Francija 3, Itālija 2, Rietumvācija 4, Austrumvācija 3, Polija 3</td></tr>
+<tr><td>Tuvie Austrumi</td><td>Lībija 2, Ēģipte 2, Izraēla 4, Irāka 3, Irāna 2, Saūda Arābija 3</td></tr>
+<tr><td>Āzija</td><td>Pakistāna 2, Indija 3, Taizeme 2, Dienvidkoreja 3, Ziemeļkoreja 3, Japāna 4</td></tr>
+<tr><td>Āfrika</td><td>Alžīrija 2, Nigērija 1, Zaira 1, Angola 1, Dienvidāfrika 3</td></tr>
+<tr><td>Centrālamerika</td><td>Meksika 2, Panama 2, Kuba 3</td></tr>
+<tr><td>Dienvidamerika</td><td>Venecuēla 2, Čīle 3, Argentīna 2, Brazīlija 2</td></tr></table></div><span class="src">Nolasīts no kartes (RB 6.–7. lpp.); skaitlis = stabilitāte</span></div>
+
+<h2>Sagatavošana</h2>
+<div class="grid2"><div class="panel"><b>Kārtis</b><ol><li>Sajauc tikai Early War kārtis</li><li>8 kārtis katram, sāk ar PSRS</li><li>The China Card atklāta pie PSRS</li><li>Kārtis drīkst apskatīt pirms ietekmes likšanas</li></ol><b>Marķieri</b>: Space Race Start (abi), Mil. Ops 0 (abi), Turn 1, Action Round blakus trasei, DEFCON 5, VP 0. <span class="src">RB 3.1, 3.4</span></div>
+<div class="panel"><b class="su">PSRS (liek pirmā), 15</b>: Sīrija 1, Irāka 1, Ziemeļkoreja 3, Austrumvācija 3, Somija 1, +6 Austrumeiropā.<br><br><b class="us">ASV (liek otrā), 25</b>: Kanāda 2, Irāna 1, Izraēla 1, Japāna 1, Austrālija 4, Filipīnas 1, Dienvidkoreja 1, Panama 1, Dienvidāfrika 1, Lielbritānija 5, +7 Rietumeiropā. <span class="src">RB 3.2–3.3</span></div></div>
+
+<h2>Ko dara katrā fāzē <span class="src">(secība uzdrukāta uz kartes)</span></h2>
+<div class="panel"><ol><li>Improve DEFCON (ja &lt; 5, +1)</li><li>Deal Cards (līdz 8 kārtīm 1.–3. gājienā, līdz 9 no 4. gājiena; China Card neskaitās)</li><li>Headline Phase</li><li>Action Rounds (6 kārtas 1.–3. gājienā, 7 kārtas no 4. gājiena; PSRS vienmēr pirmā)</li><li>Check Military Operations Status</li><li>Check for Held Scoring Card</li><li>Flip The China Card</li><li>Advance Turn Marker (Mid War kārtis pēc 3. gājiena, Late War pēc 7.)</li><li>Final Scoring (tikai pēc 10. gājiena)</li></ol><span class="src">RB 4.5</span></div>
+<div class="grid2" style="margin-top:12px"><div class="panel"><b>Kava</b><ul><li>Kava beidzas: vispirms izdala atlikušās kārtis, tad sajauc Discard kavu</li><li>Jauns periods: jaunās kārtis pievieno kavai, Discard kavu <b>nepievieno</b></li><li>Trash kavas (*) kārtis neatgriežas</li></ul><span class="src">RB 4.3–4.4</span></div>
+<div class="panel"><b>Headline</b><ul><li>Slepeni izvēlas, atklāj vienlaikus</li><li>Pirmais: lielāka operācijas vērtība. Vienādas: ASV</li><li>Vērtēšanas kārts = 0. Abas vērtēšanas: ASV pirmā</li><li>China Card nedrīkst</li><li>Notikums obligāts, operācijas punktus nedod</li><li>Pretinieka kārts: viņš izpilda, bet tu esi aktīvais DEFCON nolūkā</li></ul><span class="src">RB 4.5 C</span></div></div>
+<div class="panel" style="margin-top:12px"><b>Action kārtas</b>: 6 (1.–3. gājiens) vai 7 (4.–10.). PSRS sāk. Beidzas kārtis: izlaid atlikušās kārtas. Parasti 1 kārts paliek "turēta". <span class="src">RB 4.5 D</span></div>
+
+<h2>Kāršu izspēle</h2>
+<div class="scroll"><table><tr><th>Kārts</th><th>Notikums</th><th>Operācijas punktiem</th></tr>
+<tr><td>Tava</td><td>Drīkst</td><td>Drīkst, notikums nenotiek</td></tr>
+<tr><td>Abu pušu (Neutral)</td><td>Drīkst</td><td>Drīkst, notikums nenotiek</td></tr>
+<tr><td>Pretinieka</td><td>Nedrīkst</td><td>Drīkst, bet viņa notikums notiek (tu izvēlies pirms/pēc)</td></tr>
+<tr><td>Vērtēšanas</td><td>Drīkst (abu pušu)</td><td>Nav vērtības</td></tr></table></div>
+<div class="grid2" style="margin-top:12px"><div class="panel"><b>Kur nonāk kārts</b><ul><li>Parasti: Discard kavā</li><li>* un notikums notika: liek Trash kavā</li><li>* bet nenotika: Discard kavā</li><li>Notika bez efekta: skaitās notikis</li><li>Pasvītrots: blakus kartei (ilgstošs)</li><li>SE Asia Scoring: vienīgā vērtēšanas kārts, kas iet Trash kavā</li></ul><span class="src">RB 4.3, 5.2, 7.2–7.3</span></div>
+<div class="panel"><b>Citi likumi</b><ul><li>Prasība "vērtība X": lielāka arī der</li><li>Izmestas kārts notikums nenotiek (arī vērtēšanai)</li><li>Atcelts notikums: kārti var izspēlēt operācijas punktiem</li><li>Modifikatori summējas, darbojas visam, arī China Card</li><li>Modifikators nepāriet pretiniekam</li></ul><span class="src">RB 5.3–5.5, 7.4–7.5</span></div></div>
+
+<div class="panel" style="margin-top:12px"><b>Jebkura kārts: 5 soļi</b><ol style="margin:4px 0;padding-left:1.3em"><li>Zvaigznes krāsa: kam pieder notikums</li><li>Skaitlis zvaigznē: operācijas punkti (± Red Scare/Purge u.c.)</li><li>Notikums vai operācijas? Pretinieka kārts: tikai operācijas, viņa notikums notiek</li><li>Izlasi tekstu: kurš, ko, kur, cik, nosacījums</li><li>Kur kārts paliek: Discard kava, Trash kava (* un notika), pasvītrots: atgādinājums</li></ol>Kosmosa sacīkstēs notikums nenotiek. Virsrakstā notikums notiek vienmēr. <span class="src">RB 2.2, 5.1–5.2, 6.4.5</span></div>
+
+<h2>Ietekmes likšana</h2>
+<div class="grid2"><div class="panel"><b>Kur drīkst likt</b><ul><li>Kur jau ir tava ietekme</li><li>Blakus valstij ar tavu ietekmi</li><li>Blakus tavas lielvaras laukumam (vienmēr)</li><li>Skaitās ietekme <b>Action kārtas sākumā</b></li><li>Notikumiem šis ierobežojums nedarbojas (ja kārts nesaka citādi)</li></ul><span class="src">RB 6.1.1, 6.1.4</span></div>
+<div class="panel"><b>Cena par 1 marķieri</b><ul><li>Neviens nekontrolē vai kontrolē tu: <b>1</b></li><li>Kontrolē pretinieks: <b>2</b></li><li>Kontrole zūd Action kārtas laikā: nākamie maksā 1</li><li>Vairākas valstis un reģioni atļauti</li><li>Visi kārts punkti vienam darbam</li></ul><span class="src">RB 6.0, 6.1.2–6.1.3</span></div></div>
+
+<h2>Pārorientācija (Realignment)</h2>
+<div class="grid2"><div class="panel"><b>Nosacījumi</b><ul><li>Mērķī jābūt pretinieka ietekmei</li><li>Tava ietekme nav vajadzīga</li><li>1 metiens = 1 operācijas punkts</li><li>Pa vienam, to pašu valsti var vairākas reizes</li><li>Ietekmi nekad nepievieno</li></ul><span class="src">RB 6.2.1–6.2.3</span></div>
+<div class="panel"><b>Metiens</b><ul><li>Abi met kauliņu</li><li>+1 par katru kontrolētu kaimiņvalsti</li><li>+1 vairāk ietekmes mērķī</li><li>+1 mērķis blakus savai lielvarai</li><li>Lielākais noņem starpību pretiniekam. Neizšķirts: nekas</li></ul><span class="src">RB 6.2.2</span></div></div>
+<div class="scroll"><table><tr><th>DEFCON</th><th>Pārorientācija un apvērsumi aizliegti</th></tr><tr><td>5</td><td>Nekur</td></tr><tr><td>4</td><td>Eiropā</td></tr><tr><td>3</td><td>Eiropā, Āzijā (arī Dienvidaustrumāzijā)</td></tr><tr><td>2</td><td>Eiropā, Āzijā, Tuvajos Austrumos</td></tr></table></div>
+<p class="src">RB 8.1.5, DEFCON trase uz kartes</p>
+
+<h2>Apvērsums (Coup)</h2>
+<div class="grid2"><div class="panel"><b>Aprēķins</b><ul><li>Mērķī jābūt pretinieka ietekmei, tava nav vajadzīga</li><li>1 kārts = 1 mēģinājums ar visiem punktiem</li><li>Metiens + operācijas punkti &gt; stabilitāte × 2: izdodas</li><li>Vienāds vai mazāks: neizdodas, nekas nemainās</li><li>Starpību noņem pretiniekam, trūkstošo pieliek savu</li><li>Modifikatoru nav</li></ul><span class="src">RB 6.3.1–6.3.2</span></div>
+<div class="panel"><b>Sekas</b><ul><li>Militārās operācijas + kārts vērtība (maks. 5), arī neveiksmē</li><li>Battleground valstī DEFCON −1, arī neveiksmē</li><li>DEFCON aizliegumi kā pārorientācijai (tabula augstāk)</li><li>DEFCON 1: zaudē aktīvais spēlētājs</li><li><b>Bezmaksas</b> (no notikuma): drīkst neievērot DEFCON reģionus, Battleground valstī DEFCON −1, militārās operācijas neskaitās</li></ul><span class="src">RB 6.3.3–6.3.5, 8.1.4–8.1.5, 8.2.2–8.2.3</span></div></div>
+
+<h2>Kosmosa sacīkstes (Space Race)</h2>
+<div class="grid2"><div class="panel"><b>Mēģinājums</b><ul><li>Kārts vērtība ≥ nākamā lodziņa "OPS"</li><li>Metiens diapazonā "roll": +1 lodziņš</li><li>Notikums nenotiek (arī pretinieka kārtij), kārts uz Discard kavu</li><li>1 kārts gājienā (izņēmums: spējas, notikumi)</li><li>Pēc 8. lodziņa kosmosam vairs nespēlē</li></ul><span class="src">RB 6.4.1–6.4.2, 6.4.5–6.4.6</span></div>
+<div class="panel"><b>VP un spējas</b><ul><li>X/Y: pirmajam X VP, otrajam Y VP, uzreiz</li><li>Spēja tikai pirmajam, beidzas, kad ierodas otrais</li><li>2: 2 kosmosa kārtis gājienā</li><li>4: pretinieks virsraksta kārti atklāj pirmais</li><li>6: gājiena beigās drīkst izmest 1 turētu kārti</li><li>8: 8 Action kārtas</li></ul><span class="src">RB 6.4.3–6.4.4</span></div></div>
+<div class="scroll"><table><tr><th>Lodziņš</th><th>OPS</th><th>Metiens</th><th>VP</th></tr><tr><td>1 Earth Satellite</td><td>2</td><td>1–3</td><td>2/1</td></tr><tr><td>2 Animal in Space</td><td>2</td><td>1–4</td><td>spēja</td></tr><tr><td>3 Man in Space</td><td>2</td><td>1–3</td><td>2/0</td></tr><tr><td>4 Man in Earth Orbit</td><td>2</td><td>1–4</td><td>spēja</td></tr><tr><td>5 Lunar Orbit</td><td>3</td><td>1–3</td><td>3/1</td></tr><tr><td>6 Eagle/Bear Has Landed</td><td>3</td><td>1–4</td><td>spēja</td></tr><tr><td>7 Space Shuttle</td><td>3</td><td>1–3</td><td>4/2</td></tr><tr><td>8 Space Station</td><td>4</td><td>1–2</td><td>2/0 + spēja</td></tr></table></div>
+<p class="src">Kosmosa trase uz kartes (RB 12. lpp.)</p>
+
+<h2>DEFCON un militārās operācijas</h2>
+<div class="grid2"><div class="panel"><b>DEFCON</b><ul><li>Sākums 5, maksimums 5 (virs 5 notikumam nav ietekmes)</li><li>Uzlabot = lielāks skaitlis, pasliktināt = mazāks</li><li>Apvērsums Battleground valstī: −1</li><li>Gājiena sākumā (Improve DEFCON Status): +1, ja zem 5</li><li>DEFCON 1: spēle beidzas uzreiz, zaudē aktīvais spēlētājs</li><li>Virsraksta fāzē aktīvais ir tas, kurš izspēlēja virsraksta kārti</li></ul><span class="src">RB 4.5 A, C, 8.1</span></div>
+<div class="panel"><b>Obligātās militārās operācijas</b><ul><li>Vajag tik, cik DEFCON gājiena beigās (Check Military Operations Status)</li><li>Par katru trūkstošo pretinieks +1 VP; ja abiem, tikai starpība</li><li>Skaitās: apvērsums ar operācijas punktiem (kārts vērtība), kara notikums (skaitlis kārtī)</li><li>Neskaitās: pārorientācija, bezmaksas apvērsums</li><li>Maksimums 5; pēc pārbaudes abi uz 0</li><li>Pretinieka kara notikumu izraisot, marķieri pārvieto pretinieks</li></ul><span class="src">RB 4.5 E, 8.2</span></div></div>
+<div class="panel"><b>Kara notikumi</b> (Korean War, Arab-Israeli War, Indo-Pakistani War, Brush War, Iran-Iraq War): ietekme nav vajadzīga. Militārās operācijas saņem vienmēr, VP tikai uzvarot. <b>Indo-Pakistani War:</b> metiens − 1 par katru pretinieka kontrolētu valsti blakus mērķim; uzvara 4–6; +2 militārās operācijas; uzvara: +2 VP un pretinieka ietekmi mērķī aizstāj ar savu. <span class="src">RB 7.6, kārts RB 14. lpp.</span></div>
+
+<h2>The China Card</h2>
+<div class="grid2"><div class="panel"><b>Kā tā ceļo</b><ul><li>Sākumā pie PSRS, ar attēlu uz augšu</li><li>Daļa no rokas, bet dalot kārtis neskaitās</li><li>Izspēle = parasta Action kārta</li><li>Pēc izspēles uzreiz pretiniekam ar attēlu uz leju; šajā gājienā viņš to nedrīkst izspēlēt</li><li>Apgriež fāzē Flip The China Card (gājiena beigās)</li><li>Notikums to nodod: dari, kā raksta notikums</li><li>10. gājiena beigās turētājam +1 VP</li></ul><span class="src">RB 3.1, 4.5 G, 9.1–9.4, kārts</span></div>
+<div class="panel"><b>Bonuss un aizliegumi</b><ul><li>4 operācijas punkti; +1, ja <b>visi</b> punkti Āzijā (arī Dienvidaustrumāzijā)</li><li>Notikumi var mainīt tās vērtību (piem., Red Scare/Purge −1)</li><li>Nedrīkst: virsraksta fāzē; kā kārti, kas jāizmet notikuma dēļ</li><li>Nekad nevar piespiest izspēlēt (ne notikums, ne kāršu trūkums)</li><li>ASV izspēle atceļ Formosan Resolution</li></ul><span class="src">RB 9.5–9.8, 7.4, kārts</span></div></div>
+<h2>Reģiona vērtēšana</h2>
+<div class="grid2"><div class="panel"><b>Līmenis (tikai viens, augstākais)</b><ul><li><b>Klātbūtne:</b> kontrolē ≥ 1 valsti</li><li><b>Dominēšana:</b> vairāk valstu + vairāk Battleground + ≥ 1 valsts, kas nav Battleground</li><li><b>Kontrole:</b> vairāk valstu + visas Battleground valstis</li><li>Skaitās tikai kontrolētas valstis</li></ul><b>Papildu VP</b> (ar jebkuru līmeni)<ul><li>+1 par katru kontrolētu Battleground valsti</li><li>+1 par katru kontrolētu valsti blakus pretinieka lielvarai</li><li>Uz VP trases tikai starpība</li></ul><span class="src">RB 10.1</span></div>
+<div class="panel"><b>Reģionu tabulas (uz kartes)</b><table class="t"><tr><th>Reģions</th><th>Klātb.</th><th>Domin.</th><th>Kontr.</th></tr><tr><td>Eiropa</td><td>3</td><td>7</td><td>Uzvara</td></tr><tr><td>Āzija</td><td>3</td><td>7</td><td>9</td></tr><tr><td>Tuvie Austrumi</td><td>3</td><td>5</td><td>7</td></tr><tr><td>Centrālamerika</td><td>1</td><td>3</td><td>5</td></tr><tr><td>Dienvidamerika</td><td>2</td><td>5</td><td>6</td></tr><tr><td>Āfrika</td><td>1</td><td>4</td><td>6</td></tr></table><p><b>Dienvidaustrumāzija</b> (atsevišķa kārts, pēc tam Trash kavā): 1 VP par katru kontrolētu valsti, Taizeme 2 VP. Bez līmeņiem un papildu VP.</p><p>Blakus ASV: Kanāda, Meksika, Kuba, Japāna. Blakus PSRS: Somija, Polija, Rumānija, Afganistāna, Ziemeļkoreja.</p><span class="src">Karte, RB 7.2</span></div></div>
+<div class="panel"><b>VP trase:</b> viens marķieris, ASV 20 … Start (0) … PSRS 20. "Saņem VP" = marķieris uz šī spēlētāja pusi. Start skaitās kā lodziņš (PSRS 1 + ASV 2 VP = ASV 1). <span class="src">RB 10.2</span></div>
+<h2>Pušu pārskats</h2>
+<div class="scroll"><table><tr><th></th><th class="su">PSRS</th><th class="us">ASV</th></tr>
+<tr><td>Zvaigzne uz kārtīm</td><td>Sarkana</td><td>Zila</td></tr>
+<tr><td>Sākuma ietekme</td><td>15, liek pirmā</td><td>25, liek otrā</td></tr>
+<tr><td>The China Card sākumā</td><td>Jā, atklāta</td><td>Nē</td></tr>
+<tr><td>Kāršu dalīšana</td><td>Saņem pirmā</td><td>Otrā</td></tr>
+<tr><td>Action kārtās</td><td>Vienmēr sāk pirmā</td><td>Otrā</td></tr>
+<tr><td>Headline vienādas vērtības gadījumā</td><td>Otrā</td><td>Pirmā</td></tr><tr><td>Abi virsrakstā vērtēšanas kārtis</td><td>Otrā</td><td>Pirmā</td></tr><tr><td>Brīvā sākuma ietekme</td><td>6 Austrumeiropā</td><td>7 Rietumeiropā</td></tr><tr><td>Žetonu lauks valsts lodziņā</td><td>Labais</td><td>Kreisais</td></tr><tr><td>Kaimiņi (melnās līnijas)</td><td>Somija, Polija, Rumānija, Afganistāna, Ziemeļkoreja</td><td>Kanāda, Meksika, Kuba, Japāna</td></tr><tr><td>Viss pārējais</td><td colspan="2">Vienādi: operācijas, kosmoss, DEFCON, militārās operācijas, vērtēšana</td></tr></table></div>
+<p class="src">RB 3.1–3.3, 4.5 C–D</p>
+<h2>Pie galda: kontrolsaraksts</h2>
+<div class="grid2"><div class="panel"><b>Katrā Action kārtā</b><ul><li><b>Kārts:</b> zvaigzne, skaitlis, *, teksts</li><li><b>Spēkā esoši efekti:</b> marķieri un kārtis blakus kartei (piem. Red Scare/Purge, NORAD)</li><li><b>Karte:</b> stabilitāte, Battleground (sarkans skaitlis), kontrole, kaimiņi</li><li><b>DEFCON trase:</b> kur aizliegti apvērsumi un pārorientācija</li><li><b>Pēc apvērsuma:</b> Battleground → DEFCON −1; militārās operācijas + punkti</li><li><b>Vērtēšana:</b> reģiona tabula uz kartes</li></ul></div>
+<div class="panel"><b>Gājiena beigās</b><ul><li><b>E.</b> Militārās operācijas ≥ DEFCON? Trūkst: pretinieks +1 VP par katru</li><li><b>F.</b> Vērtēšanas kārts rokā = zaudējums</li><li><b>G.</b> China Card izspēlēta: apgriez ar attēlu uz augšu</li><li><b>H.</b> Gājiena marķieris +1 (3. un 7. gājiena beigās pievieno jaunās kārtis)</li><li>Nākamā gājiena sākumā: DEFCON +1 (ja zem 5), roku papildina</li></ul></div></div>
+<div class="panel" style="margin-top:12px"><b>Oficiālais piemērs, 1. gājiena beigas:</b> DEFCON 2, VP PSRS 6, militārās operācijas abiem 5, rokā PSRS Blockade, ASV Containment. <span class="src">BB 5. lpp.</span></div>
+</main>
+<footer class="wrap">Avoti: Twilight Struggle 20th Anniversary Rule Book (RB) un Background Book (BB), © 2026 GMT Games. Špikeri papildina katra jauna kursa nodaļa.</footer>
+<script>
+const T=[
+['Lielvara','Superpower','Spēlētāja puse: PSRS vai ASV. Arī lielvaras lauciņš uz kartes, kurā nedrīkst likt ietekmi.',1],
+['PSRS','USSR','Viena no pusēm. Sarkanā krāsa, sirpis un āmurs.',1],['ASV','US','Viena no pusēm. Zilā krāsa, zvaigzne.',1],
+['Gājiens','Turn','Spēles raunds. Kopā 10 gājieni.',1],['Action kārta','Action Round','Katra spēlētāja kārts izspēle gājienā. 6 vai 7 gājienā.',1],
+['Virsraksta fāze','Headline Phase','Gājiena sākumā abi slepeni izvēlas vienu kārti, ko izspēlē kā notikumu.',1],
+['Aktīvais spēlētājs','Phasing Player','Spēlētājs, kura Action kārta notiek. Viņš zaudē, ja DEFCON nokrīt līdz 1.',1],
+['Notikums','Event','Kārts teksta izpilde. Pretinieka notikumu izpilda pretinieks.',1],
+['Kara notikums','War Event','Viena no 5 kārtīm ar karu. Skaitās militārā operācija.',10],
+['Uzlabot / pasliktināt DEFCON','Improve / Degrade','Uzlabot: uz lielāku skaitli. Pasliktināt: uz mazāku skaitli.',10],
+['Operācijas punkti','Operations (Ops)','Kārts vērtība, ko tērē ietekmei, pārorientācijai, apvērsumam vai kosmosam. Visi vienam darbam.',1],
+['Ietekme','Influence','Spēlētāja žetoni valstī. Atklāti, maināmi kā nauda.',2],
+['Kontrole','Control','Ietekme ≥ stabilitāte un pārsvars ≥ stabilitāte. Rāda žetona tumšā puse.',2],
+['Stabilitātes skaitlis','Stability Number','Skaitlis valsts lodziņa augšējā labajā stūrī. Jo lielāks, jo grūtāk kontrolēt.',2],
+['Battleground valsts','Battleground','Svarīga valsts: violeta josla, sarkans skaitlis. Īpaši noteikumi vērtēšanā un apvērsumos.',2],
+['Reģions','Region','Viena no 6 kartes daļām: Eiropa, Āzija, Tuvie Austrumi, Āfrika, Centrālamerika, Dienvidamerika.',2],
+['Apakšreģions','sub-Region','Rietumeiropa, Austrumeiropa, Dienvidaustrumāzija. Ietilpst savā reģionā.',2],
+['Kaimiņš','Adjacent','Valsts, ar kuru savieno līnija (brūna, sarkana raustīta vai melna).',2],
+['Pārorientācijas metiens','Realignment roll','Darbība, ar kuru samazina pretinieka ietekmi (sīkāk 7. nodaļā).',1],
+['Apvērsums','Coup','Metiens + operācijas punkti pret stabilitāti × 2. Noņem pretinieka ietekmi, var pielikt savu (8. nodaļa).',1],
+['Kosmosa sacīkstes','Space Race','Trase ar 8 lodziņiem. Kārts vērtība ≥ OPS, metiens diapazonā: +1 lodziņš. VP un spējas (9. nodaļa).',2],
+['DEFCON','DEFCON Status','Kopīga kodolspriedzes skala 5→1. Pie 1 ir kodolkarš.',1],
+['Militārās operācijas','Military Operations','Trase 0–5 katrai pusei (sīkāk 10. nodaļā).',2],
+['Uzvaras punkti','Victory Points (VP)','Viena trase no ASV 20 līdz PSRS 20. 20 nozīmē uzvaru.',1],
+['Vērtēšanas kārts','Scoring card','Kārts ar "Scoring". Bez operācijas vērtības. Nedrīkst paturēt gājiena beigās.',2],
+['Automātiskā uzvara','Automatic Victory','20 VP, Eiropas kontrole tās vērtēšanā, pretinieka kodolkarš, pretinieka paturēta vērtēšanas kārts.',1],
+['Gala vērtēšana','Final Scoring','Pēc 10. gājiena novērtē visus reģionus, sāk ar Eiropu.',1],
+['Klātbūtne','Presence','Reģionā kontrolē vismaz 1 valsti.',12],
+['Dominēšana','Domination','Vairāk valstu un vairāk Battleground valstu nekā pretiniekam, un vismaz 1 valsts, kas nav Battleground.',12],
+['Reģiona kontrole','Control (region)','Vairāk valstu nekā pretiniekam un visas reģiona Battleground valstis.',12],
+['Ar attēlu uz leju','Face-down','China Card pēc izspēles: jaunais īpašnieks to šajā gājienā nedrīkst izspēlēt.',11],
+['Kodolkarš','Nuclear War','DEFCON 1: aktīvais spēlētājs zaudē.',1],
+['The China Card','The China Card','Īpaša kārts, sākumā atklāta pie PSRS. Neskaitās rokas kārtīs (11. nodaļa).',3],
+['Agrīnais / vidējais / vēlīnais karš','Early / Mid / Late War','Trīs kavas daļas: no sākuma / no 4. gājiena / no 8. gājiena.',1],
+['Zvaigznīte','Asterisk *','Pēc notikuma kārti liek Trash kavā.',2],['Ilgstošs notikums','Underlined Event','Pasvītrots nosaukums: efekts ilgst, kārti noliek blakus laukumam.',2],
+['DEFCON brīdinājums','DEFCON Warning ☢','Ikona uz 14 kārtīm, kas nepareizā brīdī var maksāt spēli.',2],
+['Virsraksta kārts','Headline card','Kārts, ko slepeni izvēlas virsraksta fāzē. Tās notikums notiek obligāti.',4],
+['Trash kavā','Removed from play','* kārts, kuras notikums notika. Vairs neatgriežas kavā.',4],
+['Pretinieka notikums','Opponent\'s Event','Notiek automātiski, ja izspēlē pretinieka kārti operācijas punktiem.',5],
+['Priekšnoteikums','Prerequisite','Nosacījums notikumam. Ja nav izpildīts, notikums nenotiek.',5],
+['Atcelts notikums','Canceled / prohibited Event','Notikums, ko aizliedz cita kārts. Kārti var izspēlēt operācijas punktiem.',5],
+['Abu pušu kārts','Neutral card','Kārts, kuras notikumu drīkst izspēlēt abi.',5],
+['Operāciju modifikators','Operations modifier','Notikums, kas maina vēlāk izspēlēto kāršu vērtību (piem., Red Scare/Purge −1).',5],
+['Izmestās kārtis','Discard Pile','Atklāta kava blakus kavai. Sajauc jaunā kavā, kad kava beidzas.',4],['Turēta kārts','Held card','Kārts, kas paliek rokā pēc visām Action kārtām.',1],
+];
+const box=document.getElementById('terms'),q=document.getElementById('q');
+function draw(){const s=q.value.trim().toLowerCase();box.innerHTML='';for(const [lv,en,d,ch] of T){if(s&&!(lv+' '+en+' '+d).toLowerCase().includes(s))continue;const e=document.createElement('div');e.className='term';e.innerHTML=`<div><b></b><span class="en"></span><span class="ch">${ch}. nodaļa</span></div><div></div>`;e.querySelector('b').textContent=lv;e.querySelector('.en').textContent=en;e.children[1].textContent=d;box.appendChild(e);}if(!box.children.length)box.innerHTML='<div class="term"><div>Nekas netika atrasts.</div></div>';}
+q.addEventListener('input',draw);draw();
+</script>
+<a href="index.html" style="position:fixed;left:12px;bottom:calc(12px + env(safe-area-inset-bottom));z-index:99;background:#14161c;color:#f3e9d2;font:600 17px 'Barlow Condensed',sans-serif;padding:10px 16px;border-radius:22px;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.35)">← Akadēmija</a><script>if("serviceWorker" in navigator){addEventListener("load",()=>navigator.serviceWorker.register("sw.js").catch(()=>{}));}</script></body></html>
