@@ -398,6 +398,9 @@ ol.flow{padding-left:1.3em}ol.flow li{margin:4px 0}
 .so-nuke b{display:block;font-family:var(--f-disp);font-size:34px;letter-spacing:.04em;color:#ff5252;line-height:1.05;font-weight:400}
 .so-nuke span{display:block;font-family:var(--f-ui);font-size:18px;margin-top:4px}.so-nuke span b{display:inline;font-size:inherit;color:#ffd54f;font-family:inherit;font-weight:700}
 @keyframes nukeP{50%{box-shadow:0 0 0 4px #ffd54f inset,0 0 24px 6px rgba(229,57,53,.8)}}
+
+.chwhy{margin:4px 0 10px;padding:8px 12px;border-left:4px solid var(--red);background:rgba(200,40,40,.06);font-size:.95em;line-height:1.4}
+.loop{display:flex;flex-wrap:wrap;align-items:stretch;gap:6px;margin:10px 0}.loop .lp{flex:1 1 150px;display:flex;gap:8px;align-items:flex-start;padding:8px;border:1px solid var(--line,#bbb);border-radius:6px;background:var(--card,#fff)}.loop .lp b{flex:none;width:24px;height:24px;border-radius:50%;background:var(--red);color:#fff;display:grid;place-items:center;font-size:13px}.loop .lp span{display:flex;flex-direction:column;font-size:.92em}.loop .lpa{align-self:center;font-style:normal;color:var(--red);font-weight:700}.loop .lpr{flex-basis:100%;text-align:center;font-weight:600;padding:4px}.loop.sm .lp{flex:1 1 90px}.loop .lp.on{outline:3px solid var(--red);background:rgba(200,40,40,.08)}
 </style><style>.ei{display:inline-block;width:1.15em;height:1.15em;vertical-align:-.2em;background:currentColor;-webkit-mask:var(--m) center/contain no-repeat;mask:var(--m) center/contain no-repeat;flex:0 0 auto}
 .ei-grad{--m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Cpath%20d%3D%22M2%209l10-5%2010%205-10%205z%22/%3E%3Cpath%20d%3D%22M6%2011v5c3%202%209%202%2012%200v-5M22%209v6%22/%3E%3C/svg%3E")}
 .ei-gift{--m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%228%22%20width%3D%2218%22%20height%3D%224%22%20rx%3D%221%22/%3E%3Cpath%20d%3D%22M5%2012v9h14v-9M12%208v13M12%208C10%204%206%204%206%206.5S12%208%2012%208zm0%200c2-4%206-4%206-1.5S12%208%2012%208z%22/%3E%3C/svg%3E")}
@@ -419,7 +422,7 @@ ol.flow{padding-left:1.3em}ol.flow li{margin:4px 0}
 .ei-joy{--m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%223%22%20y%3D%2215%22%20width%3D%2218%22%20height%3D%226%22%20rx%3D%222%22/%3E%3Cpath%20d%3D%22M12%2015V9%22/%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%226%22%20r%3D%223%22/%3E%3Cpath%20d%3D%22M6.5%2018h3%22/%3E%3C/svg%3E")}
 .ei-dice{--m:url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22black%22%20stroke-width%3D%221.9%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%3E%3Crect%20x%3D%224%22%20y%3D%224%22%20width%3D%2216%22%20height%3D%2216%22%20rx%3D%223%22/%3E%3Ccircle%20cx%3D%228.5%22%20cy%3D%228.5%22%20r%3D%221.4%22%20fill%3D%22black%22/%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%221.4%22%20fill%3D%22black%22/%3E%3Ccircle%20cx%3D%2215.5%22%20cy%3D%2215.5%22%20r%3D%221.4%22%20fill%3D%22black%22/%3E%3C/svg%3E")}</style>
 <div id="app"><div class="wrap" style="padding-block:40px;font-family:sans-serif">Ielādē akadēmiju…</div></div>
-<script>const APP_VER='73', APP_DATE='12.11.2026', APP_WHERE='telefona lietotne';
+<script>const APP_VER='74', APP_DATE='12.11.2026', APP_WHERE='telefona lietotne';
 const C = {"Mexico": {"s": 2, "bg": true, "r": "CA", "b": [90, 882, 119, 82], "adj": ["Guatemala", "USA"]}, "El Salvador": {"s": 1, "bg": false, "r": "CA", "b": [127, 1023, 119, 82], "adj": ["Guatemala", "Honduras"]}, "Guatemala": {"s": 1, "bg": false, "r": "CA", "b": [256, 918, 119, 82], "adj": ["Mexico", "El Salvador", "Honduras"]}, "Honduras": {"s": 2, "bg": false, "r": "CA", "b": [272, 1023, 119, 82], "adj": ["Guatemala", "El Salvador", "Nicaragua", "Costa Rica"]}, "Costa Rica": {"s": 3, "bg": false, "r": "CA", "b": [292, 1130, 119, 82], "adj": ["Honduras", "Nicaragua", "Panama"]}, "Ecuador": {"s": 2, "bg": false, "r": "SA", "b": [353, 1266, 119, 82], "adj": ["Colombia", "Peru"]}, "Peru": {"s": 2, "bg": false, "r": "SA", "b": [403, 1407, 119, 82], "adj": ["Ecuador", "Bolivia", "Chile"]}, "Nicaragua": {"s": 1, "bg": false, "r": "CA", "b": [418, 1023, 119, 82], "adj": ["Honduras", "Costa Rica", "Cuba"]}, "Chile": {"s": 3, "bg": true, "r": "SA", "b": [422, 1553, 119, 82], "adj": ["Peru", "Argentina"]}, "Panama": {"s": 2, "bg": true, "r": "CA", "b": [435, 1129, 119, 82], "adj": ["Costa Rica", "Colombia"]}, "Cuba": {"s": 3, "bg": true, "r": "CA", "b": [454, 911, 119, 82], "adj": ["Nicaragua", "Haiti", "USA"]}, "Argentina": {"s": 2, "bg": true, "r": "SA", "b": [501, 1697, 119, 82], "adj": ["Chile", "Paraguay", "Uruguay"]}, "Colombia": {"s": 1, "bg": false, "r": "SA", "b": [512, 1240, 119, 82], "adj": ["Panama", "Ecuador", "Venezuela"]}, "Venezuela": {"s": 2, "bg": true, "r": "SA", "b": [585, 1122, 119, 82], "adj": ["Colombia", "Brazil"]}, "Haiti": {"s": 1, "bg": false, "r": "CA", "b": [596, 992, 119, 82], "adj": ["Cuba", "Dominican Rep."]}, "Bolivia": {"s": 2, "bg": false, "r": "SA", "b": [601, 1369, 119, 82], "adj": ["Peru", "Paraguay"]}, "Paraguay": {"s": 2, "bg": false, "r": "SA", "b": [607, 1502, 119, 82], "adj": ["Bolivia", "Argentina", "Uruguay"]}, "Canada": {"s": 4, "bg": false, "r": "WE", "b": [638, 449, 119, 82], "adj": ["UK", "USA"]}, "Uruguay": {"s": 2, "bg": false, "r": "SA", "b": [681, 1629, 119, 82], "adj": ["Argentina", "Paraguay", "Brazil"]}, "Dominican Rep.": {"s": 1, "bg": false, "r": "CA", "b": [739, 992, 119, 82], "adj": ["Haiti"]}, "Brazil": {"s": 2, "bg": true, "r": "SA", "b": [790, 1349, 119, 82], "adj": ["Venezuela", "Uruguay"]}, "UK": {"s": 5, "bg": false, "r": "WE", "b": [916, 378, 119, 82], "adj": ["Canada", "Norway", "Benelux", "France"]}, "Spain/Portugal": {"s": 2, "bg": false, "r": "WE", "b": [925, 660, 119, 82], "adj": ["France", "Italy", "Morocco"]}, "Morocco": {"s": 3, "bg": false, "r": "AF", "b": [925, 896, 119, 82], "adj": ["Spain/Portugal", "Algeria", "West African States"]}, "West African States": {"s": 2, "bg": false, "r": "AF", "b": [944, 1051, 119, 82], "adj": ["Morocco", "Ivory Coast"]}, "France": {"s": 3, "bg": true, "r": "WE", "b": [1037, 529, 119, 82], "adj": ["UK", "W. Germany", "Spain/Portugal", "Italy", "Algeria"]}, "Algeria": {"s": 2, "bg": true, "r": "AF", "b": [1038, 789, 119, 82], "adj": ["France", "Morocco", "Tunisia", "Saharan States"]}, "Ivory Coast": {"s": 2, "bg": false, "r": "AF", "b": [1052, 1164, 119, 82], "adj": ["West African States", "Nigeria"]}, "Benelux": {"s": 3, "bg": false, "r": "WE", "b": [1063, 404, 119, 82], "adj": ["UK", "W. Germany"]}, "Denmark": {"s": 3, "bg": false, "r": "WE", "b": [1112, 293, 119, 82], "adj": ["Sweden", "W. Germany"]}, "Saharan States": {"s": 1, "bg": false, "r": "AF", "b": [1140, 945, 119, 82], "adj": ["Algeria", "Nigeria"]}, "Austria": {"s": 4, "bg": false, "r": "EWE", "b": [1179, 525, 119, 82], "adj": ["Italy", "W. Germany", "E. Germany", "Hungary"]}, "Italy": {"s": 2, "bg": true, "r": "WE", "b": [1195, 636, 119, 82], "adj": ["France", "Spain/Portugal", "Austria", "Yugoslavia", "Greece"]}, "Tunisia": {"s": 2, "bg": false, "r": "AF", "b": [1200, 759, 119, 82], "adj": ["Libya", "Algeria"]}, "W. Germany": {"s": 4, "bg": true, "r": "WE", "b": [1203, 415, 119, 82], "adj": ["Denmark", "Benelux", "France", "Austria", "E. Germany"]}, "Nigeria": {"s": 1, "bg": true, "r": "AF", "b": [1223, 1154, 119, 82], "adj": ["Saharan States", "Ivory Coast", "Cameroon"]}, "Norway": {"s": 4, "bg": false, "r": "WE", "b": [1233, 75, 119, 82], "adj": ["UK", "Sweden"]}, "E. Germany": {"s": 3, "bg": true, "r": "EE", "b": [1248, 314, 119, 82], "adj": ["W. Germany", "Poland", "Austria", "Czechoslovakia"]}, "Sweden": {"s": 4, "bg": false, "r": "WE", "b": [1273, 200, 119, 82], "adj": ["Norway", "Denmark", "Finland"]}, "Cameroon": {"s": 1, "bg": false, "r": "AF", "b": [1276, 1291, 119, 82], "adj": ["Nigeria", "Zaire"]}, "Libya": {"s": 2, "bg": true, "r": "ME", "b": [1277, 871, 119, 82], "adj": ["Egypt", "Tunisia"]}, "Angola": {"s": 1, "bg": true, "r": "AF", "b": [1291, 1462, 119, 82], "adj": ["Zaire", "Botswana", "South Africa"]}, "Hungary": {"s": 3, "bg": false, "r": "EE", "b": [1333, 500, 119, 82], "adj": ["Czechoslovakia", "Austria", "Romania", "Yugoslavia"]}, "Yugoslavia": {"s": 3, "bg": false, "r": "EE", "b": [1333, 597, 119, 82], "adj": ["Italy", "Hungary", "Romania", "Greece"]}, "Czechoslovakia": {"s": 3, "bg": false, "r": "EE", "b": [1356, 404, 119, 82], "adj": ["E. Germany", "Poland", "Hungary"]}, "South Africa": {"s": 3, "bg": true, "r": "AF", "b": [1376, 1684, 119, 82], "adj": ["Angola", "Botswana"]}, "Poland": {"s": 3, "bg": true, "r": "EE", "b": [1387, 303, 119, 82], "adj": ["E. Germany", "Czechoslovakia", "USSR"]}, "Botswana": {"s": 2, "bg": false, "r": "AF", "b": [1430, 1565, 119, 82], "adj": ["Angola", "South Africa", "Zimbabwe"]}, "Egypt": {"s": 2, "bg": true, "r": "ME", "b": [1431, 900, 119, 82], "adj": ["Israel", "Libya", "Sudan"]}, "Zimbabwe": {"s": 1, "bg": false, "r": "AF", "b": [1439, 1450, 119, 82], "adj": ["Zaire", "Botswana", "SE African States"]}, "Greece": {"s": 2, "bg": false, "r": "WE", "b": [1442, 696, 119, 82], "adj": ["Italy", "Yugoslavia", "Bulgaria", "Turkey"]}, "Finland": {"s": 4, "bg": false, "r": "EWE", "b": [1448, 75, 119, 82], "adj": ["Sweden", "USSR"]}, "Zaire": {"s": 1, "bg": true, "r": "AF", "b": [1449, 1330, 119, 82], "adj": ["Cameroon", "Angola", "Zimbabwe"]}, "Israel": {"s": 4, "bg": true, "r": "ME", "b": [1476, 799, 119, 82], "adj": ["Lebanon", "Syria", "Jordan", "Egypt"]}, "Bulgaria": {"s": 3, "bg": false, "r": "EE", "b": [1477, 580, 119, 82], "adj": ["Greece", "Turkey"]}, "Romania": {"s": 3, "bg": false, "r": "EE", "b": [1482, 480, 119, 82], "adj": ["Hungary", "Yugoslavia", "Turkey", "USSR"]}, "Sudan": {"s": 1, "bg": false, "r": "AF", "b": [1544, 1024, 119, 82], "adj": ["Egypt", "Ethiopia"]}, "Ethiopia": {"s": 1, "bg": false, "r": "AF", "b": [1569, 1133, 119, 82], "adj": ["Somalia", "Sudan"]}, "Kenya": {"s": 2, "bg": false, "r": "AF", "b": [1579, 1243, 119, 82], "adj": ["SE African States", "Somalia"]}, "SE African States": {"s": 1, "bg": false, "r": "AF", "b": [1597, 1443, 119, 82], "adj": ["Zimbabwe", "Kenya"]}, "Turkey": {"s": 2, "bg": false, "r": "WE", "b": [1611, 581, 119, 82], "adj": ["Romania", "Greece", "Bulgaria", "Syria"]}, "Jordan": {"s": 2, "bg": false, "r": "ME", "b": [1634, 829, 119, 82], "adj": ["Lebanon", "Israel", "Iraq", "Saudi Arabia"]}, "Saudi Arabia": {"s": 3, "bg": true, "r": "ME", "b": [1664, 932, 119, 82], "adj": ["Jordan", "Iraq", "Gulf States"]}, "Syria": {"s": 2, "bg": false, "r": "ME", "b": [1715, 689, 119, 82], "adj": ["Turkey", "Lebanon", "Israel"]}, "Somalia": {"s": 2, "bg": false, "r": "AF", "b": [1718, 1141, 119, 82], "adj": ["Kenya", "Ethiopia"]}, "Iraq": {"s": 3, "bg": true, "r": "ME", "b": [1770, 789, 119, 82], "adj": ["Jordan", "Iran", "Saudi Arabia", "Gulf States"]}, "Gulf States": {"s": 3, "bg": false, "r": "ME", "b": [1838, 935, 119, 82], "adj": ["Iraq", "Saudi Arabia"]}, "Iran": {"s": 2, "bg": true, "r": "ME", "b": [1853, 687, 119, 82], "adj": ["Iraq", "Afghanistan", "Pakistan"]}, "Pakistan": {"s": 2, "bg": true, "r": "AS", "b": [1944, 829, 119, 82], "adj": ["Iran", "Afghanistan", "India"]}, "Afghanistan": {"s": 2, "bg": false, "r": "AS", "b": [2012, 709, 119, 82], "adj": ["Iran", "Pakistan", "USSR"]}, "India": {"s": 3, "bg": true, "r": "AS", "b": [2121, 912, 119, 82], "adj": ["Pakistan", "Burma"]}, "Burma": {"s": 2, "bg": false, "r": "SEA", "b": [2275, 878, 119, 82], "adj": ["India", "Laos/Cambodia"]}, "Thailand": {"s": 2, "bg": true, "r": "SEA", "b": [2345, 1057, 119, 82], "adj": ["Laos/Cambodia", "Vietnam", "Malaysia"]}, "Malaysia": {"s": 2, "bg": false, "r": "SEA", "b": [2410, 1200, 119, 82], "adj": ["Thailand", "Indonesia", "Australia"]}, "Laos/Cambodia": {"s": 1, "bg": false, "r": "SEA", "b": [2416, 949, 119, 82], "adj": ["Burma", "Thailand", "Vietnam"]}, "Vietnam": {"s": 1, "bg": false, "r": "SEA", "b": [2520, 1048, 119, 82], "adj": ["Laos/Cambodia", "Thailand"]}, "Taiwan": {"s": 3, "bg": false, "r": "AS", "b": [2635, 881, 119, 82], "adj": ["Japan", "South Korea"]}, "Indonesia": {"s": 1, "bg": false, "r": "SEA", "b": [2635, 1308, 119, 82], "adj": ["Malaysia", "Philippines"]}, "Australia": {"s": 4, "bg": false, "r": "AS", "b": [2671, 1514, 119, 82], "adj": ["Malaysia"]}, "South Korea": {"s": 3, "bg": true, "r": "AS", "b": [2679, 700, 119, 82], "adj": ["Japan", "Taiwan", "North Korea"]}, "Philippines": {"s": 2, "bg": false, "r": "SEA", "b": [2702, 1075, 119, 82], "adj": ["Indonesia", "Japan"]}, "North Korea": {"s": 3, "bg": true, "r": "AS", "b": [2746, 579, 119, 82], "adj": ["South Korea", "USSR"]}, "Japan": {"s": 4, "bg": true, "r": "AS", "b": [2813, 776, 119, 82], "adj": ["Philippines", "Taiwan", "South Korea", "USA"]}, "Lebanon": {"s": 1, "bg": false, "r": "ME", "b": [1576, 705, 119, 82], "adj": ["Syria", "Israel", "Jordan"]}};
 const CHEAT_URL = 'cheat.html';
 // ===== Map data (read from the 20th Anniversary map, RB pp. 6–7). Box coords in map pixels (3025×1933).
@@ -456,12 +459,12 @@ const CHAPTERS = [
    <ul><li><b>Notikums:</b> izpilda kārts tekstu (piemēram, pievieno 5 PSRS ietekmes Austrumeiropā).</li>
    <li><b>Operācijas punkti:</b> saņem 3 operācijas punktus un tos visus iztērē vienam darbam, piemēram, liek 3 ietekmes žetonus.</li></ul>`,
    important: `<ul><li>Kārti nevar vienkārši izlaist vai izmest. Katrā savā kārtā tev ir jāizspēlē kārts.</li>
-   <li>Ja izspēlē <b>pretinieka</b> kārti operācijas punktiem, tās notikums tik un tā notiek (sīkāk 5. nodaļā).</li>
+   <li>Ja izspēlē <b>pretinieka</b> kārti operācijas punktiem, tās notikums tik un tā notiek (sīkāk 4. nodaļā).</li>
    <li>Kārts teksts ir svarīgāks par noteikumu grāmatu, ja tie atšķiras.</li><li>Spēlētāju, kura kārta pašlaik notiek, sauc par <b>aktīvo spēlētāju</b> (Phasing Player). Ja DEFCON nokrīt līdz 1, zaudē aktīvais spēlētājs. Tāpēc DEFCON ir bīstams abiem.</li></ul>`,
    src: 'RB 1.0 (2. lpp.), 2.2.3 (5. lpp.), 4.1 (8. lpp.), 6.0 (10. lpp.)',
    real: [IMG('cover.jpg','Noteikumu grāmatas vāks (20. gadadienas izdevums)','RB 1. lpp.'), IMG('card_anatomy.jpg','Kārts paraugs: Warsaw Pact Formed','RB 2.2, 5. lpp.')],
    extra: [`<p><b>Vēl viens piemērs.</b> ASV spēlētājam ir <b>Alliance for Progress</b> (zila zvaigzne, vērtība 3). Ja viņš to izspēlē kā notikumu, viņš saņem VP pēc kārts teksta. Ja kā operācijas punktus, viņš saņem 3 operācijas punktus, piemēram, kosmosa sacīkstēm.</p>`,
-            `<p><b>Kā tas izskatās gājienā.</b> 1. gājienā ir 6 Action kārtas ${E('Action Rounds')}. PSRS izspēlē kārti, tad ASV, tad atkal PSRS, un tā 6 reizes. Pirms tām katrs vēl izspēlē vienu "virsraksta" kārti ${E('Headline')} (4. nodaļā).</p>`] },
+            `<p><b>Kā tas izskatās gājienā.</b> 1. gājienā ir 6 Action kārtas ${E('Action Rounds')}. PSRS izspēlē kārti, tad ASV, tad atkal PSRS, un tā 6 reizes. Pirms tām katrs vēl izspēlē vienu "virsraksta" kārti ${E('Headline')} (9. nodaļā).</p>`] },
 
  { id: '1.2', title: 'Kā uzvarēt', sim: 'vp',
    rule: `<p>Uzvaras punktus ${E('Victory Points, VP')} skaita uz <b>vienas kopīgas trases</b>. Tā iet no <b>ASV 20</b> līdz <b>PSRS 20</b>. Sākumā marķieris ir nulles lodziņā ${E('Start')}. Tas ir kā virves vilkšana: ja viena puse iegūst punktus, marķieris iet uz tās pusi.</p>
@@ -486,7 +489,7 @@ const CHAPTERS = [
    rule: `<p>Šie likumi darbojas visā spēlē:</p>
    <ol><li><b>Kārts teksts ir svarīgāks par noteikumiem.</b> Vienīgais izņēmums: notikums nevar piespiest tevi paturēt vērtēšanas kārti.</li>
    <li><b>Gājienu nevar izlaist.</b> Nevar atteikties izspēlēt kārti un nevar pats izmest kārti no rokas.</li>
-   <li><b>Pretinieka notikums notiek.</b> Action fāzē pretinieka kārti drīkst izspēlēt tikai operācijas punktiem, bet tās notikums notiek automātiski. To izpilda pretinieks. (Virsraksta fāzē pretinieka kārti drīkst izvēlēties: tad tās notikumu izpilda pretinieks, sīkāk 4. nodaļā.)</li>
+   <li><b>Pretinieka notikums notiek.</b> Action fāzē pretinieka kārti drīkst izspēlēt tikai operācijas punktiem, bet tās notikums notiek automātiski. To izpilda pretinieks. (Virsraksta fāzē pretinieka kārti drīkst izvēlēties: tad tās notikumu izpilda pretinieks, sīkāk 9. nodaļā.)</li>
    <li><b>DEFCON 1 zaudē aktīvais spēlētājs.</b> Ja DEFCON nokrīt līdz 1, zaudē spēlētājs, kura kārta tobrīd notiek ${E('Phasing Player')}, neatkarīgi no tā, kura kārts to izraisīja.</li>
    <li><b>Vērtēšanas kārti nedrīkst paturēt.</b> Ja gājiena beigās tev rokā ir vērtēšanas kārts, tu zaudē.</li>
    <li><b>Ietekme ir atklāta.</b> Žetonus jebkurā brīdī drīkst apskatīt. Tos var mainīt kā naudu (piem., "3" pret trim "1").</li></ol>`,
@@ -538,7 +541,7 @@ const CHAPTERS = [
    important: `<ul><li>Kaimiņi nav ģeogrāfija. Dažas valstis robežojas dabā, bet spēlē nav savienotas. Tā nav kartes kļūda.</li><li>Kaimiņš ir tikai tas, ko savieno līnija. "Blakus uz kartes" neskaitās.</li><li>Japānai līnija uz ASV iet ar bultu ārpus kartes labajā malā.</li></ul>`,
    src: 'RB 2.1.5–2.1.6 (4. lpp.), kartes leģenda',
    real: [IMG('map.jpg','Karte: brūnās, sarkanās raustītās un melnās līnijas','RB 6.–7. lpp.'), IMG('ussr_seal.jpg','PSRS lauciņš ar melnajām līnijām','Karte, RB 7. lpp.'), IMG('us_seal.jpg','ASV lauciņš','Karte, RB 6. lpp.')],
-   extra: [`<p><b>Vēl viens piemērs.</b> Panama ir kaimiņš Kostarikai (brūna līnija) un Kolumbijai (sarkana raustīta līnija uz Dienvidameriku).</p>`, `<p><b>Kāpēc tas svarīgi?</b> Vēlāk ietekmi drīkstēs likt tikai savās valstīs un to kaimiņos (6. nodaļa). Tāpēc kaimiņi ir jāprot atrast.</p>`] },
+   extra: [`<p><b>Vēl viens piemērs.</b> Panama ir kaimiņš Kostarikai (brūna līnija) un Kolumbijai (sarkana raustīta līnija uz Dienvidameriku).</p>`, `<p><b>Kāpēc tas svarīgi?</b> Vēlāk ietekmi drīkstēs likt tikai savās valstīs un to kaimiņos (5. nodaļa). Tāpēc kaimiņi ir jāprot atrast.</p>`] },
 
  { id: '2.4', title: 'Ietekme un kontrole', sim: 'control',
    rule: `<p><b>Ietekme</b> ${E('Influence')} ir tavi žetoni valstī. ASV žetoni ir zili ar zvaigzni, PSRS žetoni sarkani ar sirpi un āmuru.</p>
@@ -565,7 +568,7 @@ const CHAPTERS = [
    important: `<ul><li><b>Divas kavas izspēlētām kārtīm</b> (kā Dune: Imperium – Uprising): <b>Discard kava</b> ${E('discard pile')} ir izspēlētās un izmestās kārtis; tās vēlāk sajauc atpakaļ. <b>Trash kava</b> ${E('removed from the game')} ir kārtis, kas izņemtas no spēles pavisam; tās nekad neatgriežas.</li><li><b>Izmest kārti</b> (discard) nozīmē likt to <b>Discard kavā</b>, nevis Trash kavā. Izmestā kārts vēlāk var atgriezties spēlē.</li><li>Izmestās kārtis (kas nav Trash kavā) noliek <b>atklātas</b> blakus kavai.</li><li>Kārts ar * iet Trash kavā tikai tad, ja tās <b>notikums</b> notiek. Ja to izspēlē operācijas punktiem un notikums nenotiek, tā iet uz Discard kavu.</li><li>Ilgstošos notikumus var atzīmēt arī ar numurētiem atgādinājuma marķieriem.</li><li>Vērtēšanas kārti izspēlē <b>tikai kā notikumu</b> (vērtēšanu). Operācijas punktus tā nedod, jo zvaigznē nav skaitļa.</li></ul>`,
    src: 'RB 2.2.1–2.2.6 (5. lpp.), 5.2 (9. lpp.), 8.1.3 piezīme (14. lpp.)',
    real: [IMG('card_anatomy.jpg','Kārts paraugs ar apzīmējumiem','RB 5. lpp.'), IMG('card_alliance.jpg','Alliance for Progress*: ASV, Mid War','RB 10. lpp.'), IMG('card_quagmire.jpg','Quagmire*: PSRS, Mid War','RB 10. lpp.'), IMG('card_starwars.jpg','Star Wars*: ASV, Late War, ar ☢︎ ikonu','RB 10. lpp.')],
-   extra: [`<p><b>Star Wars*</b>: zila zvaigzne ar "2", LATE WAR, apakšā labajā stūrī ☢︎. ASV notikums, vērtība 2, vēlīnā kara kava, viena no 14 bīstamajām kārtīm.</p>`, `<p><b>The China Card</b> ir īpaša kārts. Tā nav kavā, bet sākumā atrodas pie PSRS spēlētāja (11. nodaļa).</p>`] },
+   extra: [`<p><b>Star Wars*</b>: zila zvaigzne ar "2", LATE WAR, apakšā labajā stūrī ☢︎. ASV notikums, vērtība 2, vēlīnā kara kava, viena no 14 bīstamajām kārtīm.</p>`, `<p><b>The China Card</b> ir īpaša kārts. Tā nav kavā, bet sākumā atrodas pie PSRS spēlētāja (12. nodaļa).</p>`] },
 
  { id: '2.6', title: 'Trases un marķieri', sim: 'tracks',
    rule: `<p>Uz laukuma ir vairākas trases. Uz katras ir savs marķieris:</p>
@@ -577,10 +580,10 @@ const CHAPTERS = [
    <li><b>Kosmosa sacīkšu trase</b> ${E('Space Race Track')}: Start + 8 lodziņi, divi marķieri (NASA un Interkosmos).</li></ul>
    <p>Citi marķieri: <b>DEFCON ierobežojumu</b> atgādinājumi, kāršu atgādinājumu marķieri (ar kārts numuru) un "2nd Card Played" kosmosā.</p>`,
    example: `<p>Gājienu trasē ir uzrakstīts: Early War: <i>Hand Size 8, 6 Action Rounds</i>. Mid War: <i>Add Mid War cards, Hand Size 9, Start 7 Action Rounds</i>. Late War: <i>Add Late War cards, Final Scoring at end of Turn 10</i>.</p>`,
-   important: `<ul><li>Uz kartes ir arī lauki kavai ${E('Current Deck')} un Discard kavai ${E('discard pile')}, kā arī ilgstošo notikumu tabula ${E('Event Reminder')}.</li><li>Katram reģionam uz kartes ir tabula ar vērtēšanas VP (Presence, Domination, Control). Tās mācīsimies 12. nodaļā.</li><li>Kartē ir arī Sequence of Play (gājiena secība) atgādinājums.</li><li>Zem DEFCON trases ir uzrakstīts, kur aizliegti apvērsumi un pārorientācija. Aizliegumi <b>summējas</b>: pie 4 Eiropā; pie 3 Eiropā un Āzijā; pie 2 vēl arī Tuvajos Austrumos.</li></ul>`,
+   important: `<ul><li>Uz kartes ir arī lauki kavai ${E('Current Deck')} un Discard kavai ${E('discard pile')}, kā arī ilgstošo notikumu tabula ${E('Event Reminder')}.</li><li>Katram reģionam uz kartes ir tabula ar vērtēšanas VP (Presence, Domination, Control). Tās mācījāmies 3. nodaļā.</li><li>Kartē ir arī Sequence of Play (gājiena secība) atgādinājums.</li><li>Zem DEFCON trases ir uzrakstīts, kur aizliegti apvērsumi un pārorientācija. Aizliegumi <b>summējas</b>: pie 4 Eiropā; pie 3 Eiropā un Āzijā; pie 2 vēl arī Tuvajos Austrumos.</li></ul>`,
    src: 'RB 2.3 (5. lpp.), 3.4 (6. lpp.), karte RB 6.–7. lpp.',
    real: [IMG('markers.jpg','Marķieru paraugi','RB 5. lpp.'), IMG('defcon_track.jpg','DEFCON trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('milops_track.jpg','Militāro operāciju trase: sākumā abi marķieri uz 0','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('turn_track.jpg','Gājienu trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('ar_track.jpg','Action kārtu trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('space_track.jpg','Kosmosa sacīkšu trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('seq_play.jpg','Sequence of Play uz kartes','Pārzīmēts pēc kartes (RB 6.–7. lpp.)')],
-   extra: [`<p><b>Action kārtu trasē</b> ir lodziņš 8 un atzīme "Turn 4+" pie 7. No 4. gājiena ir 7 Action kārtas. 8. lodziņš ir paredzēts kosmosa spējai "Space Station" (9. nodaļa).</p>`] },
+   extra: [`<p><b>Action kārtu trasē</b> ir lodziņš 8 un atzīme "Turn 4+" pie 7. No 4. gājiena ir 7 Action kārtas. 8. lodziņš ir paredzēts kosmosa spējai "Space Station" (11. nodaļa).</p>`] },
  ]},
 
 { id: 3, title: 'Spēles sagatavošana', topics: [
@@ -594,7 +597,7 @@ const CHAPTERS = [
    important: `<ul><li>The China Card nekad netiek ieskaitīta rokas lielumā.</li><li><b>Visa sagatavošanas secība:</b> 1) kārtis un The China Card; 2) PSRS liek savu sākuma ietekmi; 3) ASV liek savu sākuma ietekmi; 4) marķieri uz trasēm. Tātad PSRS liek ietekmi pirmā, un abi jau zina savas kārtis.</li></ul>`,
    src: 'RB 3.1 (6. lpp.), 4.1, 4.5 B (8. lpp.), 9.1 (15. lpp.)',
    real: [IMG('setup_text.jpg','Sagatavošanas noteikumi ar numurētām norādēm uz kartes','RB 6. lpp.'), IMG('deck.jpg','(1) Early War kava','RB 7. lpp.'), IMG('china_card.jpg','(2) The China Card atklāta pie PSRS','RB 7. lpp.')],
-   extra: [`<p><b>Kāpēc PSRS dabū China Card?</b> Noteikumi to vienkārši nosaka sagatavošanā. Kā to izmanto, mācīsimies 11. nodaļā.</p>`] },
+   extra: [`<p><b>Kāpēc PSRS dabū China Card?</b> Noteikumi to vienkārši nosaka sagatavošanā. Kā to izmanto, mācīsimies 12. nodaļā.</p>`] },
 
  { id: '3.2', title: 'PSRS sākuma ietekme (15)', sim: 'setupussr',
    rule: `<p><b>PSRS liek pirmā.</b> Kopā 15 ietekmes:</p>
@@ -893,7 +896,7 @@ CHAPTERS.push(
    important: `<ul><li>Gājienu <b>nevar izlaist</b> pēc paša vēlēšanās. Kamēr ir kārtis, katrā savā kārtā jāizspēlē kārts.</li>
    <li>Izlaist var tikai tad, ja <b>nav kāršu</b>.</li>
    <li>Ja turētā kārts ir <b>vērtēšanas kārts</b>, gājiena beigās tu zaudē.</li>
-   <li>The China Card neskaitās roku izmērā. Kā to izspēlē, mācīsies 11. nodaļā.</li></ul>`,
+   <li>The China Card neskaitās roku izmērā. Kā to izspēlē, mācīsies 12. nodaļā.</li></ul>`,
    src: 'RB 4.2, 4.5 D (8. lpp.), 5.1 (9. lpp.), BB 4.–5. lpp.',
    real: [IMG('bb_actionrounds.jpg','Oficiālā piemēra Action kārtas: PSRS, tad ASV, pārmaiņus','BB 4. lpp.'), IMG('ar_track.jpg','Action kārtu trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)')],
    extra: [`<p><b>Kāršu pietrūkst.</b> 1. gājienā notikums lika ASV izmest vienu kārti. Tagad pēc 5. Action kārtas ASV rokā nav kāršu. ASV <b>izlaiž</b> 6. kārtu, bet PSRS savu 6. kārtu izspēlē.</p>`,
@@ -901,7 +904,7 @@ CHAPTERS.push(
 
  { id: '4.6', title: 'Gājiena beigas', sim: 'endturn',
    rule: `<p>Pēc pēdējās Action kārtas notiek gājiena beigu fāzes (secība ir uzdrukāta uz kartes):</p>
-   <ul><li><b>Check Military Operations Status:</b> katrs pārbauda, vai veicis pietiekami daudz militāro operāciju. Ja nē, pretinieks saņem VP. Tad abus marķierus atliek uz 0. (Kā tieši rēķina, 10. nodaļā.)</li>
+   <ul><li><b>Check Military Operations Status:</b> katrs pārbauda, vai veicis pietiekami daudz militāro operāciju. Ja nē, pretinieks saņem VP. Tad abus marķierus atliek uz 0. (Kā tieši rēķina, 8. nodaļā.)</li>
    <li><b>Check for Held Scoring Card:</b> ja kāds rokā tur <b>vērtēšanas kārti</b>, viņš <b>uzreiz zaudē</b>.</li>
    <li><b>Flip The China Card:</b> ja The China Card gājiena laikā tika nodota aizklāta, to tagad apgriež atklātu.</li>
    <li><b>Advance Turn Marker:</b> gājiena marķieri pārvieto uz nākamo gājienu. Pēc 3. gājiena kavā iejauc Mid War kārtis, pēc 7. gājiena Late War kārtis.</li>
@@ -1016,7 +1019,7 @@ Q['4.2'] = [
  {q:'Ko dara fāzē "Headline Phase"?', v:{img:'seq_play.jpg'}, o:['Abi slepeni izvēlas pa vienai kārtij un atklāj vienlaikus','Abi pārmaiņus izspēlē 6 kārtis','Pārbauda militārās operācijas','Izdala kārtis'], e:'Abu virsraksta kāršu notikumi notiek obligāti.', s:'RB 4.5 C (8. lpp.)'},
  {q:'Kurā fāzē spēlētāji izmanto kārtis ietekmei, apvērsumiem un kosmosa sacīkstēm?', v:{img:'seq_play.jpg'}, o:['Action Rounds','Headline Phase','Deal Cards','Check Military Operations Status'], e:'Action kārtās katru kārti izspēlē kā notikumu vai operācijas punktiem.', s:'RB 4.5 D (8. lpp.)'},
  {q:'Fāzē "Action Rounds": kurš izspēlē pirmo kārti?', v:{img:'seq_play.jpg'}, o:['Vienmēr PSRS','Vienmēr ASV','Tas, kuram ir mazāk VP','Tas, kurš uzvarēja virsrakstā'], e:'PSRS vienmēr sāk, tad pārmaiņus.', s:'RB 4.5 D (9. lpp.)'},
- {q:'Fāzē "Check Military Operations Status" izrādās, ka ASV veica par maz militāro operāciju. Kas notiek?', v:{img:'seq_play.jpg'}, o:['PSRS saņem VP','ASV saņem VP','ASV uzreiz zaudē','Nekas, tikai marķierus atliek uz 0'], e:'Pretinieks saņem 1 VP par katru trūkstošo militāro operāciju. Sīkāk 10. nodaļā.', s:'RB 4.5 E, 8.2.1 (9., 14. lpp.)'},
+ {q:'Fāzē "Check Military Operations Status" izrādās, ka ASV veica par maz militāro operāciju. Kas notiek?', v:{img:'seq_play.jpg'}, o:['PSRS saņem VP','ASV saņem VP','ASV uzreiz zaudē','Nekas, tikai marķierus atliek uz 0'], e:'Pretinieks saņem 1 VP par katru trūkstošo militāro operāciju. Sīkāk 8. nodaļā.', s:'RB 4.5 E, 8.2.1 (9., 14. lpp.)'},
  {q:'Kas notiek ar militāro operāciju marķieriem fāzes "Check Military Operations Status" beigās?', v:{img:'seq_play.jpg'}, o:['Abus atliek uz 0','Tie paliek, kur bija','Tos atliek uz DEFCON līmeni','Tos noņem no spēles'], e:'Pēc pārbaudes abus marķierus atliek uz 0.', s:'RB 4.5 E (9. lpp.)'},
  {q:'Fāzē "Check for Held Scoring Card" PSRS rokā ir Asia Scoring. Kas notiek?', v:{img:'seq_play.jpg'}, o:['PSRS uzreiz zaudē','Āziju novērtē tagad','Kārti liek Discard kavā','Nekas, to izspēlēs nākamajā gājienā'], e:'Kurš tur vērtēšanas kārti, tas uzreiz zaudē.', s:'RB 4.5 F (9. lpp.)'},
  {q:'Fāzē "Flip The China Card": The China Card gājiena laikā tika nodota aizklāta. Ko dara?', v:{img:'seq_play.jpg'}, o:['Apgriež to atklātu','Atdod to atpakaļ PSRS','Liek Trash kavā','Nekas nenotiek'], e:'Aizklāti nodotu The China Card gājiena beigās apgriež atklātu.', s:'RB 4.5 G (9. lpp.)'},
@@ -1087,7 +1090,7 @@ Q['4.6'] = [
  {q:'Ir 10. gājiena beigas. Gājiena marķieris ir pārvietots. Kas notiek tālāk?', o:['Gala vērtēšana (Final Scoring)','Sākas 11. gājiens','Abi saņem jaunas kārtis','Nekas, spēle vienkārši beidzas'], e:'Pēc 10. gājiena notiek Final Scoring.', s:'RB 4.5 I (9. lpp.)'},
   {q:'Oficiālajā piemērā 1. gājiena beigās PSRS tur Blockade, ASV Containment. Kas notiek turētās vērtēšanas kārts pārbaudē?', o:['Nekas, tās nav vērtēšanas kārtis','Abi zaudē','Abas kārtis liek Discard kavā','PSRS zaudē'], e:'Zaudē tikai tas, kurš tur vērtēšanas kārti.', s:'BB 5. lpp., RB 4.5 F'},
  {q:'Vai notikums var piespiest tevi paturēt vērtēšanas kārti?', o:['Nē','Jā, kārts teksts ir svarīgāks','Tikai virsrakstā','Tikai Late War periodā'], e:'"Events cannot force players to hold Scoring cards."', s:'RB 10.1.5 (16. lpp.)'},
- {q:'Kas tiek pārbaudīts fāzē "Check Military Operations Status"?', o:['Vai katrs veica pietiekami daudz militāro operāciju','Vai kāds kontrolē Eiropu','Vai DEFCON ir 1','Cik kāršu ir rokā'], e:'Ja nepietiek, pretinieks saņem VP (sīkāk 10. nodaļā).', s:'RB 4.5 E (8. lpp.)'},
+ {q:'Kas tiek pārbaudīts fāzē "Check Military Operations Status"?', o:['Vai katrs veica pietiekami daudz militāro operāciju','Vai kāds kontrolē Eiropu','Vai DEFCON ir 1','Cik kāršu ir rokā'], e:'Ja nepietiek, pretinieks saņem VP (sīkāk 8. nodaļā).', s:'RB 4.5 E (8. lpp.)'},
  {q:'Vai gala vērtēšana notiek pēc 9. gājiena?', o:['Nē, tikai pēc 10.','Jā','Tikai ja kāds tur vērtēšanas kārti','Jā, ja VP ir vienādi'], e:'Gala vērtēšana (Final Scoring) notiek tikai pēc 10. gājiena.', s:'RB 4.5 I (9. lpp.)'},
   {q:'Ja The China Card gājiena laikā netika nodota, kas notiek fāzē "Flip The China Card"?', o:['Nekas','To nodod pretiniekam','To apgriež aizklātu','To liek Trash kavā'], e:'Apgriež tikai tad, ja tā tika nodota aizklāta.', s:'RB 4.5 G (9. lpp.)'},
  {q:'Kad militāro operāciju marķieri atgriežas uz 0?', o:['Gājiena beigās, uzreiz pēc militāro operāciju pārbaudes','Pēc turētās vērtēšanas kārts pārbaudes','Kad pārvieto gājiena marķieri','Nākamā gājiena sākumā'], e:'Fāzē "Check Military Operations Status", uzreiz pēc pārbaudes.', s:'RB 4.5 E (8. lpp.)'},
@@ -1152,7 +1155,7 @@ Q['5.4'] = [
  {q:'Vairāki notikumi maina kāršu operācijas vērtību (modifikatori). Vai šie modifikatori summējas?', o:['Jā','Nē, darbojas tikai pēdējais','Nē, darbojas tikai lielākais','Tikai ja abi ir no vienas puses'], e:'"These modifiers are cumulative."', s:'RB 7.4 (13. lpp.)'},
  {q:'Vai notikumi, kas maina kāršu operācijas vērtību (modifikatori), var mainīt arī The China Card vērtību?', o:['Jā','Nē','Tikai PSRS','Tikai Late War periodā'], e:'"…and can modify The China Card."', s:'RB 7.4 (13. lpp.)'},
  {q:'PSRS ir izspēlējusi Brezhnev Doctrine. ASV izspēlē Grain Sales to Soviets, paņem kārti no PSRS rokas un to izspēlē. Vai ASV saņem +1?', v:{cards:[['Brezhnev Doctrine (PSRS kārts)','ussr','Visām PSRS kārtīm operācijas vērtība +1, bet ne vairāk kā 4.'],['Grain Sales to Soviets (ASV kārts)','us','ASV paņem kārti no PSRS rokas un var to izspēlēt.']]}, o:['Nē','Jā','Tikai ja kārts ir PSRS','Tikai pusi'], e:'Modifikators attiecas tikai uz vienu spēlētāju.', s:'RB 7.4.1 (13. lpp.)'},
- {q:'Red Scare/Purge (−1, bet ne mazāk par 1) darbojas pret ASV. ASV izspēlē kārti ar vērtību 2 apvērsumam. Cik operācijas punktu šai kārtij tagad ir?', o:['1','2','0','3'], e:'Kārts operācijas vērtība ir 2 − 1 = 1. Šis −1 darbojas visur, kur kārti izspēlē operācijām, arī apvērsumam. Kā apvērsumā izmanto operācijas punktus, mācīsimies 8. nodaļā.', s:'RB 7.4.2 1. piemērs (14. lpp.)'},
+ {q:'Red Scare/Purge (−1, bet ne mazāk par 1) darbojas pret ASV. ASV izspēlē kārti ar vērtību 2 apvērsumam. Cik operācijas punktu šai kārtij tagad ir?', o:['1','2','0','3'], e:'Kārts operācijas vērtība ir 2 − 1 = 1. Šis −1 darbojas visur, kur kārti izspēlē operācijām, arī apvērsumam. Kā apvērsumā izmanto operācijas punktus, mācīsimies 7. nodaļā.', s:'RB 7.4.2 1. piemērs (14. lpp.)'},
  {q:'ASV ir izspēlējusi Red Scare/Purge. PSRS izspēlē kārti ar vērtību 3. Cik operācijas punktu saņem PSRS?', v:{cards:[['Red Scare/Purge (abu pušu kārts)','both','Šajā gājienā visām pretinieka kārtīm operācijas vērtība −1 (bet ne mazāk par 1).']]}, o:['2','3','1','4'], e:'ASV izspēlēja Red Scare/Purge, tāpēc tas darbojas pret PSRS: 3 − 1 = 2.', s:'BB 3. lpp., RB 7.4 (13.–14. lpp.)'},
  {q:'ASV ir izspēlējusi Containment. ASV izspēlē CIA Created (vērtība 1) operācijas punktiem. Cik operācijas punktu?', v:{cards:[['Containment (ASV kārts)','us','Visām ASV kārtīm operācijas vērtība +1, bet ne vairāk kā 4.']]}, o:['2','1','3','0'], e:'Containment pieskaita +1, tāpēc CIA Created dod 2 operācijas punktus.', s:'RB 7.4.2 (14. lpp.)'},
  {q:'PSRS ir izspēlējusi Brezhnev Doctrine. Kāds notikums prasa PSRS izspēlēt kārti ar vērtību 2 vai vairāk. PSRS izspēlē kārti ar drukāto vērtību 1. Vai prasība ir izpildīta?', v:{cards:[['Brezhnev Doctrine (PSRS kārts)','ussr','Visām PSRS kārtīm operācijas vērtība +1, bet ne vairāk kā 4.']]}, o:['Jā, ar +1 kārts vērtība ir 2','Nē, prasībās skaitās tikai drukātā vērtība','Tikai ja kārts ir PSRS kārts','Nē, modifikators der tikai ietekmes likšanai'], e:'Modifikators maina kārts vērtību visos gadījumos, arī kāršu prasībās: 1 + 1 = 2.', s:'RB 7.4.2 (14. lpp.)'},
@@ -1424,7 +1427,7 @@ CHAPTERS.push(
    <li><b>DEFCON 4</b>: nav atļauts <b>Eiropā</b>.</li>
    <li><b>DEFCON 3</b>: nav atļauts Eiropā un <b>Āzijā</b>.</li>
    <li><b>DEFCON 2</b>: nav atļauts Eiropā, Āzijā un <b>Tuvajos Austrumos</b>.</li></ul>
-   <p>Tie paši ierobežojumi attiecas uz apvērsumiem (8. nodaļā).</p>`,
+   <p>Tie paši ierobežojumi attiecas uz apvērsumiem (7. nodaļā).</p>`,
    example: `<p>DEFCON ir 3. PSRS grib veikt pārorientāciju. <b>Japānā</b> (Āzija) nedrīkst. <b>Taizemē</b> arī nedrīkst, jo Dienvidaustrumāzija ir daļa no Āzijas. <b>Irānā</b> (Tuvie Austrumi) drīkst. <b>Panamā</b> (Centrālamerika) drīkst.</p>`,
    important: `<ul><li>Eiropa ir Rietumeiropa un Austrumeiropa kopā. Austrija un Somija arī ir Eiropā.</li>
    <li>Dienvidaustrumāzija ir daļa no Āzijas.</li>
@@ -1622,7 +1625,7 @@ CHAPTERS.push(
    <tr><td>Militārās operācijas</td><td>marķieris virzās</td><td>marķieris nevirzās</td></tr></table></div>`,
    example: `<p>DEFCON ir 3. PSRS izspēlē notikumu, kas dod bezmaksas apvērsumu Āzijā. Parasti DEFCON 3 aizliedz apvērsumus Āzijā, bet bezmaksas apvērsums to drīkst neievērot. PSRS izvēlas <b>Ziemeļkoreju</b> (Battleground valsts, kur ir ASV ietekme). DEFCON nokrīt uz <b>2</b>. PSRS militāro operāciju marķieris paliek, kur bija.</p>`,
    important: `<ul><li>Kurā reģionā ir bezmaksas apvērsums un kā tas notiek, raksta kārts tekstā. Spēlē to izlasi uz kārts.</li>
-   <li>Arī <b>pārorientācijas metieni</b> neskaitās militārās operācijas. Skaitās tikai apvērsumi ar operācijas punktiem (un kara notikumi, 10. nodaļā).</li>
+   <li>Arī <b>pārorientācijas metieni</b> neskaitās militārās operācijas. Skaitās tikai apvērsumi ar operācijas punktiem (un kara notikumi, 8. nodaļā).</li>
    <li>Ja DEFCON ir 2 un bezmaksas apvērsums ir Battleground valstī, DEFCON kļūst 1. Zaudē aktīvais spēlētājs.</li></ul>`,
    src: 'RB 6.3.5 (12. lpp.), 8.2.2 (15. lpp.)',
    real: [IMG(DEF_IMG,'DEFCON trase: bezmaksas apvērsums drīkst neievērot reģionu aizliegumus','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('milops_track.jpg','Militāro operāciju trase: bezmaksas apvērsums marķieri nepārvieto','Pārzīmēts pēc kartes (RB 6.–7. lpp.)')],
@@ -1816,7 +1819,7 @@ CHAPTERS.push(
    <li><b>Pasliktināt</b> ${E('degrade')} DEFCON nozīmē pārvietot marķieri uz <b>mazāku</b> skaitli.</li>
    <li>Ja notikums uzlabotu DEFCON virs 5, tam nav ietekmes uz DEFCON. Marķieris paliek uz 5.</li></ul>
    <p><b>Kas maina DEFCON:</b></p>
-   <ul><li>Apvērsums <b>Battleground</b> valstī: DEFCON pasliktinās par 1 (8. nodaļa).</li>
+   <ul><li>Apvērsums <b>Battleground</b> valstī: DEFCON pasliktinās par 1 (7. nodaļa).</li>
    <li><b>Kāršu notikumi.</b> Kā tieši, raksta kārts tekstā.</li>
    <li>Gājiena sākumā, fāzē <b>Improve DEFCON Status</b>: ja DEFCON ir mazāks par 5, to uzlabo par 1.</li></ul>
    <p><b>DEFCON 1</b> nozīmē kodolkaru. Spēle beidzas <b>uzreiz</b>. Zaudē <b>aktīvais spēlētājs</b> ${E('Phasing Player')}:</p>
@@ -2051,8 +2054,8 @@ CHAPTERS.push(
    <p>Papildu VP saņem ar jebkuru līmeni, arī ar Klātbūtni.</p>
    <p><b>Aprēķins:</b> katram spēlētājam saskaita līmeni + Battleground + blakus pretinieka lielvarai. Uz VP trases marķieri pārvieto par <b>starpību</b> uz tā spēlētāja pusi, kuram ir vairāk.</p>
    <p><b>Dienvidaustrumāzijas vērtēšanas kārts</b> strādā citādi. Tai nav līmeņu:</p>${SEA_TAB}
-   <p>Tā ir vienīgā vērtēšanas kārts ar zvaigznīti: pēc izspēles to izņem no spēles (Trash kava).</p>
-   <p><b>Citi VP avoti:</b> kāršu notikumi un pretinieka trūkstošās militārās operācijas (10. nodaļa).</p>`,
+   <p>Tā ir vienīgā vērtēšanas kārts ar zvaigznīti: pēc izspēles to izņem no spēles (Trash kava). Par zvaigznīti sīkāk 4. nodaļā.</p>
+   <p><b>Citi VP avoti:</b> kāršu notikumi un pretinieka trūkstošās militārās operācijas (8. nodaļa).</p>`,
    example: `<p><b>Noteikumu grāmatas piemērs (Centrālamerika).</b> PSRS: Dominēšana 3 + 1 Battleground (Kuba) + 1 blakus ASV (Kuba) = <b>5 VP</b>. ASV: Klātbūtne 1, Gvatemala nav Battleground un nav blakus PSRS = <b>1 VP</b>. Starpība 4: marķieri pārvieto <b>4 lodziņus uz PSRS pusi</b>.</p>
    <p><b>Oficiālais piemērs (BB 11. lpp., Āzija).</b> ASV: Dominēšana 7 + 3 Battleground = <b>10 VP</b>. PSRS: Klātbūtne 3 + 1 Battleground (Ziemeļkoreja) = <b>4 VP</b>. Starpība 6 ASV labā.</p>
    <p><b>Oficiālais piemērs (BB 5. lpp., Tuvie Austrumi).</b> PSRS: Dominēšana 5 + 1 Battleground = <b>6 VP</b>. ASV nekontrolē nevienu valsti: 0. PSRS saņem 6 VP.</p>`,
@@ -2084,15 +2087,15 @@ CHAPTERS.push(
 
  { id: '12.4', title: 'Uzvara', sim: 'whowins',
    rule: `<p><b>Automātiska uzvara.</b> Spēle beidzas uzreiz, ja:</p>
-   <ul><li>Spēlētājs sasniedz <b>20 VP</b>. Viņš uzvar. Izņēmums: ja tas notiek fāzē <b>Check Military Operations Status</b>, viņš parāda rokas kārtis. Ja viņam rokā ir vērtēšanas kārts, viņš <b>zaudē</b>.</li>
+   <ul><li>Spēlētājs sasniedz <b>20 VP</b>. Viņš uzvar. Izņēmums: ja tas notiek fāzē <b>Check Military Operations Status</b> (gājiena beigās, 8. un 9. nodaļā), viņš parāda rokas kārtis. Ja viņam rokā ir vērtēšanas kārts, viņš <b>zaudē</b>.</li>
    <li>Izspēlē Eiropas vērtēšanu, un spēlētājam ir <b>Eiropas Kontrole</b>. Viņš uzvar.</li>
    <li>Fāzē <b>Check for Held Scoring Card</b> spēlētājam rokā ir vērtēšanas kārts. Viņš <b>zaudē</b>.</li>
-   <li>DEFCON nokrīt līdz <b>1</b>. Zaudē aktīvais spēlētājs, uzvar otrs (10. nodaļa).</li></ul>
+   <li>DEFCON nokrīt līdz <b>1</b>. Zaudē aktīvais spēlētājs, uzvar otrs (8. nodaļa).</li></ul>
    <p>Ja vienā notikumā vai vērtēšanā VP saņem abi, vispirms saskaita abus, tikai tad skatās, vai kāds sasniedza 20.</p>
    <p><b>Uzvara spēles beigās.</b> Pēc 10. gājiena notiek <b>Final Scoring</b>:</p>
    <ol><li>Vērtē <b>visus</b> reģionus. Sāk ar <b>Eiropu</b>, jo Eiropas Kontrole ir automātiska uzvara.</li>
    <li>Dienvidaustrumāzija skaitās Āzijas vērtēšanā. Atsevišķi to nevērtē.</li>
-   <li>China Card turētājs saņem <b>+1 VP</b> (rakstīts uz kārts).</li>
+   <li>China Card turētājs saņem <b>+1 VP</b> (rakstīts uz kārts; pati kārts 12. nodaļā).</li>
    <li>Uzvar tas, kura pusē ir marķieris. Ja marķieris ir uz <b>0</b>, ir <b>neizšķirts</b>.</li></ol>
    <p>Notikumi nevar piespiest spēlētāju turēt rokā vērtēšanas kārti.</p>`,
    example: `<p><b>Piemērs.</b> Marķieris ir uz PSRS 18. PSRS izspēlē vērtēšanas kārti: PSRS 5 VP, ASV 4 VP. Starpība ir 1, marķieris iet uz PSRS 19. Spēle turpinās. PSRS nesaņem 5 VP atsevišķi.</p>
@@ -2287,7 +2290,7 @@ CHAPTERS.push(
    extra: [`<p><b>Kurš pirmais 1. gājienā (oficiālais piemērs).</b> Sagatavošanā PSRS liek ietekmi pirmā. Virsrakstā pirmā notiek PSRS kārts Red Scare/Purge. Iemesls: tās vērtība 4 ir lielāka par ASV kārts Special Relationship vērtību 2, nevis tas, ka tā ir PSRS. Action fāzē AR1 sāk PSRS (De-Stalinization), tad ASV (NORAD).</p>`],
    important: `<ul><li>Nekas no tā nav jāatceras: sākuma ietekme ir uzdrukāta uz kartes, zvaigznes krāsa uz kārts, kaimiņi kartē.</li>
    <li>PSRS ir pirmā sagatavošanā un Action kārtās. Virsraksta fāzē pirmā ir tā kārts, kurai lielāka vērtība, nevis PSRS.</li>
-   <li>Sarkanā zvaigzne nozīmē: notikums ir <b>PSRS</b> notikums. Kārti var izspēlēt arī ASV, bet tad PSRS notikums notiek (5. nodaļa).</li></ul>`,
+   <li>Sarkanā zvaigzne nozīmē: notikums ir <b>PSRS</b> notikums. Kārti var izspēlēt arī ASV, bet tad PSRS notikums notiek (4. nodaļa).</li></ul>`,
    src: 'RB 2.1.8, 2.2.2 (4.–5. lpp.), 3.1–3.2 (6. lpp.), 4.5 D (8. lpp.), BB 4. lpp.',
    real: [IMG('map.jpg','Karte: mazie sarkanie skaitļi ir PSRS sākuma ietekme','RB 6.–7. lpp.'), IMG('card_anatomy.jpg','Sarkana zvaigzne: PSRS kārts (Warsaw Pact Formed)','RB 5. lpp.'), IMG('ussr_seal.jpg','PSRS lauciņš ar melnajām līnijām','Karte, RB 7. lpp.'), IMG('bb_actionrounds.jpg','Oficiālais piemērs: PSRS sāk Action kārtas','BB')] },
 
@@ -3086,7 +3089,7 @@ function shell(inner){
 }
 function render(){ ({home:vHome,map:vMap,lesson:vLesson,quiz:vQuiz,result:vResult,album:vAlbum,train:vTrain,diploma:vDiploma}[VIEW.name]||vHome)(); }
 
-function itemTitle(it){ return it.kind==='topic'?`${it.t.id} ${it.t.title}`:it.final?'Gala eksāmens':`${it.ch.id}. nodaļas ieskaite`; }
+function itemTitle(it){ return it.kind==='topic'?`${it.t.n||it.t.id} ${it.t.title}`:it.final?'Gala eksāmens':`${it.ch.n||it.ch.id}. nodaļas ieskaite`; }
 function openItem(it){ if(it.kind==='topic') go({name:'lesson',id:it.id}); else startQuiz(it); }
 
 function vHome(){ shell(m=>{
@@ -3114,10 +3117,10 @@ function vMap(){ shell(m=>{
   m.appendChild(h('h1',{style:'font-size:40px;color:var(--blue)'},'Kursa karte'));
   m.appendChild(h('div',{style:'margin:8px 0'},`<div class="row" style="justify-content:space-between"><span class="pct">Viss kurss: <b>${pct()}%</b></span></div><div class="progress"><i style="width:${pct()}%"></i></div>`));
   const ci=currentIdx();
-  for(const ch of CHAPTERS){ const sec=h('section',{cls:'chap'}); sec.appendChild(h('h2',{},`${ch.id}. nodaļa · ${ch.title}`)); const ul=h('ul',{cls:'tlist'});
+  for(const ch of CHAPTERS){ const sec=h('section',{cls:'chap'}); sec.appendChild(h('h2',{},`${ch.n||ch.id}. nodaļa · ${ch.title}`)); if(ch.why) sec.appendChild(h('p',{cls:'chwhy'},`<b>Kāpēc tas vajadzīgs?</b> ${ch.why}`)); const ul=h('ul',{cls:'tlist'});
     for(const it of SEQ.filter(s=>s.ch===ch)){ const i=SEQ.indexOf(it), ok=passed(it.id), un=unlocked(i), cur=i===ci;
       const st= ok?'<span class="st done">✓ Nokārtots</span>':cur?'<span class="st cur">Pašreizējā</span>':un?'<span class="st cur">Atvērta</span>':'<span class="st lock">'+ico('lock')+' Slēgts</span>';
-      const b=h('button',{cls:'titem'+(cur?' cur':'')},`<span class="num">${it.kind==='topic'?it.id:ico('exam')}</span><span>${it.kind==='topic'?esc(it.t.title):it.final?`Gala eksāmens (${FINAL_N} jautājumi, ${FINAL_TH}%)`:'Nodaļas ieskaite'}</span>${st}${P.done[it.id]?`<span class="best">labākais ${P.done[it.id].best}%</span>`:''}`);
+      const b=h('button',{cls:'titem'+(cur?' cur':'')},`<span class="num">${it.kind==='topic'?(it.t.n||it.id):ico('exam')}</span><span>${it.kind==='topic'?esc(it.t.title):it.final?`Gala eksāmens (${FINAL_N} jautājumi, ${FINAL_TH}%)`:'Nodaļas ieskaite'}</span>${st}${P.done[it.id]?`<span class="best">labākais ${P.done[it.id].best}%</span>`:''}`);
       if(!un) b.disabled=true; else b.onclick=()=>openItem(it); const li=h('li'); li.appendChild(b); ul.appendChild(li); }
     sec.appendChild(ul); m.appendChild(sec); }
   for(const [id,title,ts] of FUTURE){ const sec=h('section',{cls:'chap locked'}); sec.appendChild(h('h2',{},`${id}. nodaļa · ${title}`)); const ul=h('ul',{cls:'tlist'});
@@ -3128,7 +3131,7 @@ function vMap(){ shell(m=>{
 function figHTML(im){ return `<figure><img src="img/${im.f}" alt="${esc(im.cap)}" loading="lazy" data-zoom="1"><figcaption>${esc(im.cap)} · <i>${esc(im.src)}</i></figcaption></figure>`; }
 function vLesson(){ const it=SEQ.find(s=>s.id===VIEW.id); const t=it.t; let exi=0; shell(m=>{
   const d=h('article',{cls:'lesson'});
-  d.innerHTML=`<div class="crumb">${it.ch.id}. nodaļa · ${esc(it.ch.title)}</div><h1>${t.id} ${esc(t.title)}</h1>
+  d.innerHTML=`<div class="crumb">${it.ch.n||it.ch.id}. nodaļa · ${esc(it.ch.title)}</div><h1>${t.n||t.id} ${esc(t.title)}</h1>${it.ch.why&&it.ch.topics[0]===t?`<div class="chwhy"><b>Kāpēc tas vajadzīgs?</b> ${it.ch.why}</div>`:''}
    <div class="blk rule">${bh('rule','Noteikums')}${t.rule}<div class="src">Avots: ${esc(t.src)}</div></div>
    <div class="blk ex">${bh('ex','Piemērs praksē')}${t.example}<div id="more"></div></div>
    <div class="blk imp">${bh('imp','Svarīgi')}${t.important}</div>
@@ -3150,7 +3153,7 @@ function buildQuiz(it){
     return shuffle(qs).map(q=>{ if(q.type) return {...q,ans:null,inf:q.inf?cloneInf(q.inf):q.inf}; const opts=shuffle(q.o.map((t,i)=>({t,ok:i===0}))); return {...q,opts,ans:null}; }); }
   if(it.kind==='topic'){ pool=POOLS[it.id].map(q=>({...q,_t:it.id})); n=8; }
   else { pool=it.ch.topics.flatMap(t=>POOLS[t.id].map(q=>({...q,_t:t.id}))); n=20;
-    const prev=CHAPTERS.filter(c=>c.id<it.ch.id).flatMap(c=>c.topics.flatMap(t=>POOLS[t.id].map(q=>({...q,_t:t.id,_rev:true})))); if(prev.length) rev=prev; }
+    const prev=CHAPTERS.filter(c=>!c.final&&CHAPTERS.indexOf(c)<CHAPTERS.indexOf(it.ch)).flatMap(c=>c.topics.flatMap(t=>POOLS[t.id].map(q=>({...q,_t:t.id,_rev:true})))); if(prev.length) rev=prev; }
   const order=arr=>shuffle(arr).sort((a,b)=>(P.seen[a.id]||0)-(P.seen[b.id]||0));
   let qs;
   if(rev.length){ const nr=Math.round(n*0.2); qs=[...order(pool).slice(0,n-nr),...order(rev).slice(0,nr)]; }
@@ -3254,7 +3257,7 @@ function vResult(){ const V=VIEW, it=V.it; shell(m=>{
   m.appendChild(h('div',{cls:'crumb'},esc(itemTitle(it))));
   const top=h('div',{cls:'qcard',style:'text-align:center'},`<div class="score ${V.ok?'pass':'fail'}">${V.sc}%</div><div style="font-family:var(--f-ui);font-size:20px">${V.right} no ${V.qs.length} pareizi · slieksnis ${V.th}%</div><p style="font-size:20px;margin:8px 0">${V.ok?'<i class=mk-ok></i> Nokārtots!':'Šoreiz vēl nē. Pamēģini jaunu testu ar citiem jautājumiem.'}</p><div class="row" style="justify-content:center" id="nx"></div>`);
   m.appendChild(top); const nxd=$('#nx',top);
-  if(V.ok){ if(nx){ const b=h('button',{cls:'btn pri'}, nx.final?'Uz gala eksāmenu →':nx.kind==='exam'?'Uz nodaļas ieskaiti →':nx.ch!==it.ch?`Nākamā nodaļa: ${nx.ch.id}. ${esc(nx.ch.title)} →`:`Nākamā tēma: ${esc(itemTitle(nx))} →`); b.onclick=()=>openItem(nx); nxd.appendChild(b); }
+  if(V.ok){ if(nx){ const b=h('button',{cls:'btn pri'}, nx.final?'Uz gala eksāmenu →':nx.kind==='exam'?'Uz nodaļas ieskaiti →':nx.ch!==it.ch?`Nākamā nodaļa: ${nx.ch.n||nx.ch.id}. ${esc(nx.ch.title)} →`:`Nākamā tēma: ${esc(itemTitle(nx))} →`); b.onclick=()=>openItem(nx); nxd.appendChild(b); }
     else if(it.final){ const d=h('button',{cls:'btn pri'},'<i class="ei ei-gift"></i> Tevi gaida pārsteigums →'); d.onclick=()=>go({name:'diploma'}); nxd.appendChild(d); }
     else nxd.appendChild(h('p',{},'Visas pieejamās nodaļas ir pabeigtas!'));
     if(it.kind==='exam' && !it.final && passed(it.id)) nxd.appendChild(h('span',{cls:'tag'},'Nodaļa pabeigta'));
@@ -3336,7 +3339,7 @@ SIMS.cardplay = el => {
     if(mode==='ev'&&own) resBox(o,true,`<i class=mk-ok></i> Atļauts. ${c.cond?c.cond+' ':''}Notikums notiek, un ${me} izpilda kārts tekstu. Nosaukumā ir *, tāpēc pēc tam kārti <b>liek Trash kavā</b>.<div class="src">RB 5.1, 2.2.4</div>`);
     else if(mode==='ev') resBox(o,false,`<i class=mk-no></i> Nav atļauts. Šī ir ${opp} kārts. ${me} to drīkst izspēlēt tikai operācijas punktiem.<div class="src">RB 5.1</div>`);
     else if(own) resBox(o,true,`<i class=mk-ok></i> ${me} saņem <b>${c.ops} operācijas punktus</b> un visus tērē vienam darbam. Notikums <b>nenotiek</b>, un kārts iet uz Discard kavu.<div class="src">RB 5.1, 6.0</div>`);
-    else resBox(o,true,`<i class=mk-ok></i> ${me} saņem <b>${c.ops} operācijas punktus</b>. Taču ${opp} notikums <b>notiek tik un tā</b>, un to izpilda ${opp}. ${me} izvēlas, vai notikums notiek pirms vai pēc operācijām. Sīkāk 5. nodaļā.<div class="src">RB 5.2</div>`); };
+    else resBox(o,true,`<i class=mk-ok></i> ${me} saņem <b>${c.ops} operācijas punktus</b>. Taču ${opp} notikums <b>notiek tik un tā</b>, un to izpilda ${opp}. ${me} izvēlas, vai notikums notiek pirms vai pēc operācijām. Sīkāk 4. nodaļā.<div class="src">RB 5.2</div>`); };
   draw();
 };
 
@@ -3441,7 +3444,7 @@ SIMS.card = el => {
 };
 
 SIMS.tracks = el => {
-  const tr=[['defcon_track.jpg','DEFCON','Kopīgs marķieris. 5 ir miers, 1 ir kodolkarš. Zem lodziņiem rakstīts, kur aizliegti apvērsumi un pārorientācija (sīkāk 10. nodaļā).'],['milops_track.jpg','Militārās operācijas','0–5, katrai pusei savs marķieris.'],['turn_track.jpg','Gājieni','1–10. Early War 1–3, Mid War 4–7, Late War 8–10.'],['ar_track.jpg','Action kārtas','1–8. No 4. gājiena ir 7 kārtas.'],['vp_track.jpg','Uzvaras punkti','ASV 20 … START … PSRS 20.'],['space_track.jpg','Kosmosa sacīkstes','Start + 8 lodziņi. Katram lodziņam ir sava operācijas punktu prasība un metiena diapazons (9. nodaļa).'],['markers.jpg','Marķieri','Space Race, Military Operations, DEFCON, DEFCON ierobežojumi, Action Round, VP, Turn un kāršu atgādinājumi.']];
+  const tr=[['defcon_track.jpg','DEFCON','Kopīgs marķieris. 5 ir miers, 1 ir kodolkarš. Zem lodziņiem rakstīts, kur aizliegti apvērsumi un pārorientācija (sīkāk 8. nodaļā).'],['milops_track.jpg','Militārās operācijas','0–5, katrai pusei savs marķieris.'],['turn_track.jpg','Gājieni','1–10. Early War 1–3, Mid War 4–7, Late War 8–10.'],['ar_track.jpg','Action kārtas','1–8. No 4. gājiena ir 7 kārtas.'],['vp_track.jpg','Uzvaras punkti','ASV 20 … START … PSRS 20.'],['space_track.jpg','Kosmosa sacīkstes','Start + 8 lodziņi. Katram lodziņam ir sava operācijas punktu prasība un metiena diapazons (11. nodaļa).'],['markers.jpg','Marķieri','Space Race, Military Operations, DEFCON, DEFCON ierobežojumi, Action Round, VP, Turn un kāršu atgādinājumi.']];
   el.innerHTML='<p>Izvēlies trasi, lai to apskatītu tuvāk.</p><div class="maptools" id="t"></div><div id="v" style="margin-top:8px"></div>';
   const show=i=>{ const [f,n,d]=tr[i]; $('#v',el).innerHTML=`<div class="scroll"><img src="img/${f}" alt="${n}" data-zoom="1" style="max-height:300px;border-radius:8px"></div><div class="info"><b>${n}</b>: ${d}</div>`; $('#t',el).querySelectorAll('.chip').forEach((b,k)=>b.setAttribute('aria-pressed',String(k===i))); };
   tr.forEach((x,i)=>$('#t',el).appendChild(btn(x[1],'chip',()=>show(i)))); show(0);
@@ -4358,6 +4361,122 @@ SIMS.t1a = el => t1walk(el, 0, 6);
 SIMS.t1b = el => t1walk(el, 6, 12);
 SIMS.t1c = el => t1walk(el, 12, T1.length);
 
+// ===== v74: kursa secība iesācējam. Vispirms kopaina (ko dara un kāpēc), tad detaļas.
+// Iekšējie nodaļu/tēmu id paliek (progress), redzamos numurus (ch.n, t.n) aprēķina pēc jaunās secības.
+
+// --- Jaunas ievada tēmas 1. nodaļā
+const LOOP_HTML = `<div class="loop">${[
+  ['1','Saņem kārtis','Gājiena sākumā rokā ir 8 vai 9 kārtis.'],
+  ['2','Izspēlē kārti','Pārmaiņus, pa vienai. PSRS sāk.'],
+  ['3','Notikums VAI operācijas','Izpildi kārts tekstu vai saņem operāciju punktus.'],
+  ['4','Ietekme kartē','Ar operācijām liek ietekmi. Pietiekami daudz ietekmes = kontrole valstī.'],
+  ['5','Vērtēšana dod VP','Kad izspēlē vērtēšanas kārti, reģionā skaita kontrolētās valstis.'],
+ ].map(([n,t,d])=>`<div class="lp"><b>${n}</b><span><strong>${t}</strong>${d}</span></div>`).join('<i class="lpa">→</i>')}<div class="lpr">↻ Tā 10 gājienus, līdz kāds sasniedz 20 VP vai spēle beidzas citādi.</div></div>`;
+
+const INTRO_TOPICS = {
+ '0.1': { id: '0.1', title: 'Spēle vienā skatienā', sim: 'loop',
+   rule: `<p>Pirms detaļām: lūk, kā Twilight Struggle notiek kopumā. Viss pārējais kurss izskaidro šos soļus sīkāk.</p>${LOOP_HTML}
+   <p><b>Kāpēc liek ietekmi?</b> Kavā ir <b>vērtēšanas kārtis</b> ${E('Scoring cards')}. Kad kāds tādu izspēlē, novērtē vienu reģionu: kurš tur kontrolē vairāk valstu (īpaši svarīgās <b>Battleground</b> valstis), tas saņem <b>uzvaras punktus</b> ${E('VP')}. Tāpēc spēle lielākoties ir par ietekmi un kontroli kartē.</p>
+   <p><b>Kas ir uz dēļa:</b> karte ar valstīm (katrai ir <b>stabilitātes</b> skaitlis), VP trase, DEFCON trase, gājienu trase, Action kārtu trase, militāro operāciju trase un kosmosa sacīkšu trase. Daudz kas ir uzdrukāts, tāpēc no galvas to zināt nevajag.</p>
+   <p><b>DEFCON</b> ir kopīga briesmu skala no 5 (miers) līdz 1 (kodolkarš). Apvērsumi to var pazemināt. Ja tā nokrīt līdz 1, spēli zaudē tas, kura kārta tobrīd notiek.</p>`,
+   example: `<p>PSRS izspēlē kārti ar <b>3</b> operāciju punktiem un liek 3 ietekmes marķierus Tuvajos Austrumos. Viņa ietekme Sīrijā kļūst pietiekami liela, un PSRS <b>kontrolē</b> Sīriju. Vēlāk kāds izspēlē <b>Middle East Scoring</b>: Sīrijas kontrole tagad skaitās, un PSRS var saņemt VP.</p>`,
+   important: `<ul><li>Visu uzreiz iegaumēt nevajag. Šī tēma ir karte, pa kuru ejam visā kursā.</li>
+   <li>Katru kārti izspēlē <b>vienā</b> veidā: vai nu notikums, vai operācijas punkti. Operācijas punktus tērē ietekmei, pārorientācijai, apvērsumam vai kosmosam.</li>
+   <li>Uzvar tas, kurš sasniedz <b>20 VP</b>, vai tas, kura pusē ir VP marķieris pēc 10. gājiena gala vērtēšanas. Ir arī citi veidi, kā spēle beidzas (nākamajās tēmās).</li></ul>`,
+   src: 'RB 1.0 (2. lpp.), 4.1–4.5 (8. lpp.), 6.0 (10. lpp.), 10.1 (16. lpp.)',
+   real: [IMG('vp_track.jpg','Uzvaras punktu trase: zilā puse ASV, sarkanā PSRS','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('defcon_track.jpg','DEFCON trase: 5 miers, 1 kodolkarš','Pārzīmēts pēc kartes (RB 6.–7. lpp.)')],
+   extra: [`<p><b>Viens teikums par visu spēli.</b> Tu izspēlē kārtis, lai liktu ietekmi kartē; ietekme dod kontroli valstīs; kontrole vērtēšanā dod VP; VP dod uzvaru. DEFCON visu laiku jāpieskata, jo kodolkarā zaudē tas, kurš to izraisīja.</p>`] },
+
+ '0.2': { id: '0.2', title: 'Viens gājiens īsumā', sim: 'turn1',
+   rule: `<p>Šeit ir viena gājiena gaita vienkāršoti. Precīzi katru fāzi mācīsimies 9. nodaļā, bet jau tagad ir vērts redzēt visu kopā.</p>
+   <ol class="steps"><li><b>DEFCON +1</b> (ja tas ir zem 5).</li>
+   <li><b>Kārtis:</b> abi papildina roku līdz 8 kārtīm (1.–3. gājienā) vai 9 kārtīm (no 4. gājiena).</li>
+   <li><b>Virsraksts</b> ${E('Headline')}: abi slepeni izvēlas pa vienai kārtij un atklāj kopā. Abu notikumi notiek; pirmais tas, kuras kārtij lielāka operāciju vērtība.</li>
+   <li><b>Action kārtas</b> ${E('Action Rounds')}: PSRS izspēlē kārti, tad ASV, tad atkal PSRS. Tā 6 reizes katram (no 4. gājiena 7 reizes).</li>
+   <li><b>Gājiena beigas:</b> militāro operāciju pārbaude, vērtēšanas kārti rokā paturēt nedrīkst, China Card apgriež, gājiena marķieris uz priekšu.</li></ol>`,
+   example: `<p>1. gājiens. PSRS Action kārtā PSRS izspēlē kārti ar 3 operāciju punktiem: liek 2 ietekmi <b>Sīrijā</b> (tur jau bija 1) un 1 <b>Libānā</b>. Tagad PSRS kontrolē abas. ASV Action kārtā ASV izspēlē kārti ar 2 punktiem: liek 2 ietekmi <b>Jordānijā</b> (blakus Izraēlai, kur ASV jau ir ietekme) un to kontrolē. Ja tagad kāds izspēlētu <b>Middle East Scoring</b>, abiem būtu Klātbūtne (Presence): 3 VP un 3 VP, starpība 0, VP marķieris nekustas.</p>`,
+   important: `<ul><li>Kārtis izspēlē <b>pārmaiņus</b>, nevis visas uzreiz.</li>
+   <li>Gājiena beigās katram rokā parasti paliek <b>1 kārts</b>. Tā drīkst palikt nākamajam gājienam, ja tā nav vērtēšanas kārts.</li>
+   <li>Izmēģini pats sadaļā: spied "Nākamais solis" un skaties, kas notiek kartē.</li></ul>`,
+   src: 'RB 4.1–4.5 (8. lpp.), 6.1 (11. lpp.), 10.1 (16. lpp.)',
+   real: [IMG('seq_play.jpg','Gājiena fāžu secība, kā tā uzdrukāta uz kartes','Pārzīmēts pēc kartes (RB 6.–7. lpp.)'), IMG('ar_track.jpg','Action kārtu trase','Pārzīmēts pēc kartes (RB 6.–7. lpp.)')],
+   extra: [`<p><b>Kāpēc tieši tur drīkst likt?</b> Ietekmi drīkst likt valstī, kur tev jau ir ietekme, vai blakus tādai. PSRS sākumā ir 1 ietekme Sīrijā, tāpēc Sīrija un tās kaimiņš Libāna ir atļautas. ASV ir 1 ietekme Izraēlā, tāpēc tās kaimiņš Jordānija ir atļauta. (5. nodaļā.)</p>`] },
+};
+
+Q['0.1'] = [
+ {q:'Ar ko spēlētājs iegūst uzvaras punktus (VP) reģionā, kad izspēlē vērtēšanas kārti?', o:['Ar kontrolētām valstīm tajā reģionā','Ar kārtīm, kas palikušas rokā','Ar to, cik reizes metis kauliņu','Ar operāciju punktiem, kas palikuši neiztērēti'], e:'Vērtēšanā skaita, cik valstu reģionā katrs kontrolē (un vai tās ir Battleground). Tāpēc spēlē liek ietekmi.', s:'RB 10.1 (16. lpp.)'},
+ {q:'Kā spēlētāji izspēlē kārtis Action kārtās?', o:['Pārmaiņus, pa vienai kārtij','Katrs visas savas kārtis uzreiz','Abi vienlaicīgi un slepeni','Kā vēlas, bez secības'], e:'Action kārtās izspēlē pa vienai kārtij pārmaiņus. PSRS sāk.', s:'RB 4.5 (8. lpp.)'},
+ {q:'Kādos divos veidos var izspēlēt kārti?', o:['Kā notikumu VAI kā operācijas punktus','Kā notikumu UN kā operācijas punktus','Tikai kā operācijas punktus','Tikai kā notikumu'], e:'Katru kārti izspēlē vienā veidā: notikums vai operācijas. (Pretinieka kārtij notikums notiek tik un tā, to mācīsimies 4. nodaļā.)', s:'RB 6.0 (10. lpp.)'},
+ {q:'Kam tērē operāciju punktus?', o:['Ietekmei, pārorientācijai, apvērsumam vai kosmosam','Tikai VP pirkšanai','Kāršu vilkšanai no kavas','DEFCON paaugstināšanai'], e:'Ir četri veidi: ietekme, pārorientācija, apvērsums vai kosmosa sacīkstes.', s:'RB 6.0 (10. lpp.)'},
+ {q:'Kas notiek, ja DEFCON nokrīt līdz 1?', v:{img:'defcon_track.jpg'}, o:['Kodolkarš: zaudē tas, kura kārta tobrīd notiek','Spēle turpinās, DEFCON atgriežas uz 5','Abi zaudē','Uzvar tas, kuram vairāk VP'], e:'DEFCON 1 ir kodolkarš. Zaudē aktīvais spēlētājs (tas, kura kārta notiek).', s:'RB 8.1.3 (14. lpp.)'},
+ {q:'Cik gājienu ir spēlē?', o:['10','6','7','20'], e:'Spēlē ir 10 gājieni. (6 vai 7 ir Action kārtu skaits vienā gājienā.)', s:'RB 4.1 (8. lpp.)'},
+ {q:'Ko nozīmē "kontrolēt valsti"?', o:['Tev tur ir pietiekami daudz ietekmes (to nosaka stabilitāte)','Tu tur esi izspēlējis notikumu','Tev tur ir vismaz 1 ietekme','Valsts ir blakus tavai lielvarai'], e:'Kontrole atkarīga no valsts stabilitātes un pretinieka ietekmes. Precīzu formulu mācīsimies 2. nodaļā.', s:'RB 2.1.5 (4. lpp.)'},
+ {q:'Kad spēle beidzas ar uzvaru uzreiz?', o:['Kad kāds sasniedz 20 VP','Kad kāds kontrolē 5 valstis','Kad beidzas kava','Kad DEFCON ir 5'], e:'20 VP ir automātiska uzvara. Ir arī citi veidi, kurus mācīsimies.', s:'RB 10.3.1 (17. lpp.)'},
+];
+Q['0.2'] = [
+ {q:'Kas notiek gājiena pašā sākumā?', v:{img:'seq_play.jpg'}, o:['DEFCON uzlabojas par 1 (ja tas ir zem 5)','Abi izspēlē visas kārtis','Vērtē visus reģionus','PSRS saņem 1 VP'], e:'Pirmā fāze: DEFCON +1, ja tas ir zem 5. Tad dala kārtis.', s:'RB 4.5 (8. lpp.)'},
+ {q:'Kā notiek virsraksta (Headline) fāze?', o:['Abi slepeni izvēlas pa kārtij un atklāj kopā; abu notikumi notiek','PSRS izspēlē kārti, ASV skatās','Abi izspēlē kārti operāciju punktiem','Izspēlē tikai vērtēšanas kārtis'], e:'Virsrakstā abi vienlaicīgi atklāj kārti, un abu notikumi notiek.', s:'RB 4.5 B (8. lpp.)'},
+ {q:'Kurš izspēlē pirmo kārti Action kārtās?', o:['PSRS','ASV','Tas, kuram vairāk VP','Tas, kurš uzvarēja virsrakstā'], e:'Katrā Action kārtā PSRS sāk, tad ASV.', s:'RB 4.5 (8. lpp.)'},
+ {q:'Cik kāršu rokā ir 1.–3. gājienā pēc kāršu dalīšanas?', v:{img:'turn_track.jpg'}, o:['8','9','6','7'], e:'1.–3. gājienā līdz 8 kārtīm, no 4. gājiena līdz 9.', s:'RB 4.4 (8. lpp.)'},
+ {q:'Cik Action kārtas ir 1.–3. gājienā?', v:{img:'ar_track.jpg'}, o:['6','7','8','10'], e:'1.–3. gājienā 6 Action kārtas, no 4. gājiena 7.', s:'RB 4.5 (8. lpp.)'},
+ {q:'Ko nedrīkst paturēt rokā gājiena beigās?', o:['Vērtēšanas kārti','Pretinieka kārti','Kārti ar zvaigznīti','Jebkuru kārti ar vērtību 4'], e:'Ja gājiena beigās rokā ir vērtēšanas kārts, tu zaudē.', s:'RB 10.3.1 (17. lpp.)'},
+ {q:'Piemērā PSRS lika 2 ietekmi Sīrijā. Kāpēc tur drīkstēja likt?', o:['PSRS tur jau bija ietekme','Sīrija ir blakus ASV','Ietekmi drīkst likt jebkur','Sīrija ir Battleground valsts'], e:'Ietekmi drīkst likt valstī, kur tev jau ir ietekme, vai blakus tādai. PSRS sākumā Sīrijā ir 1.', s:'RB 6.1.1 (11. lpp.)'},
+ {q:'Piemērā abiem bija Klātbūtne Tuvajos Austrumos (3 VP un 3 VP). Ko dara VP marķieris?', o:['Nekustas, jo starpība ir 0','Iet 3 lodziņus uz PSRS pusi','Iet 6 lodziņus uz ASV pusi','Iet uz 0 no jebkuras vietas'], e:'VP marķieri pārvieto par starpību. 3 − 3 = 0.', s:'RB 10.1 (16. lpp.)'},
+];
+
+// --- Izmēģini pats: cikls un viens gājiens
+SIMS.loop = el => {
+  const S=[['Saņem kārtis','Rokā ir 8 vai 9 kārtis. Gājiena sākumā roku papildina no kavas.'],['Izspēlē kārti','Pārmaiņus, pa vienai. PSRS sāk.'],['Notikums VAI operācijas','Notikums izpilda kārts tekstu. Operācijas dod punktus.'],['Ietekme kartē','Ar punktiem liek ietekmes marķierus. Pietiekami daudz = kontrole.'],['Vērtēšana dod VP','Vērtēšanas kārts saskaita kontrolētās valstis reģionā un dod VP.']];
+  let i=0;
+  el.innerHTML=`<p>Spied pogu un ej cauri spēles ciklam.</p><div class="loop sm" id="lp"></div><div class="info" id="tx"></div><div class="maptools"><button class="btn pri" id="nx">Nākamais solis →</button></div>`;
+  const draw=()=>{ $('#lp',el).innerHTML=S.map((s,k)=>`<div class="lp${k===i?' on':''}"><b>${k+1}</b><span><strong>${s[0]}</strong></span></div>`).join('<i class="lpa">→</i>'); $('#tx',el).innerHTML=`<b>${i+1}. ${S[i][0]}.</b> ${S[i][1]}${i===4?' Tad viss atkārtojas: nākamā kārts, nākamais gājiens.':''}`; };
+  $('#nx',el).onclick=()=>{ i=(i+1)%S.length; draw(); }; draw();
+};
+SIMS.turn1 = el => {
+  const ST=[
+   [{Syria:[0,1],Lebanon:[0,0],Jordan:[0,0],Israel:[1,0]},'<b>Sākums.</b> Tuvie Austrumi pēc sagatavošanas: PSRS 1 Sīrijā, ASV 1 Izraēlā. DEFCON +1, abi saņem 8 kārtis, virsrakstā abi atklāj pa kārtij.'],
+   [{Syria:[0,3],Lebanon:[0,1],Jordan:[0,0],Israel:[1,0]},'<b>PSRS Action kārta.</b> Kārts ar 3 operāciju punktiem: +2 Sīrijā, +1 Libānā. Sīrija (stabilitāte 2) un Libāna (stabilitāte 1) tagad ir PSRS kontrolē: tumšais marķieris.'],
+   [{Syria:[0,3],Lebanon:[0,1],Jordan:[2,0],Israel:[1,0]},'<b>ASV Action kārta.</b> Kārts ar 2 operāciju punktiem: +2 Jordānijā (blakus Izraēlai). Jordānija (stabilitāte 2) ir ASV kontrolē.'],
+   [{Syria:[0,3],Lebanon:[0,1],Jordan:[2,0],Israel:[1,0]},'<b>Ja tagad izspēlētu Middle East Scoring:</b> PSRS kontrolē 2 valstis, ASV 1. Battleground valstis nekontrolē neviens. Abiem Klātbūtne: 3 VP un 3 VP. Starpība 0, VP marķieris nekustas.'],
+   [{Syria:[0,3],Lebanon:[0,1],Jordan:[2,0],Israel:[1,0]},'<b>Tālāk.</b> Action kārtas turpinās pārmaiņus, līdz katrs izspēlējis 6. Gājiena beigās: militāro operāciju pārbaude, vērtēšanas kārti rokā paturēt nedrīkst, gājiena marķieris uz priekšu.'],
+  ];
+  let i=0;
+  el.innerHTML=`<div class="row" id="bx" style="gap:10px;flex-wrap:wrap;justify-content:center"></div><div class="info" id="tx"></div><div class="maptools"><button class="btn ghost" id="pv">← Atpakaļ</button><button class="btn pri" id="nx">Nākamais solis →</button></div>`;
+  const draw=()=>{ const [inf,t]=ST[i]; $('#bx',el).innerHTML=Object.entries(inf).map(([n,[u,s]])=>cbox(n,u,s)).join(''); $('#tx',el).innerHTML=`${i+1}/${ST.length}. ${t}`; $('#pv',el).disabled=i===0; $('#nx',el).textContent=i===ST.length-1?'No sākuma ↻':'Nākamais solis →'; };
+  $('#nx',el).onclick=()=>{ i=(i+1)%ST.length; draw(); }; $('#pv',el).onclick=()=>{ if(i>0){ i--; draw(); } }; draw();
+};
+
+// --- Jaunā secība (vecie id) un "Kāpēc tas vajadzīgs?"
+const NEW_ORDER = [1,2,12,5,6,7,8,10,4,3,9,11,13,14,15,16];
+const CH_WHY = {
+ 1:'Kopaina: ko spēlē dara un kāpēc. Viss pārējais kurss ir šo soļu detaļas.',
+ 2:'Visa spēle notiek uz kartes: tur liek ietekmi un iegūst kontroli valstīs. Te iemācies lasīt valsts lodziņu un saprast kontroli.',
+ 12:'Šī ir atbilde uz jautājumu "kāpēc vispār likt ietekmi?". Vērtēšana pārvērš kontroli kartē par uzvaras punktiem.',
+ 5:'Katrā savā kārtā tu izspēlē vienu kārti. Te uzzini, ko ar to drīkst darīt un kas notiek ar pretinieka kārti.',
+ 6:'Ietekmes likšana ir galvenais veids, kā iegūt kontroli valstīs, un tātad VP vērtēšanā.',
+ 7:'Pārorientācija ļauj samazināt pretinieka ietekmi valstī, neliekot savu.',
+ 8:'Apvērsums var nomainīt pretinieka ietekmi pret tavu, bet tas var pazemināt DEFCON.',
+ 10:'DEFCON nosaka, kur drīkst taisīt apvērsumus un pārorientāciju, un katru gājienu prasa militārās operācijas.',
+ 4:'Tagad, kad zini, ko dara ar kārtīm, te ir precīza gājiena secība no sākuma līdz beigām.',
+ 3:'Kā salikt spēli pirms 1. gājiena. Tagad saproti, kāpēc sākuma ietekme ir svarīga.',
+ 9:'Ceturtais veids, kā izmantot operācijas: kosmosa trase dod VP un īpašas spējas, un kārts notikums nenotiek.',
+ 11:'Īpaša kārts, kas ceļo starp spēlētājiem un dod papildu operāciju punktu Āzijā.',
+ 13:'Kas PSRS un ASV spēlētājam ir atšķirīgs.',
+ 14:'Kā izlasīt jebkuru kārti un saprast, kas notiks, to izspēlējot.',
+ 15:'Viss kopā: pilns oficiālais spēles sākums soli pa solim.',
+};
+(function reorder(){
+  const byId={}; for(const c of CHAPTERS) byId[c.id]=c;
+  const ch1=byId[1]; const t=id=>ch1.topics.find(x=>x.id===id);
+  ch1.title='Spēle vienā skatienā';
+  ch1.topics=[INTRO_TOPICS['0.1'], t('1.1'), t('1.2'), INTRO_TOPICS['0.2'], t('1.3')];
+  byId[12].title='Kāpēc kontrole: vērtēšana un uzvara';
+  const out=NEW_ORDER.map(id=>byId[id]).filter(Boolean);
+  for(const c of CHAPTERS) if(!out.includes(c)) out.push(c);
+  CHAPTERS.length=0; CHAPTERS.push(...out);
+  CHAPTERS.forEach((c,i)=>{ c.n=i+1; c.why=CH_WHY[c.id]||''; (c.topics||[]).forEach((x,j)=>{ x.n=`${c.n}.${j+1}`; }); });
+})();
+
 // ===== Treniņu zona: random practice scenarios built only on rules taught in chapters 6–10.
 const TR_LS = 'ts_train_v1';
 const trLoad = () => { try { return JSON.parse(localStorage.getItem(TR_LS)||'{}'); } catch(e){ return {}; } };
@@ -4477,12 +4596,12 @@ function drMil(host, done){
 
 const DRILLS = {
   sim:{t:'Operāciju simulators', ic:'<i class="ei ei-joy"></i>', d:'Pats izvēlies: ietekme, pārorientācija, apvērsums vai karš. Dari visu pats soli pa solim. Easy, Normal, Hard.', sim:true, ch:'Jaunums · viss kopā'},
-  where:{g:'<ul><li>Ietekmi drīkst likt valstī, kur tev <b>jau ir ietekme</b>.</li><li>Valstī <b>blakus</b> tādai valstij.</li><li>Valstī <b>blakus tavai lielvarai</b> (ASV vai PSRS laukumam).</li><li>Skaitās ietekme, kas bija <b>Action kārtas sākumā</b>.</li></ul>', t:'Kur drīkst likt ietekmi?', ic:'<i class="ei ei-map"></i>', d:'Atzīmē kartē visas redzamās valstis, kur drīkst likt ietekmi.', f:drWhere, ch:'6. nodaļa'},
-  place:{g:'<ul><li>Kur drīkst: valstī ar tavu ietekmi, blakus tai vai blakus tavai lielvarai (pēc ietekmes Action kārtas sākumā).</li><li><b>Cena:</b> 1 punkts par marķieri, <b>2</b>, ja valsti kontrolē pretinieks.</li><li><b>Kontrole:</b> tava ietekme ≥ stabilitāte un vismaz par stabilitāti vairāk nekā pretiniekam.</li><li>Ja liekot pretinieka kontrole zūd, nākamie marķieri maksā 1.</li></ul>', t:'Ietekmes misija', ic:'<i class="ei ei-target"></i>', d:'Iegūsti kontroli valstī ar tieši tik operācijas punktiem, cik dots.', f:drPlace, ch:'6. nodaļa'},
-  realign:{g:'<ul><li>Drīkst, ja mērķī ir <b>pretinieka ietekme</b> un DEFCON neaizliedz reģionu.</li><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li>Abi met. Katrs pieskaita sev: <b>+1</b> par katru kontrolētu kaimiņvalsti, <b>+1</b> ja vairāk ietekmes mērķī, <b>+1</b> ja mērķis blakus savai lielvarai.</li><li>Lielākais noņem <b>starpību</b> no otra ietekmes, arī ja pārorientāciju sāka otrs. Vienādi: nekas. Savu ietekmi nepieliek.</li></ul>', t:'Pārorientācija', ic:'<i class="ei ei-dice"></i>', d:'Drīkst vai nē, modifikatori, metiens un rezultāts.', f:drRealign, ch:'7. nodaļa'},
-  coup:{g:'<ul><li>Drīkst, ja mērķī ir <b>pretinieka ietekme</b> un DEFCON neaizliedz reģionu.</li><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li><b>Metiens + kārts operācijas</b> jāpārsniedz <b>2 × stabilitāte</b>.</li><li>Starpību noņem no pretinieka ietekmes, ja pietrūkst, atlikumu pieliek sev.</li><li><b>Battleground</b> valstī DEFCON −1 (arī neizdevies). Militārās op. + kārts operācijas.</li></ul>', t:'Apvērsums', ic:'<i class="ei ei-boom"></i>', d:'Drīkst vai nē, slieksnis, metiens, ietekme, DEFCON un militārās operācijas.', f:drCoup, ch:'8. nodaļa'},
-  defcon:{g:'<ul><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li>Apvērsums <b>Battleground</b> valstī: DEFCON −1. Ne-Battleground valstī DEFCON nemainās.</li><li>Pārorientācija DEFCON nemaina.</li><li>DEFCON 1 (kodolkarš): zaudē tas, kura Action kārtā tas notika.</li></ul>', t:'DEFCON sargs', ic:'<i class="ei ei-nuke"></i>', d:'Ātri lēmumi: drīkst vai nē, un kas notiek ar DEFCON.', f:drDefcon, ch:'7., 8., 10. nodaļa'},
-  mil:{g:'<ul><li>Gājiena beigās katram vajag <b>tik militāro operāciju, cik ir DEFCON</b>.</li><li>Par katru trūkstošo punktu <b>pretinieks saņem 1 VP</b>. Vairāk par vajadzīgo neko nedod.</li><li>Ja trūkst abiem, uz VP trases liek tikai <b>starpību</b>.</li></ul>', t:'Militāro operāciju pārbaude', ic:'<i class="ei ei-medal"></i>', d:'Gājiena beigas: kurš saņem VP un cik.', f:drMil, ch:'10. nodaļa'},
+  where:{g:'<ul><li>Ietekmi drīkst likt valstī, kur tev <b>jau ir ietekme</b>.</li><li>Valstī <b>blakus</b> tādai valstij.</li><li>Valstī <b>blakus tavai lielvarai</b> (ASV vai PSRS laukumam).</li><li>Skaitās ietekme, kas bija <b>Action kārtas sākumā</b>.</li></ul>', t:'Kur drīkst likt ietekmi?', ic:'<i class="ei ei-map"></i>', d:'Atzīmē kartē visas redzamās valstis, kur drīkst likt ietekmi.', f:drWhere, ch:'5. nodaļa'},
+  place:{g:'<ul><li>Kur drīkst: valstī ar tavu ietekmi, blakus tai vai blakus tavai lielvarai (pēc ietekmes Action kārtas sākumā).</li><li><b>Cena:</b> 1 punkts par marķieri, <b>2</b>, ja valsti kontrolē pretinieks.</li><li><b>Kontrole:</b> tava ietekme ≥ stabilitāte un vismaz par stabilitāti vairāk nekā pretiniekam.</li><li>Ja liekot pretinieka kontrole zūd, nākamie marķieri maksā 1.</li></ul>', t:'Ietekmes misija', ic:'<i class="ei ei-target"></i>', d:'Iegūsti kontroli valstī ar tieši tik operācijas punktiem, cik dots.', f:drPlace, ch:'5. nodaļa'},
+  realign:{g:'<ul><li>Drīkst, ja mērķī ir <b>pretinieka ietekme</b> un DEFCON neaizliedz reģionu.</li><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li>Abi met. Katrs pieskaita sev: <b>+1</b> par katru kontrolētu kaimiņvalsti, <b>+1</b> ja vairāk ietekmes mērķī, <b>+1</b> ja mērķis blakus savai lielvarai.</li><li>Lielākais noņem <b>starpību</b> no otra ietekmes, arī ja pārorientāciju sāka otrs. Vienādi: nekas. Savu ietekmi nepieliek.</li></ul>', t:'Pārorientācija', ic:'<i class="ei ei-dice"></i>', d:'Drīkst vai nē, modifikatori, metiens un rezultāts.', f:drRealign, ch:'6. nodaļa'},
+  coup:{g:'<ul><li>Drīkst, ja mērķī ir <b>pretinieka ietekme</b> un DEFCON neaizliedz reģionu.</li><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li><b>Metiens + kārts operācijas</b> jāpārsniedz <b>2 × stabilitāte</b>.</li><li>Starpību noņem no pretinieka ietekmes, ja pietrūkst, atlikumu pieliek sev.</li><li><b>Battleground</b> valstī DEFCON −1 (arī neizdevies). Militārās op. + kārts operācijas.</li></ul>', t:'Apvērsums', ic:'<i class="ei ei-boom"></i>', d:'Drīkst vai nē, slieksnis, metiens, ietekme, DEFCON un militārās operācijas.', f:drCoup, ch:'7. nodaļa'},
+  defcon:{g:'<ul><li><b>DEFCON aizliegumi</b> (apvērsumiem un pārorientācijai): DEFCON 4: Eiropā; DEFCON 3: arī Āzijā (ar Dienvidaustrumāziju); DEFCON 2: arī Tuvajos Austrumos.</li><li>Apvērsums <b>Battleground</b> valstī: DEFCON −1. Ne-Battleground valstī DEFCON nemainās.</li><li>Pārorientācija DEFCON nemaina.</li><li>DEFCON 1 (kodolkarš): zaudē tas, kura Action kārtā tas notika.</li></ul>', t:'DEFCON sargs', ic:'<i class="ei ei-nuke"></i>', d:'Ātri lēmumi: drīkst vai nē, un kas notiek ar DEFCON.', f:drDefcon, ch:'6., 7., 8. nodaļa'},
+  mil:{g:'<ul><li>Gājiena beigās katram vajag <b>tik militāro operāciju, cik ir DEFCON</b>.</li><li>Par katru trūkstošo punktu <b>pretinieks saņem 1 VP</b>. Vairāk par vajadzīgo neko nedod.</li><li>Ja trūkst abiem, uz VP trases liek tikai <b>starpību</b>.</li></ul>', t:'Militāro operāciju pārbaude', ic:'<i class="ei ei-medal"></i>', d:'Gājiena beigas: kurš saņem VP un cik.', f:drMil, ch:'8. nodaļa'},
   mix:{t:'Jauktā misija', ic:'<i class="ei ei-star"></i>', d:'8 nejauši uzdevumi no visiem treniņiem pēc kārtas. Cik izdosies?', mix:true, ch:'Viss kopā'},
 };
 
