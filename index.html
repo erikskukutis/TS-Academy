@@ -371,9 +371,20 @@ ol.flow{padding-left:1.3em}ol.flow li{margin:4px 0}
  .dp-seals img{height:24mm;width:24mm}
  .dp-sign{width:100%;margin-top:4mm}
 }
+/* Operāciju simulators */
+.so-setup{margin-bottom:14px}
+.so-lvd{font-family:var(--f-ui);font-size:16px;color:var(--ink2);margin:2px 0 4px}
+.so-stats{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--f-ui);font-size:15px;color:var(--ink2);margin-top:8px}
+.so-head{display:flex;flex-wrap:wrap;gap:6px 16px;font-family:var(--f-ui);font-size:17px;margin-bottom:6px;align-items:center}
+.so-acts{display:grid;grid-template-columns:repeat(auto-fill,minmax(210px,1fr));gap:12px;margin:8px 0}
+.so-pend{background:#fff6d8;border:2px solid var(--gold,#c9a227);border-radius:10px;padding:8px 12px;font-family:var(--f-ui);font-size:17px;margin:8px 0}
+.so-step{font-size:17px}
+.res.so-neutral{background:#ece6da;color:#444}
+.so-log{margin:8px 0 0 20px;font-family:var(--f-ui);font-size:16px}.so-log li{margin:6px 0}.so-log span{color:#333;font-size:15px}
+.so-step:empty{display:none}
 </style>
 <div id="app"><div class="wrap" style="padding-block:40px;font-family:sans-serif">Ielādē akadēmiju…</div></div>
-<script>const APP_VER='66', APP_DATE='05.11.2026', APP_WHERE='telefona lietotne';
+<script>const APP_VER='67', APP_DATE='12.11.2026', APP_WHERE='telefona lietotne';
 const C = {"Mexico": {"s": 2, "bg": true, "r": "CA", "b": [90, 882, 119, 82], "adj": ["Guatemala", "USA"]}, "El Salvador": {"s": 1, "bg": false, "r": "CA", "b": [127, 1023, 119, 82], "adj": ["Guatemala", "Honduras"]}, "Guatemala": {"s": 1, "bg": false, "r": "CA", "b": [256, 918, 119, 82], "adj": ["Mexico", "El Salvador", "Honduras"]}, "Honduras": {"s": 2, "bg": false, "r": "CA", "b": [272, 1023, 119, 82], "adj": ["Guatemala", "El Salvador", "Nicaragua", "Costa Rica"]}, "Costa Rica": {"s": 3, "bg": false, "r": "CA", "b": [292, 1130, 119, 82], "adj": ["Honduras", "Nicaragua", "Panama"]}, "Ecuador": {"s": 2, "bg": false, "r": "SA", "b": [353, 1266, 119, 82], "adj": ["Colombia", "Peru"]}, "Peru": {"s": 2, "bg": false, "r": "SA", "b": [403, 1407, 119, 82], "adj": ["Ecuador", "Bolivia", "Chile"]}, "Nicaragua": {"s": 1, "bg": false, "r": "CA", "b": [418, 1023, 119, 82], "adj": ["Honduras", "Costa Rica", "Cuba"]}, "Chile": {"s": 3, "bg": true, "r": "SA", "b": [422, 1553, 119, 82], "adj": ["Peru", "Argentina"]}, "Panama": {"s": 2, "bg": true, "r": "CA", "b": [435, 1129, 119, 82], "adj": ["Costa Rica", "Colombia"]}, "Cuba": {"s": 3, "bg": true, "r": "CA", "b": [454, 911, 119, 82], "adj": ["Nicaragua", "Haiti", "USA"]}, "Argentina": {"s": 2, "bg": true, "r": "SA", "b": [501, 1697, 119, 82], "adj": ["Chile", "Paraguay", "Uruguay"]}, "Colombia": {"s": 1, "bg": false, "r": "SA", "b": [512, 1240, 119, 82], "adj": ["Panama", "Ecuador", "Venezuela"]}, "Venezuela": {"s": 2, "bg": true, "r": "SA", "b": [585, 1122, 119, 82], "adj": ["Colombia", "Brazil"]}, "Haiti": {"s": 1, "bg": false, "r": "CA", "b": [596, 992, 119, 82], "adj": ["Cuba", "Dominican Rep."]}, "Bolivia": {"s": 2, "bg": false, "r": "SA", "b": [601, 1369, 119, 82], "adj": ["Peru", "Paraguay"]}, "Paraguay": {"s": 2, "bg": false, "r": "SA", "b": [607, 1502, 119, 82], "adj": ["Bolivia", "Argentina", "Uruguay"]}, "Canada": {"s": 4, "bg": false, "r": "WE", "b": [638, 449, 119, 82], "adj": ["UK", "USA"]}, "Uruguay": {"s": 2, "bg": false, "r": "SA", "b": [681, 1629, 119, 82], "adj": ["Argentina", "Paraguay", "Brazil"]}, "Dominican Rep.": {"s": 1, "bg": false, "r": "CA", "b": [739, 992, 119, 82], "adj": ["Haiti"]}, "Brazil": {"s": 2, "bg": true, "r": "SA", "b": [790, 1349, 119, 82], "adj": ["Venezuela", "Uruguay"]}, "UK": {"s": 5, "bg": false, "r": "WE", "b": [916, 378, 119, 82], "adj": ["Canada", "Norway", "Benelux", "France"]}, "Spain/Portugal": {"s": 2, "bg": false, "r": "WE", "b": [925, 660, 119, 82], "adj": ["France", "Italy", "Morocco"]}, "Morocco": {"s": 3, "bg": false, "r": "AF", "b": [925, 896, 119, 82], "adj": ["Spain/Portugal", "Algeria", "West African States"]}, "West African States": {"s": 2, "bg": false, "r": "AF", "b": [944, 1051, 119, 82], "adj": ["Morocco", "Ivory Coast"]}, "France": {"s": 3, "bg": true, "r": "WE", "b": [1037, 529, 119, 82], "adj": ["UK", "W. Germany", "Spain/Portugal", "Italy", "Algeria"]}, "Algeria": {"s": 2, "bg": true, "r": "AF", "b": [1038, 789, 119, 82], "adj": ["France", "Morocco", "Tunisia", "Saharan States"]}, "Ivory Coast": {"s": 2, "bg": false, "r": "AF", "b": [1052, 1164, 119, 82], "adj": ["West African States", "Nigeria"]}, "Benelux": {"s": 3, "bg": false, "r": "WE", "b": [1063, 404, 119, 82], "adj": ["UK", "W. Germany"]}, "Denmark": {"s": 3, "bg": false, "r": "WE", "b": [1112, 293, 119, 82], "adj": ["Sweden", "W. Germany"]}, "Saharan States": {"s": 1, "bg": false, "r": "AF", "b": [1140, 945, 119, 82], "adj": ["Algeria", "Nigeria"]}, "Austria": {"s": 4, "bg": false, "r": "EWE", "b": [1179, 525, 119, 82], "adj": ["Italy", "W. Germany", "E. Germany", "Hungary"]}, "Italy": {"s": 2, "bg": true, "r": "WE", "b": [1195, 636, 119, 82], "adj": ["France", "Spain/Portugal", "Austria", "Yugoslavia", "Greece"]}, "Tunisia": {"s": 2, "bg": false, "r": "AF", "b": [1200, 759, 119, 82], "adj": ["Libya", "Algeria"]}, "W. Germany": {"s": 4, "bg": true, "r": "WE", "b": [1203, 415, 119, 82], "adj": ["Denmark", "Benelux", "France", "Austria", "E. Germany"]}, "Nigeria": {"s": 1, "bg": true, "r": "AF", "b": [1223, 1154, 119, 82], "adj": ["Saharan States", "Ivory Coast", "Cameroon"]}, "Norway": {"s": 4, "bg": false, "r": "WE", "b": [1233, 75, 119, 82], "adj": ["UK", "Sweden"]}, "E. Germany": {"s": 3, "bg": true, "r": "EE", "b": [1248, 314, 119, 82], "adj": ["W. Germany", "Poland", "Austria", "Czechoslovakia"]}, "Sweden": {"s": 4, "bg": false, "r": "WE", "b": [1273, 200, 119, 82], "adj": ["Norway", "Denmark", "Finland"]}, "Cameroon": {"s": 1, "bg": false, "r": "AF", "b": [1276, 1291, 119, 82], "adj": ["Nigeria", "Zaire"]}, "Libya": {"s": 2, "bg": true, "r": "ME", "b": [1277, 871, 119, 82], "adj": ["Egypt", "Tunisia"]}, "Angola": {"s": 1, "bg": true, "r": "AF", "b": [1291, 1462, 119, 82], "adj": ["Zaire", "Botswana", "South Africa"]}, "Hungary": {"s": 3, "bg": false, "r": "EE", "b": [1333, 500, 119, 82], "adj": ["Czechoslovakia", "Austria", "Romania", "Yugoslavia"]}, "Yugoslavia": {"s": 3, "bg": false, "r": "EE", "b": [1333, 597, 119, 82], "adj": ["Italy", "Hungary", "Romania", "Greece"]}, "Czechoslovakia": {"s": 3, "bg": false, "r": "EE", "b": [1356, 404, 119, 82], "adj": ["E. Germany", "Poland", "Hungary"]}, "South Africa": {"s": 3, "bg": true, "r": "AF", "b": [1376, 1684, 119, 82], "adj": ["Angola", "Botswana"]}, "Poland": {"s": 3, "bg": true, "r": "EE", "b": [1387, 303, 119, 82], "adj": ["E. Germany", "Czechoslovakia", "USSR"]}, "Botswana": {"s": 2, "bg": false, "r": "AF", "b": [1430, 1565, 119, 82], "adj": ["Angola", "South Africa", "Zimbabwe"]}, "Egypt": {"s": 2, "bg": true, "r": "ME", "b": [1431, 900, 119, 82], "adj": ["Israel", "Libya", "Sudan"]}, "Zimbabwe": {"s": 1, "bg": false, "r": "AF", "b": [1439, 1450, 119, 82], "adj": ["Zaire", "Botswana", "SE African States"]}, "Greece": {"s": 2, "bg": false, "r": "WE", "b": [1442, 696, 119, 82], "adj": ["Italy", "Yugoslavia", "Bulgaria", "Turkey"]}, "Finland": {"s": 4, "bg": false, "r": "EWE", "b": [1448, 75, 119, 82], "adj": ["Sweden", "USSR"]}, "Zaire": {"s": 1, "bg": true, "r": "AF", "b": [1449, 1330, 119, 82], "adj": ["Cameroon", "Angola", "Zimbabwe"]}, "Israel": {"s": 4, "bg": true, "r": "ME", "b": [1476, 799, 119, 82], "adj": ["Lebanon", "Syria", "Jordan", "Egypt"]}, "Bulgaria": {"s": 3, "bg": false, "r": "EE", "b": [1477, 580, 119, 82], "adj": ["Greece", "Turkey"]}, "Romania": {"s": 3, "bg": false, "r": "EE", "b": [1482, 480, 119, 82], "adj": ["Hungary", "Yugoslavia", "Turkey", "USSR"]}, "Sudan": {"s": 1, "bg": false, "r": "AF", "b": [1544, 1024, 119, 82], "adj": ["Egypt", "Ethiopia"]}, "Ethiopia": {"s": 1, "bg": false, "r": "AF", "b": [1569, 1133, 119, 82], "adj": ["Somalia", "Sudan"]}, "Kenya": {"s": 2, "bg": false, "r": "AF", "b": [1579, 1243, 119, 82], "adj": ["SE African States", "Somalia"]}, "SE African States": {"s": 1, "bg": false, "r": "AF", "b": [1597, 1443, 119, 82], "adj": ["Zimbabwe", "Kenya"]}, "Turkey": {"s": 2, "bg": false, "r": "WE", "b": [1611, 581, 119, 82], "adj": ["Romania", "Greece", "Bulgaria", "Syria"]}, "Jordan": {"s": 2, "bg": false, "r": "ME", "b": [1634, 829, 119, 82], "adj": ["Lebanon", "Israel", "Iraq", "Saudi Arabia"]}, "Saudi Arabia": {"s": 3, "bg": true, "r": "ME", "b": [1664, 932, 119, 82], "adj": ["Jordan", "Iraq", "Gulf States"]}, "Syria": {"s": 2, "bg": false, "r": "ME", "b": [1715, 689, 119, 82], "adj": ["Turkey", "Lebanon", "Israel"]}, "Somalia": {"s": 2, "bg": false, "r": "AF", "b": [1718, 1141, 119, 82], "adj": ["Kenya", "Ethiopia"]}, "Iraq": {"s": 3, "bg": true, "r": "ME", "b": [1770, 789, 119, 82], "adj": ["Jordan", "Iran", "Saudi Arabia", "Gulf States"]}, "Gulf States": {"s": 3, "bg": false, "r": "ME", "b": [1838, 935, 119, 82], "adj": ["Iraq", "Saudi Arabia"]}, "Iran": {"s": 2, "bg": true, "r": "ME", "b": [1853, 687, 119, 82], "adj": ["Iraq", "Afghanistan", "Pakistan"]}, "Pakistan": {"s": 2, "bg": true, "r": "AS", "b": [1944, 829, 119, 82], "adj": ["Iran", "Afghanistan", "India"]}, "Afghanistan": {"s": 2, "bg": false, "r": "AS", "b": [2012, 709, 119, 82], "adj": ["Iran", "Pakistan", "USSR"]}, "India": {"s": 3, "bg": true, "r": "AS", "b": [2121, 912, 119, 82], "adj": ["Pakistan", "Burma"]}, "Burma": {"s": 2, "bg": false, "r": "SEA", "b": [2275, 878, 119, 82], "adj": ["India", "Laos/Cambodia"]}, "Thailand": {"s": 2, "bg": true, "r": "SEA", "b": [2345, 1057, 119, 82], "adj": ["Laos/Cambodia", "Vietnam", "Malaysia"]}, "Malaysia": {"s": 2, "bg": false, "r": "SEA", "b": [2410, 1200, 119, 82], "adj": ["Thailand", "Indonesia", "Australia"]}, "Laos/Cambodia": {"s": 1, "bg": false, "r": "SEA", "b": [2416, 949, 119, 82], "adj": ["Burma", "Thailand", "Vietnam"]}, "Vietnam": {"s": 1, "bg": false, "r": "SEA", "b": [2520, 1048, 119, 82], "adj": ["Laos/Cambodia", "Thailand"]}, "Taiwan": {"s": 3, "bg": false, "r": "AS", "b": [2635, 881, 119, 82], "adj": ["Japan", "South Korea"]}, "Indonesia": {"s": 1, "bg": false, "r": "SEA", "b": [2635, 1308, 119, 82], "adj": ["Malaysia", "Philippines"]}, "Australia": {"s": 4, "bg": false, "r": "AS", "b": [2671, 1514, 119, 82], "adj": ["Malaysia"]}, "South Korea": {"s": 3, "bg": true, "r": "AS", "b": [2679, 700, 119, 82], "adj": ["Japan", "Taiwan", "North Korea"]}, "Philippines": {"s": 2, "bg": false, "r": "SEA", "b": [2702, 1075, 119, 82], "adj": ["Indonesia", "Japan"]}, "North Korea": {"s": 3, "bg": true, "r": "AS", "b": [2746, 579, 119, 82], "adj": ["South Korea", "USSR"]}, "Japan": {"s": 4, "bg": true, "r": "AS", "b": [2813, 776, 119, 82], "adj": ["Philippines", "Taiwan", "South Korea", "USA"]}, "Lebanon": {"s": 1, "bg": false, "r": "ME", "b": [1576, 705, 119, 82], "adj": ["Syria", "Israel", "Jordan"]}};
 const CHEAT_URL = 'cheat.html';
 // ===== Map data (read from the 20th Anniversary map, RB pp. 6–7). Box coords in map pixels (3025×1933).
@@ -4428,6 +4439,7 @@ function drMil(host, done){
 }
 
 const DRILLS = {
+  sim:{t:'Operāciju simulators', ic:'🕹️', d:'Pats izvēlies: ietekme, pārorientācija, apvērsums vai karš. Dari visu pats soli pa solim. Easy, Normal, Hard.', sim:true, ch:'Jaunums · viss kopā'},
   where:{t:'Kur drīkst likt ietekmi?', ic:'🗺️', d:'Atzīmē kartē visas redzamās valstis, kur drīkst likt ietekmi.', f:drWhere, ch:'6. nodaļa'},
   place:{t:'Ietekmes misija', ic:'🎯', d:'Iegūsti kontroli valstī ar tieši tik operācijas punktiem, cik dots.', f:drPlace, ch:'6. nodaļa'},
   realign:{t:'Pārorientācija', ic:'🎲', d:'Drīkst vai nē, modifikatori, metiens un rezultāts.', f:drRealign, ch:'7. nodaļa'},
@@ -4443,8 +4455,9 @@ function vTrain(){ shell(m=>{ const S=trLoad();
     m.appendChild(h('h1',{style:'font-size:40px;color:var(--blue)'},'Treniņu zona'));
     m.appendChild(h('p',{},'Nejauši scenāriji ar ietekmi, pārorientāciju, apvērsumiem un DEFCON. Katru reizi cita karte un cita situācija. Pēc katras atbildes redzi paskaidrojumu. Treniņi neietekmē kursa progresu.'));
     const g=h('div',{cls:'trgrid'});
-    for(const [k,x] of Object.entries(DRILLS)){ const b=h('button',{cls:'trcard'+(x.mix?' mix':'')},`<span class="tri">${x.ic}</span><b>${x.t}</b><span>${x.d}</span><span class="trm">${x.ch}${S[k]?` · labākā sērija: ${S[k]}`:''}</span>`); b.onclick=()=>go({name:'train',d:k}); g.appendChild(b); }
+    for(const [k,x] of Object.entries(DRILLS)){ const b=h('button',{cls:'trcard'+(x.mix?' mix':'')+(x.sim?' mix so-new':'')},`<span class="tri">${x.ic}</span><b>${x.t}</b><span>${x.d}</span><span class="trm">${x.ch}${S[k]?` · labākā sērija: ${S[k]}`:''}</span>`); b.onclick=()=>go({name:'train',d:k}); g.appendChild(b); }
     m.appendChild(g); return; }
+  if(DRILLS[VIEW.d].sim) return vSimOps(m);
   const x=DRILLS[VIEW.d]; let right=0, total=0, streak=0, step=0; const N=8;
   m.appendChild(h('div',{cls:'crumb'},`Treniņu zona · ${x.t}`));
   const top=h('div',{cls:'row',style:'justify-content:space-between;flex-wrap:wrap;gap:8px'}); m.appendChild(top);
@@ -4454,13 +4467,277 @@ function vTrain(){ shell(m=>{ const S=trLoad();
   const nav=h('div',{cls:'maptools'}); m.appendChild(nav);
   const upd=()=>{ const best=trLoad()[VIEW.d]||0; sb.innerHTML=`<span>Pareizi: <b>${right}</b> / ${total}</span><span>Sērija: <b>${streak}</b>${streak>=3?' 🔥':''}</span><span>Labākā sērija: <b>${best}</b></span>${x.mix?`<span>Uzdevums ${Math.min(step+1,N)} / ${N}</span>`:''}`; };
   const next=()=>{ nav.innerHTML=''; if(x.mix&&step>=N){ const ok=right>=N*.75; card.innerHTML=`<div class="res ${ok?'ok':'no'}" style="font-size:20px">${ok?'🏆 ':''}Jauktā misija pabeigta: <b>${right} no ${N}</b>.</div>`; nav.appendChild(btn('Vēlreiz ↻','btn pri',()=>go({name:'train',d:'mix'}))); return; }
-    const key=x.mix?rpick(Object.keys(DRILLS).filter(k=>k!=='mix')):VIEW.d; card.innerHTML=x.mix?`<div class="lbl">${DRILLS[key].ic} ${DRILLS[key].t}</div><div></div>`:'<div></div>';
+    const key=x.mix?rpick(Object.keys(DRILLS).filter(k=>k!=='mix'&&k!=='sim')):VIEW.d; card.innerHTML=x.mix?`<div class="lbl">${DRILLS[key].ic} ${DRILLS[key].t}</div><div></div>`:'<div></div>';
     const host=card.lastElementChild; let fired=false;
     DRILLS[key].f(host, ok=>{ if(fired) return; fired=true; total++; step++; if(ok){ right++; streak++; } else streak=0; const S=trLoad(); if(streak>(S[VIEW.d]||0)){ S[VIEW.d]=streak; trSave(S); } upd();
       nav.appendChild(btn(x.mix&&step>=N?'Rezultāts →':'Nākamais scenārijs →','btn pri',()=>{ next(); card.scrollIntoView({block:'start',behavior:'smooth'}); })); });
     upd(); };
   next();
 });}
+
+// ===== Operāciju simulators (treniņu zona): the player does every step himself; feedback depends on level.
+// Rules: RB 6.1 influence, 6.2 realignment, 6.3 coup, 8.1.5 DEFCON limits, 8.2 military ops, Indo-Pakistani War card text (RB 14. lpp.).
+const SO_LS='ts_simops_v1';
+const soLoad=()=>{ try{ return JSON.parse(localStorage.getItem(SO_LS)||'{}'); }catch(e){ return {}; } };
+const soSave=o=>{ try{ localStorage.setItem(SO_LS,JSON.stringify(o)); }catch(e){} };
+const SO_REG={EU:['WE','EE','EWE'],AS:['AS','SEA'],ME:['ME'],AF:['AF'],CA:['CA'],SA:['SA']};
+const SO_REGLV={rnd:'Nejauši',EU:'Eiropa',AS:'Āzija',ME:'Tuvie Austrumi',AF:'Āfrika',CA:'Centrālamerika',SA:'Dienvidamerika'};
+const SO_LVL={easy:['Easy','Pēc katra soļa: pareizi vai nē, ar paskaidrojumu.'],normal:['Normal','Pēc katra soļa: tikai parādu, kur ir kļūda. Labo pats.'],hard:['Hard','Nekādu norāžu. Atskaite tikai beigās.']};
+const SO_ACT={inf:['➕','Ietekmes likšana'],rea:['⇄','Pārorientācija'],coup:['💥','Apvērsums'],war:['⚔️','Kara notikums: Indo-Pakistani War']};
+const soPrefs={lvl:'easy',side:'rnd',reg:'rnd'};
+try{ Object.assign(soPrefs, JSON.parse(localStorage.getItem(SO_LS+'p')||'{}')); }catch(e){}
+const soPrefSave=()=>{ try{ localStorage.setItem(SO_LS+'p',JSON.stringify(soPrefs)); }catch(e){} };
+
+function soCluster(regs){
+  const pool=Object.keys(C).filter(n=>regs.includes(C[n].r));
+  for(let t=0;t<40;t++){ const seed=rpick(pool), out=[seed], q=[seed];
+    while(q.length&&out.length<6){ const c=q.shift(); for(const a of shuffle(C[c].adj)) if(C[a]&&regs.includes(C[a].r)&&!out.includes(a)&&out.length<6){ out.push(a); q.push(a); } }
+    if(out.length>=4) return out; }
+  return trCluster();
+}
+function soGen(side, reg){
+  const rk=reg==='rnd'?rpick(Object.keys(SO_REG)):reg, regs=SO_REG[rk];
+  for(let t=0;t<300;t++){
+    const cl=soCluster(regs), inf=trInf(cl,.65), d=t>150&&rk==='EU'?5:rint(2,5), opp=OTHER(side);
+    if(!cl.some(n=>iv(inf,n)[sIx(opp)]>0)) continue;
+    if(!cl.some(n=>iv(inf,n)[sIx(side)]>0)) continue;
+    if(!cl.some(n=>canRealign(side,inf,n,d).ok)) continue;
+    if(!cl.some(n=>canCoup(side,inf,n,d).ok)) continue;
+    if(!cl.some(n=>canPlace(side,inf,n).ok&&ctrlOf(n,...iv(inf,n))!==side)) continue;
+    return {side,cl,inf,d,ops:rint(1,4),mil:rint(0,3),reg:rk};
+  }
+  return null;
+}
+function soWarGen(side, d, mil){
+  const cl=['Pakistan','India','Iran','Afghanistan','Burma'];
+  for(let t=0;t<200;t++){ const inf=trInf(cl,.75);
+    if(warMods(side,inf,'Pakistan').length+warMods(side,inf,'India').length===0 && t<150) continue;
+    if(!iv(inf,'Pakistan')[sIx(OTHER(side))]&&!iv(inf,'India')[sIx(OTHER(side))]&&t<150) continue;
+    return {side,cl,inf,d,ops:2,mil,reg:'AS',war:true}; }
+}
+
+function vSimOps(m){
+  let S=null, sc=null, inf=null, act=null, log=[], step=null, tries=0, ended=false;
+  const L=()=>soPrefs.lvl;
+  m.appendChild(h('div',{cls:'crumb'},'Treniņu zona · Operāciju simulators'));
+  const top=h('div',{cls:'row',style:'justify-content:space-between;flex-wrap:wrap;gap:8px'}); m.appendChild(top);
+  top.appendChild(h('h1',{style:'font-size:34px;color:var(--blue);margin:0'},'🕹️ Operāciju simulators')); top.appendChild(btn('← Visi treniņi','btn ghost',()=>go({name:'train'})));
+  const setup=h('div',{cls:'qcard so-setup'}); m.appendChild(setup);
+  const card=h('div',{cls:'qcard'}); m.appendChild(card);
+
+  function drawSetup(){
+    const st=soLoad();
+    setup.innerHTML=`<div class="lbl">Grūtības līmenis</div><div class="maptools" id="lv"></div><div class="so-lvd" id="lvd"></div>
+      <div class="row" style="gap:18px;flex-wrap:wrap;margin-top:6px"><div><div class="lbl">Tu spēlē par</div><div class="maptools" id="sd"></div></div><div><div class="lbl">Reģions</div><div class="maptools" id="rg"></div></div></div>
+      <div class="maptools" style="margin-top:6px"><button class="btn pri" id="go">🎲 Jauna situācija</button></div>
+      <div class="so-stats">${['easy','normal','hard'].map(k=>{ const x=st[k]||{n:0,c:0}; return `<span><b>${SO_LVL[k][0]}</b>: izspēlētas ${x.n}, bez kļūdām ${x.c}</span>`; }).join('')}</div>`;
+    chips($('#lv',setup),Object.entries(SO_LVL).map(([k,v])=>[k,v[0]]),soPrefs.lvl,v=>{soPrefs.lvl=v;soPrefSave();drawSetup();});
+    $('#lvd',setup).textContent=SO_LVL[soPrefs.lvl][1];
+    chips($('#sd',setup),[['rnd','Nejauši'],['US','ASV'],['USSR','PSRS']],soPrefs.side,v=>{soPrefs.side=v;soPrefSave();drawSetup();});
+    chips($('#rg',setup),Object.entries(SO_REGLV),soPrefs.reg,v=>{soPrefs.reg=v;soPrefSave();drawSetup();});
+    $('#go',setup).onclick=newScenario;
+  }
+
+  function newScenario(){
+    const side=soPrefs.side==='rnd'?rside():soPrefs.side; S=soGen(side,soPrefs.reg); if(!S) S=soGen(side,'rnd');
+    sc=S; inf=cloneInf(S.inf); act=null; log=[]; ended=false; drawIntro(); card.scrollIntoView({block:'start',behavior:'smooth'});
+  }
+
+  // ---- shared pieces
+  let mv=null, hl=()=>'', onMap=null;
+  function head(){ const d=sc.d;
+    return `<div class="so-head"><span>${sideTag(sc.side)} Tu esi <b>${SIDE_LV[sc.side]}</b>, tava Action kārta</span>${sc.war?'':`<span>Kārts: <b>${sc.ops}</b> operāciju ${sc.ops===1?'punkts':'punkti'}</span>`}<span>DEFCON: <b>${d}</b></span><span>Tavas militārās op.: <b>${sc.mil}</b></span><span>Līmenis: <b>${SO_LVL[L()][0]}</b></span></div>${defBar(d)}`; }
+  function mapBox(host){ host.innerHTML=''; mv=mapView(host,{view:BOX(...sc.cl),clean:true,inf:()=>inf,cls:n=>hl(n),onClick:n=>{ if(onMap&&!ended) onMap(n); }}); mapTools(host,mv,false); }
+  const redraw=()=>mv&&mv.redraw();
+  const SUP=()=>SUPER_NOTE(sc.cl);
+
+  // feedback: issues=[{f,why}], good = explanation of the right answer
+  function judge(box, title, issues, good){
+    const first=tries===0; tries++;
+    if(first) log.push({t:title, ok:!issues.length, why:good});
+    const lv=L(); box.hidden=false;
+    if(lv==='hard'){ box.className='res so-neutral'; box.innerHTML='Pieņemts. Turpini.'; return true; }
+    if(!issues.length){ resBox(box,true, lv==='easy'?`<i class=mk-ok></i> Pareizi! ${good}`:'<i class=mk-ok></i> Pareizi!'); return true; }
+    resBox(box,false, lv==='easy'?`<i class=mk-no></i> Nav pareizi.<ul>${issues.map(i=>`<li><b>${i.f}</b>: ${i.why}</li>`).join('')}</ul>Izlabo un mēģini vēlreiz.`:`<i class=mk-no></i> Kļūda: <b>${issues.map(i=>i.f).join(', ')}</b>. Izlabo un mēģini vēlreiz.`);
+    return false;
+  }
+  const newStep=()=>{ tries=0; };
+  const hintBtn=(host,fn)=>{ if(L()!=='easy') return; host.appendChild(btn('💡 Padoms','chip',()=>{ const o=$('.so-hint',card); o.hidden=false; o.innerHTML=fn(); redraw(); })); };
+
+  function drawIntro(){
+    hl=n=>sc.cl.includes(n)?'':''; onMap=null;
+    card.innerHTML=`${head()}<p>Situācija: kartē redzama <b>visa</b> ietekme (citur kartē ietekmes nav). ${SUP()}</p><div id="mp"></div>
+      <p><b>Ko tu darīsi ar šo kārti?</b></p><div class="so-acts" id="ac"></div>`;
+    mapBox($('#mp',card));
+    for(const [k,[ic,t]] of Object.entries(SO_ACT)){ const b=h('button',{cls:'trcard'},`<span class="tri">${ic}</span><b>${t}</b><span>${k==='war'?'Izspēlē notikumu (jauna situācija pie Indijas un Pakistānas).':k==='inf'?`${sc.ops} punkti marķieriem.`:k==='rea'?`${sc.ops} ${sc.ops===1?'metiens':'metieni'}.`:`Viens apvērsums ar ${sc.ops} punktiem.`}</span>`); b.onclick=()=>start(k); $('#ac',card).appendChild(b); }
+  }
+  function start(k){ act=k;
+    if(k==='war'){ sc=soWarGen(sc.side,sc.d,sc.mil); inf=cloneInf(sc.inf); }
+    ({inf:actInf,rea:actRea,coup:actCoup,war:actWar})[k](); }
+  function frame(extra){
+    card.innerHTML=`${head()}<div class="lbl">${SO_ACT[act][0]} ${SO_ACT[act][1]}</div>${extra||''}<div id="mp"></div><div class="info so-step" id="st"></div><div class="maptools" id="tl"></div><div class="info so-hint" hidden></div><div id="pn"></div><div class="res" id="fb" hidden></div><div class="maptools" id="fin"></div>`;
+    mapBox($('#mp',card));
+  }
+
+  // ===== 1. Influence (RB 6.1)
+  function actInf(){
+    const start=cloneInf(inf); let left=sc.ops, placed=[], pend=null, hint=false;
+    frame(); newStep();
+    hl=n=>n===pend?'on':hint&&canPlace(sc.side,start,n).ok?'good':placed.includes(n)?'srcc':'';
+    const st=$('#st',card), pn=$('#pn',card), fb=$('#fb',card);
+    const bar=()=>{ st.innerHTML=`<div class="opsbar">${sideTag(sc.side)} Atlikuši punkti: ${'<i class="op on"></i>'.repeat(Math.max(0,left))}${'<i class="op"></i>'.repeat(Math.max(0,sc.ops-left))} <b>${left}</b> no ${sc.ops}</div>${left>0?'Klikšķini kartē uz valsts, kur liksi <b>1 marķieri</b>.':'Visi punkti izlietoti.'}`; };
+    bar();
+    hintBtn($('#tl',card),()=>{ hint=true; return 'Zaļā rāmī: valstis, kur drīkst likt (ietekme vai kaimiņš Action kārtas sākumā, vai blakus tavai lielvarai). Pretinieka kontrolētā valstī marķieris maksā 2, citur 1.'; });
+    $('#tl',card).appendChild(btn('Pabeigt','btn sec',finish));
+    onMap=n=>{ if(left<=0) return; pend=n; fb.hidden=true; redraw();
+      const [u,s]=iv(inf,n);
+      pn.innerHTML=`<div class="so-pend"><b>${nmPlain(n)}</b> (stabilitāte ${C[n].s}, ASV ${u}, PSRS ${s}). <b>Cik punktu maksā šis marķieris?</b><div class="maptools" id="cs"></div></div>`;
+      for(const c of [1,2]) $('#cs',pn).appendChild(btn(String(c),'chip',()=>pay(n,c)));
+      $('#cs',pn).appendChild(btn('Atcelt','chip',()=>{ pend=null; pn.innerHTML=''; redraw(); }));
+    };
+    function pay(n,c){
+      if(c>left){ fb.hidden=false; resBox(fb,false,`Tev ir tikai ${left} ${left===1?'punkts':'punkti'}.`); return; }
+      const lg=canPlace(sc.side,start,n), cost=placeCost(sc.side,inf,n), issues=[];
+      if(!lg.ok) issues.push({f:'Vieta',why:lg.why});
+      if(c!==cost) issues.push({f:'Cena',why:cost===2?`${nmPlain(n)} kontrolē pretinieks, tāpēc marķieris maksā 2.`:`${nmPlain(n)} nekontrolē pretinieks, tāpēc marķieris maksā 1.`});
+      const good=`${lg.why} Marķieris maksā ${cost}.`;
+      newStep(); const ok=judge(fb,`Marķieris: ${nmPlain(n)} (tu samaksāji ${c})`,issues,good);
+      if(!ok) return;
+      const v=iv(inf,n).slice(); v[sIx(sc.side)]++; inf[n]=v; left-=c; placed.push(n); pend=null; pn.innerHTML=''; bar(); redraw();
+      if(left<=0) finish();
+    }
+    function finish(){ onMap=null; pend=null; pn.innerHTML=''; redraw(); summary(left>0?`Neizlietoti ${left} punkti.`:''); }
+  }
+
+  // ===== 2. Realignment (RB 6.2): every roll costs 1 op; target may change after each roll.
+  function actRea(){
+    let left=sc.ops, tgt=null, phase='tgt', gU=0, gS=0, R=null, eU=0, eS=0, hint=false;
+    frame(); const st=$('#st',card), pn=$('#pn',card), fb=$('#fb',card);
+    hl=n=>n===tgt?'on':hint&&phase==='tgt'&&sc.cl.includes(n)&&canRealign(sc.side,inf,n,sc.d).ok?'good':'';
+    hintBtn($('#tl',card),()=>{ if(phase==='tgt'){ hint=true; return 'Zaļā rāmī: valstis, kur drīkst (ir pretinieka ietekme un DEFCON to neaizliedz).'; }
+      if(!tgt) return ''; const b=s=>{ const x=realignMods(s,inf,tgt); return x.length?x.map(y=>'+1 '+y[1]).join('; '):'nav'; }; return `Modifikatori: ASV: ${b('US')}. PSRS: ${b('USSR')}.`; });
+    $('#tl',card).appendChild(btn('Pabeigt','btn sec',()=>{ onMap=null; summary(left>0?`Neizmantoti ${left} metieni.`:''); }));
+    const draw=()=>{ fb.hidden=true; $('.so-hint',card).hidden=true;
+      st.innerHTML=`<div class="opsbar">${sideTag(sc.side)} Atlikuši metieni: ${'<i class="op on"></i>'.repeat(left)}${'<i class="op"></i>'.repeat(sc.ops-left)} <b>${left}</b> no ${sc.ops}</div>`;
+      if(phase==='tgt'){ pn.innerHTML=''; st.innerHTML+='<b>1. solis.</b> Klikšķini kartē uz valsts, kur veiksi pārorientāciju.'; newStep(); }
+      if(phase==='mod'){ st.innerHTML+=`<b>2. solis.</b> Mērķis: <b>${nmPlain(tgt)}</b>. Saskaiti abu pušu modifikatorus.`; newStep();
+        pn.innerHTML=`<div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV modifikators</div><div class="stepper sm" id="gU"></div></div><div><div class="lbl">PSRS modifikators</div><div class="stepper sm" id="gS"></div></div></div><div class="maptools"><button class="btn sec" id="ck">Pārbaudīt un mest kauliņus</button></div>`;
+        gU=0; gS=0; stp($('#gU',pn),()=>gU,v=>gU=v,0,6); stp($('#gS',pn),()=>gS,v=>gS=v,0,6);
+        $('#ck',pn).onclick=()=>{ const mU=modSum(realignMods('US',inf,tgt)), mS=modSum(realignMods('USSR',inf,tgt)), b=s=>{ const x=realignMods(s,inf,tgt); return x.length?x.map(y=>'+1 '+y[1]).join('; '):'nav modifikatoru'; };
+          const issues=[]; if(gU!==mU) issues.push({f:'ASV modifikators',why:`ASV: ${mU} (${b('US')}).`}); if(gS!==mS) issues.push({f:'PSRS modifikators',why:`PSRS: ${mS} (${b('USSR')}).`});
+          if(!judge(fb,`Modifikatori (${nmPlain(tgt)}): tu ASV ${gU}, PSRS ${gS}`,issues,`ASV ${mU} (${b('US')}); PSRS ${mS} (${b('USSR')}).`)) return;
+          const ru=rint(1,6), rs=rint(1,6); R=realignResult(inf,tgt,ru,rs); R.ru=ru; R.rs=rs; phase='res'; setTimeout(draw, L()==='hard'?250:900); };
+      }
+      if(phase==='res'){ newStep(); const [u,s]=iv(inf,tgt); eU=u; eS=s;
+        st.innerHTML+=`<b>3. solis.</b> Kauliņi uzmesti. Pieskaiti modifikatorus un pats izmaini ietekmi valstī <b>${nmPlain(tgt)}</b>.`;
+        pn.innerHTML=`<div class="dicebox rolling"><div><div class="lbl">ASV metiens</div>${dieSVG(R.ru,'US')}</div><div><div class="lbl">PSRS metiens</div>${dieSVG(R.rs,'USSR')}</div></div>
+          <div class="lbl">Ietekme valstī ${nmPlain(tgt)} pēc pārorientācijas</div><div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV</div><div class="stepper sm" id="eU"></div></div><div><div class="lbl">PSRS</div><div class="stepper sm" id="eS"></div></div></div><div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
+        stp($('#eU',pn),()=>eU,v=>eU=v,0,15); stp($('#eS',pn),()=>eS,v=>eS=v,0,15);
+        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt), issues=[];
+          const why=R.loser?`ASV ${R.ru}+${R.mU}=${R.tU}, PSRS ${R.rs}+${R.mS}=${R.tS}. Lielāks ir ${SIDE_LV[OTHER(R.loser)]}: no ${SIDE_LV[R.loser]} ietekmes noņem starpību ${R.d}${R.removed<R.d?` (bet tur ir tikai ${R.removed})`:''}. Savu ietekmi nepieliek. Rezultāts: ASV ${want[0]}, PSRS ${want[1]}.`:`ASV ${R.ru}+${R.mU}=${R.tU}, PSRS ${R.rs}+${R.mS}=${R.tS}. Vienādi: nekas nemainās.`;
+          if(eU!==want[0]) issues.push({f:'ASV ietekme',why}); if(eS!==want[1]) issues.push({f:'PSRS ietekme',why:issues.length?'skat. augstāk.':why});
+          if(!judge(fb,`Metiens ${sc.ops-left+1} (${nmPlain(tgt)}): tu iestatīji ASV ${eU}, PSRS ${eS}`,issues,why)) return;
+          inf[tgt]=[eU,eS]; left--; redraw();
+          const nx=()=>{ if(left<=0){ onMap=null; summary(''); return; } phase='tgt'; tgt=null; hint=false; redraw(); draw(); };
+          if(L()==='hard') nx(); else { pn.innerHTML=''; $('#fin',card).innerHTML=''; $('#fin',card).appendChild(btn(left>0?'Nākamais metiens →':'Rezultāts →','btn pri',()=>{ $('#fin',card).innerHTML=''; nx(); })); }
+        };
+      }
+    };
+    onMap=n=>{ if(phase!=='tgt') return; tgt=n; redraw(); const c=canRealign(sc.side,inf,n,sc.d);
+      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,c.ok?[]:[{f:'Mērķis',why:c.why}],c.why)){ tgt=null; redraw(); return; }
+      phase='mod'; hint=false; const keep=fb.innerHTML, kc=fb.className; draw(); fb.hidden=false; fb.innerHTML=keep; fb.className=kc; };
+    draw();
+  }
+
+  // ===== 3. Coup (RB 6.3, 8.1.5, 8.2)
+  function actCoup(){
+    let tgt=null, phase='tgt', roll=0, R=null, A=null, g={tot:0,need:0,u:0,s:0,d:sc.d,m:sc.mil}, hint=false;
+    frame(); const st=$('#st',card), pn=$('#pn',card), fb=$('#fb',card);
+    hl=n=>n===tgt?'on':hint&&phase==='tgt'&&sc.cl.includes(n)&&canCoup(sc.side,inf,n,sc.d).ok?'good':'';
+    hintBtn($('#tl',card),()=>{ if(phase==='tgt'){ hint=true; return 'Zaļā rāmī: valstis, kur drīkst (ir pretinieka ietekme un DEFCON to neaizliedz).'; }
+      return `Metiens + ${sc.ops} operācijas. Jāpārsniedz 2 × stabilitāte (${C[tgt].s} × 2). ${C[tgt].bg?'Battleground valsts: DEFCON −1.':'Nav Battleground: DEFCON nemainās.'} Militārās op. + ${sc.ops}.`; });
+    const draw=()=>{
+      if(phase==='tgt'){ st.innerHTML='<b>1. solis.</b> Klikšķini kartē uz valsts, kur veiksi apvērsumu.'; newStep(); }
+      if(phase==='roll'){ st.innerHTML=`<b>2. solis.</b> Mērķis: <b>${nmPlain(tgt)}</b>. Met kauliņu.`; pn.innerHTML='<div class="maptools"><button class="btn pri" id="rl">🎲 Mest kauliņu</button></div>';
+        $('#rl',pn).onclick=()=>{ roll=rint(1,6); R=coupResult(sc.side,inf,tgt,sc.ops,roll); A=coupAfter(tgt,sc.d,sc.mil,sc.ops); phase='res'; draw(); }; }
+      if(phase==='res'){ newStep(); const [u,s]=iv(inf,tgt); g={tot:0,need:0,u,s,d:sc.d,m:sc.mil};
+        st.innerHTML=`<b>3. solis.</b> Aprēķini rezultātu un pats nomaini ietekmi, DEFCON un militārās operācijas.`;
+        pn.innerHTML=`<div class="dicebox rolling"><div><div class="lbl">Tavs metiens</div>${dieSVG(roll,sc.side)}</div></div>
+          <div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">Metiens + operācijas</div><div class="stepper sm" id="tot"></div></div><div><div class="lbl">2 × stabilitāte</div><div class="stepper sm" id="need"></div></div></div>
+          <div class="lbl">Ietekme valstī ${nmPlain(tgt)} pēc apvērsuma</div><div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV</div><div class="stepper sm" id="u"></div></div><div><div class="lbl">PSRS</div><div class="stepper sm" id="s"></div></div></div>
+          <div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">DEFCON pēc tam</div><div class="stepper sm" id="d"></div></div><div><div class="lbl">Tavas militārās op. pēc tam</div><div class="stepper sm" id="m"></div></div></div>
+          <div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
+        for(const [k,mx,mn] of [['tot',12,0],['need',12,0],['u',15,0],['s',15,0],['d',5,1],['m',5,0]]) stp($('#'+k,pn),()=>g[k],v=>g[k]=v,mn,mx);
+        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt), me=sIx(sc.side), issues=[];
+          const res=R.ok?`${roll} + ${sc.ops} = ${R.tot}, kas ir vairāk par ${R.need}: izdodas. Starpība ${R.d}: noņem ${R.removed} pretinieka ietekmi${R.added?`, pieliek ${R.added} savu`:''}.`:`${roll} + ${sc.ops} = ${R.tot}, kas nav vairāk par ${R.need}: neizdodas, ietekme nemainās.`;
+          if(g.tot!==R.tot) issues.push({f:'Metiens + operācijas',why:`${roll} + ${sc.ops} = ${R.tot}.`});
+          if(g.need!==R.need) issues.push({f:'2 × stabilitāte',why:`Stabilitāte ${C[tgt].s} × 2 = ${R.need}.`});
+          if(g.u!==want[0]||g.s!==want[1]) issues.push({f:'Ietekme',why:`${res} Pareizi: ASV ${want[0]}, PSRS ${want[1]}.`});
+          if(g.d!==A.defcon) issues.push({f:'DEFCON',why:C[tgt].bg?`Apvērsums Battleground valstī (arī neizdevies): DEFCON ${sc.d} → ${A.defcon}.`:`${nmPlain(tgt)} nav Battleground valsts: DEFCON paliek ${sc.d}.`});
+          if(g.m!==A.milops) issues.push({f:'Militārās op.',why:`Apvērsums vienmēr dod militārās op. tik, cik kārts operāciju: ${sc.mil} + ${sc.ops} = ${A.milops}${sc.mil+sc.ops>5?' (maksimums 5)':''}.`});
+          const good=`${res} ${C[tgt].bg?`DEFCON ${sc.d} → ${A.defcon}${A.lose?` (kodolkarš: ${SIDE_LV[sc.side]} zaudē!)`:''}.`:'DEFCON nemainās.'} Militārās op.: ${A.milops}.`;
+          if(!judge(fb,`Apvērsuma rezultāts (${nmPlain(tgt)}, metiens ${roll})`,issues,good)) return;
+          inf[tgt]=[g.u,g.s]; sc.d=g.d; sc.mil=g.m; redraw(); onMap=null; summary(''); };
+      }
+    };
+    onMap=n=>{ if(phase!=='tgt') return; tgt=n; redraw(); const c=canCoup(sc.side,inf,n,sc.d);
+      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,c.ok?[]:[{f:'Mērķis',why:c.why}],c.why)){ tgt=null; redraw(); return; }
+      phase='roll'; hint=false; draw(); };
+    draw();
+  }
+
+  // ===== 4. Indo-Pakistani War (card text, RB 14. lpp.; RB 7.6, 8.2)
+  function actWar(){
+    let tgt=null, phase='tgt', roll=0, W=null, g={mod:0,win:null,u:0,s:0,vp:0,m:sc.mil};
+    frame(`<div class="row" style="gap:12px;align-items:flex-start;flex-wrap:wrap"><img src="img/card_indopak.jpg" alt="Indo-Pakistani War kārts" style="width:150px;border-radius:8px" data-zoom="1"><p style="flex:1;min-width:200px">Tu izspēlē <b>Indo-Pakistani War</b> kā notikumu. Izvēlies, kurai valstij uzbrūk: <b>Indijai</b> vai <b>Pakistānai</b> (otra ir uzbrucēja). Metienam atņem 1 par katru <b>pretinieka kontrolētu</b> valsti blakus mērķim. Uzvara ar <b>4–6</b>: +2 VP un visa pretinieka ietekme mērķī tiek aizstāta ar tavu. Militārās op. +2 vienmēr.</p></div>`);
+    const st=$('#st',card), pn=$('#pn',card), fb=$('#fb',card);
+    hl=n=>n===tgt?'on':(phase==='tgt'&&(n==='India'||n==='Pakistan'))?'srcc':'';
+    const draw=()=>{
+      if(phase==='tgt'){ st.innerHTML='<b>1. solis.</b> Klikšķini uz valsts, kurai uzbruks (Indija vai Pakistāna).'; newStep(); }
+      if(phase==='mod'){ newStep(); st.innerHTML=`<b>2. solis.</b> Mērķis: <b>${nmPlain(tgt)}</b>. Cik jāatņem no metiena?`;
+        pn.innerHTML=`<div class="stepper sm" id="md"></div><div class="maptools"><button class="btn sec" id="ck">Pārbaudīt un mest</button></div>`; g.mod=0; stp($('#md',pn),()=>g.mod,v=>g.mod=v,0,4);
+        $('#ck',pn).onclick=()=>{ const ms=warMods(sc.side,inf,tgt), why=ms.length?`Blakus valstij ${nmPlain(tgt)} pretinieks kontrolē: ${ms.map(nmPlain).join(', ')}. Atņem ${ms.length}.`:`Blakus valstij ${nmPlain(tgt)} pretinieks nekontrolē nevienu valsti. Atņem 0.`;
+          if(!judge(fb,`Mīnusi (${nmPlain(tgt)}): tu ${g.mod}`,g.mod!==ms.length?[{f:'Mīnusi',why}]:[],why)) return;
+          roll=rint(1,6); W=warResult(sc.side,inf,tgt,roll); phase='res'; setTimeout(draw, L()==='hard'?250:900); };
+      }
+      if(phase==='res'){ newStep(); const [u,s]=iv(inf,tgt); g={mod:g.mod,win:null,u,s,vp:0,m:sc.mil};
+        st.innerHTML=`<b>3. solis.</b> Kauliņš uzmests. Nosaki rezultātu un pats izmaini ietekmi, VP un militārās operācijas.`;
+        pn.innerHTML=`<div class="dicebox rolling"><div><div class="lbl">Tavs metiens</div>${dieSVG(roll,sc.side)}</div></div>
+          <div class="lbl">Vai uzvarēji?</div><div class="maptools" id="w"></div>
+          <div class="lbl">Ietekme valstī ${nmPlain(tgt)} pēc kara</div><div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV</div><div class="stepper sm" id="u"></div></div><div><div class="lbl">PSRS</div><div class="stepper sm" id="s"></div></div></div>
+          <div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">Tu saņem VP</div><div class="stepper sm" id="vp"></div></div><div><div class="lbl">Tavas militārās op. pēc tam</div><div class="stepper sm" id="m"></div></div></div>
+          <div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
+        const wc=()=>chips($('#w',pn),[[true,'Jā, uzvara'],[false,'Nē']],g.win,v=>{g.win=v;wc();}); wc();
+        for(const [k,mx,mn] of [['u',15,0],['s',15,0],['vp',5,0],['m',5,0]]) stp($('#'+k,pn),()=>g[k],v=>g[k]=v,mn,mx);
+        $('#ok',pn).onclick=()=>{ const want=iv(W.inf,tgt), mil=milAdd(sc.mil,2), issues=[];
+          const res=`${roll} − ${W.mods.length} = ${W.tot}. ${W.ok?`Tas ir 4–6: uzvara! +2 VP, un visa pretinieka ietekme (${W.moved}) tiek aizstāta ar tavu.`:'Tas nav 4–6: zaudējums. Ietekme un VP nemainās.'}`;
+          if(g.win!==W.ok) issues.push({f:'Uzvara',why:res});
+          if(g.u!==want[0]||g.s!==want[1]) issues.push({f:'Ietekme',why:`Pareizi: ASV ${want[0]}, PSRS ${want[1]}.`});
+          if(g.vp!==W.vp) issues.push({f:'VP',why:W.ok?'Uzvarot +2 VP.':'Zaudējot VP nav.'});
+          if(g.m!==mil) issues.push({f:'Militārās op.',why:`Kara notikums dod +2 militārās op. vienmēr, arī zaudējot: ${sc.mil} + 2 = ${mil}.`});
+          if(!judge(fb,`Kara rezultāts (${nmPlain(tgt)}, metiens ${roll})`,issues,`${res} Militārās op.: ${mil}.`)) return;
+          inf[tgt]=[g.u,g.s]; sc.mil=g.m; redraw(); onMap=null; summary(''); };
+      }
+    };
+    onMap=n=>{ if(phase!=='tgt') return; if(n!=='India'&&n!=='Pakistan'){ fb.hidden=false; resBox(fb,false,'Šajā kārtī mērķis var būt tikai Indija vai Pakistāna.'); return; }
+      tgt=n; fb.hidden=true; phase='mod'; redraw(); draw(); };
+    draw();
+  }
+
+  function summary(note){
+    ended=true; const ok=log.filter(x=>x.ok).length, all=log.length, clean=all>0&&ok===all;
+    const s=soLoad(), k=L(); s[k]=s[k]||{n:0,c:0}; s[k].n++; if(clean) s[k].c++; soSave(s);
+    $('#pn',card).innerHTML=''; $('#tl',card).innerHTML=''; $('#st',card).innerHTML='';
+    const f=$('#fb',card); f.hidden=false; f.className='res '+(clean?'ok':'no');
+    f.innerHTML=`<div style="font-size:22px">${clean?'🏆 Viss pareizi!':`Pareizi ${ok} no ${all} soļiem${k==='hard'?'':' (ar pirmo mēģinājumu)'}`}</div>${note?`<div>${note}</div>`:''}
+      <ol class="so-log">${log.map(x=>`<li>${x.ok?'<i class=mk-ok></i>':'<i class=mk-no></i>'} <b>${x.t}</b><br><span>${x.why}</span></li>`).join('')}</ol>`;
+    const fin=$('#fin',card); fin.innerHTML=''; fin.append(btn('🎲 Jauna situācija','btn pri',newScenario));
+    drawSetup();
+  }
+
+  window.__so={st:()=>({sc,inf,act,log})};
+  drawSetup(); newScenario();
+}
 
 // ---------- Diploma tiers, ceremony and diploma view (after the final exam)
 const TIERS = [
