@@ -382,9 +382,12 @@ ol.flow{padding-left:1.3em}ol.flow li{margin:4px 0}
 .res.so-neutral{background:#ece6da;color:#444}
 .so-log{margin:8px 0 0 20px;font-family:var(--f-ui);font-size:16px}.so-log li{margin:6px 0}.so-log span{color:#333;font-size:15px}
 .so-step:empty{display:none}
+.so-tab{border-collapse:collapse;margin:4px 0;font-size:15px;background:#fffdf8;border-radius:6px;overflow:hidden;max-width:100%}
+.so-tab th,.so-tab td{padding:3px 8px;border-bottom:1px solid #e3d9c5;text-align:left}.so-tab th{font-weight:600;color:#666;font-size:13px}
+.so-tab tr.n td{background:#fbe1e1;color:#7a1717}.so-tab tr.y td{color:#1d4f20}
 </style>
 <div id="app"><div class="wrap" style="padding-block:40px;font-family:sans-serif">Ielādē akadēmiju…</div></div>
-<script>const APP_VER='67', APP_DATE='12.11.2026', APP_WHERE='telefona lietotne';
+<script>const APP_VER='68', APP_DATE='12.11.2026', APP_WHERE='telefona lietotne';
 const C = {"Mexico": {"s": 2, "bg": true, "r": "CA", "b": [90, 882, 119, 82], "adj": ["Guatemala", "USA"]}, "El Salvador": {"s": 1, "bg": false, "r": "CA", "b": [127, 1023, 119, 82], "adj": ["Guatemala", "Honduras"]}, "Guatemala": {"s": 1, "bg": false, "r": "CA", "b": [256, 918, 119, 82], "adj": ["Mexico", "El Salvador", "Honduras"]}, "Honduras": {"s": 2, "bg": false, "r": "CA", "b": [272, 1023, 119, 82], "adj": ["Guatemala", "El Salvador", "Nicaragua", "Costa Rica"]}, "Costa Rica": {"s": 3, "bg": false, "r": "CA", "b": [292, 1130, 119, 82], "adj": ["Honduras", "Nicaragua", "Panama"]}, "Ecuador": {"s": 2, "bg": false, "r": "SA", "b": [353, 1266, 119, 82], "adj": ["Colombia", "Peru"]}, "Peru": {"s": 2, "bg": false, "r": "SA", "b": [403, 1407, 119, 82], "adj": ["Ecuador", "Bolivia", "Chile"]}, "Nicaragua": {"s": 1, "bg": false, "r": "CA", "b": [418, 1023, 119, 82], "adj": ["Honduras", "Costa Rica", "Cuba"]}, "Chile": {"s": 3, "bg": true, "r": "SA", "b": [422, 1553, 119, 82], "adj": ["Peru", "Argentina"]}, "Panama": {"s": 2, "bg": true, "r": "CA", "b": [435, 1129, 119, 82], "adj": ["Costa Rica", "Colombia"]}, "Cuba": {"s": 3, "bg": true, "r": "CA", "b": [454, 911, 119, 82], "adj": ["Nicaragua", "Haiti", "USA"]}, "Argentina": {"s": 2, "bg": true, "r": "SA", "b": [501, 1697, 119, 82], "adj": ["Chile", "Paraguay", "Uruguay"]}, "Colombia": {"s": 1, "bg": false, "r": "SA", "b": [512, 1240, 119, 82], "adj": ["Panama", "Ecuador", "Venezuela"]}, "Venezuela": {"s": 2, "bg": true, "r": "SA", "b": [585, 1122, 119, 82], "adj": ["Colombia", "Brazil"]}, "Haiti": {"s": 1, "bg": false, "r": "CA", "b": [596, 992, 119, 82], "adj": ["Cuba", "Dominican Rep."]}, "Bolivia": {"s": 2, "bg": false, "r": "SA", "b": [601, 1369, 119, 82], "adj": ["Peru", "Paraguay"]}, "Paraguay": {"s": 2, "bg": false, "r": "SA", "b": [607, 1502, 119, 82], "adj": ["Bolivia", "Argentina", "Uruguay"]}, "Canada": {"s": 4, "bg": false, "r": "WE", "b": [638, 449, 119, 82], "adj": ["UK", "USA"]}, "Uruguay": {"s": 2, "bg": false, "r": "SA", "b": [681, 1629, 119, 82], "adj": ["Argentina", "Paraguay", "Brazil"]}, "Dominican Rep.": {"s": 1, "bg": false, "r": "CA", "b": [739, 992, 119, 82], "adj": ["Haiti"]}, "Brazil": {"s": 2, "bg": true, "r": "SA", "b": [790, 1349, 119, 82], "adj": ["Venezuela", "Uruguay"]}, "UK": {"s": 5, "bg": false, "r": "WE", "b": [916, 378, 119, 82], "adj": ["Canada", "Norway", "Benelux", "France"]}, "Spain/Portugal": {"s": 2, "bg": false, "r": "WE", "b": [925, 660, 119, 82], "adj": ["France", "Italy", "Morocco"]}, "Morocco": {"s": 3, "bg": false, "r": "AF", "b": [925, 896, 119, 82], "adj": ["Spain/Portugal", "Algeria", "West African States"]}, "West African States": {"s": 2, "bg": false, "r": "AF", "b": [944, 1051, 119, 82], "adj": ["Morocco", "Ivory Coast"]}, "France": {"s": 3, "bg": true, "r": "WE", "b": [1037, 529, 119, 82], "adj": ["UK", "W. Germany", "Spain/Portugal", "Italy", "Algeria"]}, "Algeria": {"s": 2, "bg": true, "r": "AF", "b": [1038, 789, 119, 82], "adj": ["France", "Morocco", "Tunisia", "Saharan States"]}, "Ivory Coast": {"s": 2, "bg": false, "r": "AF", "b": [1052, 1164, 119, 82], "adj": ["West African States", "Nigeria"]}, "Benelux": {"s": 3, "bg": false, "r": "WE", "b": [1063, 404, 119, 82], "adj": ["UK", "W. Germany"]}, "Denmark": {"s": 3, "bg": false, "r": "WE", "b": [1112, 293, 119, 82], "adj": ["Sweden", "W. Germany"]}, "Saharan States": {"s": 1, "bg": false, "r": "AF", "b": [1140, 945, 119, 82], "adj": ["Algeria", "Nigeria"]}, "Austria": {"s": 4, "bg": false, "r": "EWE", "b": [1179, 525, 119, 82], "adj": ["Italy", "W. Germany", "E. Germany", "Hungary"]}, "Italy": {"s": 2, "bg": true, "r": "WE", "b": [1195, 636, 119, 82], "adj": ["France", "Spain/Portugal", "Austria", "Yugoslavia", "Greece"]}, "Tunisia": {"s": 2, "bg": false, "r": "AF", "b": [1200, 759, 119, 82], "adj": ["Libya", "Algeria"]}, "W. Germany": {"s": 4, "bg": true, "r": "WE", "b": [1203, 415, 119, 82], "adj": ["Denmark", "Benelux", "France", "Austria", "E. Germany"]}, "Nigeria": {"s": 1, "bg": true, "r": "AF", "b": [1223, 1154, 119, 82], "adj": ["Saharan States", "Ivory Coast", "Cameroon"]}, "Norway": {"s": 4, "bg": false, "r": "WE", "b": [1233, 75, 119, 82], "adj": ["UK", "Sweden"]}, "E. Germany": {"s": 3, "bg": true, "r": "EE", "b": [1248, 314, 119, 82], "adj": ["W. Germany", "Poland", "Austria", "Czechoslovakia"]}, "Sweden": {"s": 4, "bg": false, "r": "WE", "b": [1273, 200, 119, 82], "adj": ["Norway", "Denmark", "Finland"]}, "Cameroon": {"s": 1, "bg": false, "r": "AF", "b": [1276, 1291, 119, 82], "adj": ["Nigeria", "Zaire"]}, "Libya": {"s": 2, "bg": true, "r": "ME", "b": [1277, 871, 119, 82], "adj": ["Egypt", "Tunisia"]}, "Angola": {"s": 1, "bg": true, "r": "AF", "b": [1291, 1462, 119, 82], "adj": ["Zaire", "Botswana", "South Africa"]}, "Hungary": {"s": 3, "bg": false, "r": "EE", "b": [1333, 500, 119, 82], "adj": ["Czechoslovakia", "Austria", "Romania", "Yugoslavia"]}, "Yugoslavia": {"s": 3, "bg": false, "r": "EE", "b": [1333, 597, 119, 82], "adj": ["Italy", "Hungary", "Romania", "Greece"]}, "Czechoslovakia": {"s": 3, "bg": false, "r": "EE", "b": [1356, 404, 119, 82], "adj": ["E. Germany", "Poland", "Hungary"]}, "South Africa": {"s": 3, "bg": true, "r": "AF", "b": [1376, 1684, 119, 82], "adj": ["Angola", "Botswana"]}, "Poland": {"s": 3, "bg": true, "r": "EE", "b": [1387, 303, 119, 82], "adj": ["E. Germany", "Czechoslovakia", "USSR"]}, "Botswana": {"s": 2, "bg": false, "r": "AF", "b": [1430, 1565, 119, 82], "adj": ["Angola", "South Africa", "Zimbabwe"]}, "Egypt": {"s": 2, "bg": true, "r": "ME", "b": [1431, 900, 119, 82], "adj": ["Israel", "Libya", "Sudan"]}, "Zimbabwe": {"s": 1, "bg": false, "r": "AF", "b": [1439, 1450, 119, 82], "adj": ["Zaire", "Botswana", "SE African States"]}, "Greece": {"s": 2, "bg": false, "r": "WE", "b": [1442, 696, 119, 82], "adj": ["Italy", "Yugoslavia", "Bulgaria", "Turkey"]}, "Finland": {"s": 4, "bg": false, "r": "EWE", "b": [1448, 75, 119, 82], "adj": ["Sweden", "USSR"]}, "Zaire": {"s": 1, "bg": true, "r": "AF", "b": [1449, 1330, 119, 82], "adj": ["Cameroon", "Angola", "Zimbabwe"]}, "Israel": {"s": 4, "bg": true, "r": "ME", "b": [1476, 799, 119, 82], "adj": ["Lebanon", "Syria", "Jordan", "Egypt"]}, "Bulgaria": {"s": 3, "bg": false, "r": "EE", "b": [1477, 580, 119, 82], "adj": ["Greece", "Turkey"]}, "Romania": {"s": 3, "bg": false, "r": "EE", "b": [1482, 480, 119, 82], "adj": ["Hungary", "Yugoslavia", "Turkey", "USSR"]}, "Sudan": {"s": 1, "bg": false, "r": "AF", "b": [1544, 1024, 119, 82], "adj": ["Egypt", "Ethiopia"]}, "Ethiopia": {"s": 1, "bg": false, "r": "AF", "b": [1569, 1133, 119, 82], "adj": ["Somalia", "Sudan"]}, "Kenya": {"s": 2, "bg": false, "r": "AF", "b": [1579, 1243, 119, 82], "adj": ["SE African States", "Somalia"]}, "SE African States": {"s": 1, "bg": false, "r": "AF", "b": [1597, 1443, 119, 82], "adj": ["Zimbabwe", "Kenya"]}, "Turkey": {"s": 2, "bg": false, "r": "WE", "b": [1611, 581, 119, 82], "adj": ["Romania", "Greece", "Bulgaria", "Syria"]}, "Jordan": {"s": 2, "bg": false, "r": "ME", "b": [1634, 829, 119, 82], "adj": ["Lebanon", "Israel", "Iraq", "Saudi Arabia"]}, "Saudi Arabia": {"s": 3, "bg": true, "r": "ME", "b": [1664, 932, 119, 82], "adj": ["Jordan", "Iraq", "Gulf States"]}, "Syria": {"s": 2, "bg": false, "r": "ME", "b": [1715, 689, 119, 82], "adj": ["Turkey", "Lebanon", "Israel"]}, "Somalia": {"s": 2, "bg": false, "r": "AF", "b": [1718, 1141, 119, 82], "adj": ["Kenya", "Ethiopia"]}, "Iraq": {"s": 3, "bg": true, "r": "ME", "b": [1770, 789, 119, 82], "adj": ["Jordan", "Iran", "Saudi Arabia", "Gulf States"]}, "Gulf States": {"s": 3, "bg": false, "r": "ME", "b": [1838, 935, 119, 82], "adj": ["Iraq", "Saudi Arabia"]}, "Iran": {"s": 2, "bg": true, "r": "ME", "b": [1853, 687, 119, 82], "adj": ["Iraq", "Afghanistan", "Pakistan"]}, "Pakistan": {"s": 2, "bg": true, "r": "AS", "b": [1944, 829, 119, 82], "adj": ["Iran", "Afghanistan", "India"]}, "Afghanistan": {"s": 2, "bg": false, "r": "AS", "b": [2012, 709, 119, 82], "adj": ["Iran", "Pakistan", "USSR"]}, "India": {"s": 3, "bg": true, "r": "AS", "b": [2121, 912, 119, 82], "adj": ["Pakistan", "Burma"]}, "Burma": {"s": 2, "bg": false, "r": "SEA", "b": [2275, 878, 119, 82], "adj": ["India", "Laos/Cambodia"]}, "Thailand": {"s": 2, "bg": true, "r": "SEA", "b": [2345, 1057, 119, 82], "adj": ["Laos/Cambodia", "Vietnam", "Malaysia"]}, "Malaysia": {"s": 2, "bg": false, "r": "SEA", "b": [2410, 1200, 119, 82], "adj": ["Thailand", "Indonesia", "Australia"]}, "Laos/Cambodia": {"s": 1, "bg": false, "r": "SEA", "b": [2416, 949, 119, 82], "adj": ["Burma", "Thailand", "Vietnam"]}, "Vietnam": {"s": 1, "bg": false, "r": "SEA", "b": [2520, 1048, 119, 82], "adj": ["Laos/Cambodia", "Thailand"]}, "Taiwan": {"s": 3, "bg": false, "r": "AS", "b": [2635, 881, 119, 82], "adj": ["Japan", "South Korea"]}, "Indonesia": {"s": 1, "bg": false, "r": "SEA", "b": [2635, 1308, 119, 82], "adj": ["Malaysia", "Philippines"]}, "Australia": {"s": 4, "bg": false, "r": "AS", "b": [2671, 1514, 119, 82], "adj": ["Malaysia"]}, "South Korea": {"s": 3, "bg": true, "r": "AS", "b": [2679, 700, 119, 82], "adj": ["Japan", "Taiwan", "North Korea"]}, "Philippines": {"s": 2, "bg": false, "r": "SEA", "b": [2702, 1075, 119, 82], "adj": ["Indonesia", "Japan"]}, "North Korea": {"s": 3, "bg": true, "r": "AS", "b": [2746, 579, 119, 82], "adj": ["South Korea", "USSR"]}, "Japan": {"s": 4, "bg": true, "r": "AS", "b": [2813, 776, 119, 82], "adj": ["Philippines", "Taiwan", "South Korea", "USA"]}, "Lebanon": {"s": 1, "bg": false, "r": "ME", "b": [1576, 705, 119, 82], "adj": ["Syria", "Israel", "Jordan"]}};
 const CHEAT_URL = 'cheat.html';
 // ===== Map data (read from the 20th Anniversary map, RB pp. 6–7). Box coords in map pixels (3025×1933).
@@ -4552,13 +4555,17 @@ function vSimOps(m){
   const SUP=()=>SUPER_NOTE(sc.cl);
 
   // feedback: issues=[{f,why}], good = explanation of the right answer
-  function judge(box, title, issues, good){
+  // rows=[{f,mine,want,why}]: every field the player set, his value and the right value
+  const RW=(f,mine,want,why)=>({f,mine:String(mine),want:String(want),why});
+  const YN=b=>b?'drīkst':'nedrīkst';
+  function judge(box, title, rows, good){
+    const issues=rows.filter(r=>r.mine!==r.want);
     const first=tries===0; tries++;
-    if(first) log.push({t:title, ok:!issues.length, why:good});
+    if(first) log.push({t:title, ok:!issues.length, why:good, rows});
     const lv=L(); box.hidden=false;
     if(lv==='hard'){ box.className='res so-neutral'; box.innerHTML='Pieņemts. Turpini.'; return true; }
     if(!issues.length){ resBox(box,true, lv==='easy'?`<i class=mk-ok></i> Pareizi! ${good}`:'<i class=mk-ok></i> Pareizi!'); return true; }
-    resBox(box,false, lv==='easy'?`<i class=mk-no></i> Nav pareizi.<ul>${issues.map(i=>`<li><b>${i.f}</b>: ${i.why}</li>`).join('')}</ul>Izlabo un mēģini vēlreiz.`:`<i class=mk-no></i> Kļūda: <b>${issues.map(i=>i.f).join(', ')}</b>. Izlabo un mēģini vēlreiz.`);
+    resBox(box,false, lv==='easy'?`<i class=mk-no></i> Nav pareizi.<ul>${issues.map(i=>`<li><b>${i.f}</b>: tev ${i.mine}, pareizi <b>${i.want}</b>. ${i.why}</li>`).join('')}</ul>Izlabo un mēģini vēlreiz.`:`<i class=mk-no></i> Kļūda: <b>${issues.map(i=>i.f).join(', ')}</b>. Izlabo un mēģini vēlreiz.`);
     return false;
   }
   const newStep=()=>{ tries=0; };
@@ -4597,11 +4604,10 @@ function vSimOps(m){
     };
     function pay(n,c){
       if(c>left){ fb.hidden=false; resBox(fb,false,`Tev ir tikai ${left} ${left===1?'punkts':'punkti'}.`); return; }
-      const lg=canPlace(sc.side,start,n), cost=placeCost(sc.side,inf,n), issues=[];
-      if(!lg.ok) issues.push({f:'Vieta',why:lg.why});
-      if(c!==cost) issues.push({f:'Cena',why:cost===2?`${nmPlain(n)} kontrolē pretinieks, tāpēc marķieris maksā 2.`:`${nmPlain(n)} nekontrolē pretinieks, tāpēc marķieris maksā 1.`});
+      const lg=canPlace(sc.side,start,n), cost=placeCost(sc.side,inf,n);
+      const issues=[RW(`Vai drīkst likt valstī ${nmPlain(n)}`,YN(true),YN(lg.ok),lg.why), RW('Cena',c,cost,cost===2?`${nmPlain(n)} kontrolē pretinieks, tāpēc marķieris maksā 2.`:`${nmPlain(n)} nekontrolē pretinieks, tāpēc marķieris maksā 1.`)];
       const good=`${lg.why} Marķieris maksā ${cost}.`;
-      newStep(); const ok=judge(fb,`Marķieris: ${nmPlain(n)} (tu samaksāji ${c})`,issues,good);
+      newStep(); const ok=judge(fb,`Marķieris valstī ${nmPlain(n)}`,issues,good);
       if(!ok) return;
       const v=iv(inf,n).slice(); v[sIx(sc.side)]++; inf[n]=v; left-=c; placed.push(n); pend=null; pn.innerHTML=''; bar(); redraw();
       if(left<=0) finish();
@@ -4624,8 +4630,8 @@ function vSimOps(m){
         pn.innerHTML=`<div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV modifikators</div><div class="stepper sm" id="gU"></div></div><div><div class="lbl">PSRS modifikators</div><div class="stepper sm" id="gS"></div></div></div><div class="maptools"><button class="btn sec" id="ck">Pārbaudīt un mest kauliņus</button></div>`;
         gU=0; gS=0; stp($('#gU',pn),()=>gU,v=>gU=v,0,6); stp($('#gS',pn),()=>gS,v=>gS=v,0,6);
         $('#ck',pn).onclick=()=>{ const mU=modSum(realignMods('US',inf,tgt)), mS=modSum(realignMods('USSR',inf,tgt)), b=s=>{ const x=realignMods(s,inf,tgt); return x.length?x.map(y=>'+1 '+y[1]).join('; '):'nav modifikatoru'; };
-          const issues=[]; if(gU!==mU) issues.push({f:'ASV modifikators',why:`ASV: ${mU} (${b('US')}).`}); if(gS!==mS) issues.push({f:'PSRS modifikators',why:`PSRS: ${mS} (${b('USSR')}).`});
-          if(!judge(fb,`Modifikatori (${nmPlain(tgt)}): tu ASV ${gU}, PSRS ${gS}`,issues,`ASV ${mU} (${b('US')}); PSRS ${mS} (${b('USSR')}).`)) return;
+          const issues=[RW('ASV modifikators',gU,mU,b('US')+'.'), RW('PSRS modifikators',gS,mS,b('USSR')+'.')];
+          if(!judge(fb,`Modifikatori (${nmPlain(tgt)})`,issues,`ASV ${mU} (${b('US')}); PSRS ${mS} (${b('USSR')}).`)) return;
           const ru=rint(1,6), rs=rint(1,6); R=realignResult(inf,tgt,ru,rs); R.ru=ru; R.rs=rs; phase='res'; setTimeout(draw, L()==='hard'?250:900); };
       }
       if(phase==='res'){ newStep(); const [u,s]=iv(inf,tgt); eU=u; eS=s;
@@ -4633,10 +4639,10 @@ function vSimOps(m){
         pn.innerHTML=`<div class="dicebox rolling"><div><div class="lbl">ASV metiens</div>${dieSVG(R.ru,'US')}</div><div><div class="lbl">PSRS metiens</div>${dieSVG(R.rs,'USSR')}</div></div>
           <div class="lbl">Ietekme valstī ${nmPlain(tgt)} pēc pārorientācijas</div><div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">ASV</div><div class="stepper sm" id="eU"></div></div><div><div class="lbl">PSRS</div><div class="stepper sm" id="eS"></div></div></div><div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
         stp($('#eU',pn),()=>eU,v=>eU=v,0,15); stp($('#eS',pn),()=>eS,v=>eS=v,0,15);
-        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt), issues=[];
+        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt);
           const why=R.loser?`ASV ${R.ru}+${R.mU}=${R.tU}, PSRS ${R.rs}+${R.mS}=${R.tS}. Lielāks ir ${SIDE_LV[OTHER(R.loser)]}: no ${SIDE_LV[R.loser]} ietekmes noņem starpību ${R.d}${R.removed<R.d?` (bet tur ir tikai ${R.removed})`:''}. Savu ietekmi nepieliek. Rezultāts: ASV ${want[0]}, PSRS ${want[1]}.`:`ASV ${R.ru}+${R.mU}=${R.tU}, PSRS ${R.rs}+${R.mS}=${R.tS}. Vienādi: nekas nemainās.`;
-          if(eU!==want[0]) issues.push({f:'ASV ietekme',why}); if(eS!==want[1]) issues.push({f:'PSRS ietekme',why:issues.length?'skat. augstāk.':why});
-          if(!judge(fb,`Metiens ${sc.ops-left+1} (${nmPlain(tgt)}): tu iestatīji ASV ${eU}, PSRS ${eS}`,issues,why)) return;
+          const issues=[RW(`ASV ietekme valstī ${nmPlain(tgt)}`,eU,want[0],''), RW(`PSRS ietekme valstī ${nmPlain(tgt)}`,eS,want[1],'')];
+          if(!judge(fb,`${sc.ops-left+1}. metiens (${nmPlain(tgt)})`,issues,why)) return;
           inf[tgt]=[eU,eS]; left--; redraw();
           const nx=()=>{ if(left<=0){ onMap=null; summary(''); return; } phase='tgt'; tgt=null; hint=false; redraw(); draw(); };
           if(L()==='hard') nx(); else { pn.innerHTML=''; $('#fin',card).innerHTML=''; $('#fin',card).appendChild(btn(left>0?'Nākamais metiens →':'Rezultāts →','btn pri',()=>{ $('#fin',card).innerHTML=''; nx(); })); }
@@ -4644,7 +4650,7 @@ function vSimOps(m){
       }
     };
     onMap=n=>{ if(phase!=='tgt') return; tgt=n; redraw(); const c=canRealign(sc.side,inf,n,sc.d);
-      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,c.ok?[]:[{f:'Mērķis',why:c.why}],c.why)){ tgt=null; redraw(); return; }
+      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,[RW(`Vai drīkst valstī ${nmPlain(n)}`,YN(true),YN(c.ok),c.why)],c.why)){ tgt=null; redraw(); return; }
       phase='mod'; hint=false; const keep=fb.innerHTML, kc=fb.className; draw(); fb.hidden=false; fb.innerHTML=keep; fb.className=kc; };
     draw();
   }
@@ -4668,20 +4674,19 @@ function vSimOps(m){
           <div class="row" style="gap:18px;flex-wrap:wrap"><div><div class="lbl">DEFCON pēc tam</div><div class="stepper sm" id="d"></div></div><div><div class="lbl">Tavas militārās op. pēc tam</div><div class="stepper sm" id="m"></div></div></div>
           <div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
         for(const [k,mx,mn] of [['tot',12,0],['need',12,0],['u',15,0],['s',15,0],['d',5,1],['m',5,0]]) stp($('#'+k,pn),()=>g[k],v=>g[k]=v,mn,mx);
-        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt), me=sIx(sc.side), issues=[];
+        $('#ok',pn).onclick=()=>{ const want=iv(R.inf,tgt);
           const res=R.ok?`${roll} + ${sc.ops} = ${R.tot}, kas ir vairāk par ${R.need}: izdodas. Starpība ${R.d}: noņem ${R.removed} pretinieka ietekmi${R.added?`, pieliek ${R.added} savu`:''}.`:`${roll} + ${sc.ops} = ${R.tot}, kas nav vairāk par ${R.need}: neizdodas, ietekme nemainās.`;
-          if(g.tot!==R.tot) issues.push({f:'Metiens + operācijas',why:`${roll} + ${sc.ops} = ${R.tot}.`});
-          if(g.need!==R.need) issues.push({f:'2 × stabilitāte',why:`Stabilitāte ${C[tgt].s} × 2 = ${R.need}.`});
-          if(g.u!==want[0]||g.s!==want[1]) issues.push({f:'Ietekme',why:`${res} Pareizi: ASV ${want[0]}, PSRS ${want[1]}.`});
-          if(g.d!==A.defcon) issues.push({f:'DEFCON',why:C[tgt].bg?`Apvērsums Battleground valstī (arī neizdevies): DEFCON ${sc.d} → ${A.defcon}.`:`${nmPlain(tgt)} nav Battleground valsts: DEFCON paliek ${sc.d}.`});
-          if(g.m!==A.milops) issues.push({f:'Militārās op.',why:`Apvērsums vienmēr dod militārās op. tik, cik kārts operāciju: ${sc.mil} + ${sc.ops} = ${A.milops}${sc.mil+sc.ops>5?' (maksimums 5)':''}.`});
+          const issues=[RW('Metiens + operācijas',g.tot,R.tot,`${roll} + ${sc.ops} = ${R.tot}.`), RW('2 × stabilitāte',g.need,R.need,`Stabilitāte ${C[tgt].s} × 2 = ${R.need}.`),
+            RW(`ASV ietekme valstī ${nmPlain(tgt)}`,g.u,want[0],res), RW(`PSRS ietekme valstī ${nmPlain(tgt)}`,g.s,want[1],res),
+            RW('DEFCON',g.d,A.defcon,C[tgt].bg?`Apvērsums Battleground valstī (arī neizdevies): DEFCON ${sc.d} → ${A.defcon}.`:`${nmPlain(tgt)} nav Battleground valsts: DEFCON paliek ${sc.d}.`),
+            RW('Tavas militārās op.',g.m,A.milops,`Apvērsums vienmēr dod militārās op. tik, cik kārts operāciju: ${sc.mil} + ${sc.ops} = ${A.milops}${sc.mil+sc.ops>5?' (maksimums 5)':''}.`)];
           const good=`${res} ${C[tgt].bg?`DEFCON ${sc.d} → ${A.defcon}${A.lose?` (kodolkarš: ${SIDE_LV[sc.side]} zaudē!)`:''}.`:'DEFCON nemainās.'} Militārās op.: ${A.milops}.`;
           if(!judge(fb,`Apvērsuma rezultāts (${nmPlain(tgt)}, metiens ${roll})`,issues,good)) return;
           inf[tgt]=[g.u,g.s]; sc.d=g.d; sc.mil=g.m; redraw(); onMap=null; summary(''); };
       }
     };
     onMap=n=>{ if(phase!=='tgt') return; tgt=n; redraw(); const c=canCoup(sc.side,inf,n,sc.d);
-      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,c.ok?[]:[{f:'Mērķis',why:c.why}],c.why)){ tgt=null; redraw(); return; }
+      if(!judge(fb,`Mērķis: ${nmPlain(n)}`,[RW(`Vai drīkst valstī ${nmPlain(n)}`,YN(true),YN(c.ok),c.why)],c.why)){ tgt=null; redraw(); return; }
       phase='roll'; hint=false; draw(); };
     draw();
   }
@@ -4697,7 +4702,7 @@ function vSimOps(m){
       if(phase==='mod'){ newStep(); st.innerHTML=`<b>2. solis.</b> Mērķis: <b>${nmPlain(tgt)}</b>. Cik jāatņem no metiena?`;
         pn.innerHTML=`<div class="stepper sm" id="md"></div><div class="maptools"><button class="btn sec" id="ck">Pārbaudīt un mest</button></div>`; g.mod=0; stp($('#md',pn),()=>g.mod,v=>g.mod=v,0,4);
         $('#ck',pn).onclick=()=>{ const ms=warMods(sc.side,inf,tgt), why=ms.length?`Blakus valstij ${nmPlain(tgt)} pretinieks kontrolē: ${ms.map(nmPlain).join(', ')}. Atņem ${ms.length}.`:`Blakus valstij ${nmPlain(tgt)} pretinieks nekontrolē nevienu valsti. Atņem 0.`;
-          if(!judge(fb,`Mīnusi (${nmPlain(tgt)}): tu ${g.mod}`,g.mod!==ms.length?[{f:'Mīnusi',why}]:[],why)) return;
+          if(!judge(fb,`Mīnusi (${nmPlain(tgt)})`,[RW('Cik atņem no metiena',g.mod,ms.length,why)],why)) return;
           roll=rint(1,6); W=warResult(sc.side,inf,tgt,roll); phase='res'; setTimeout(draw, L()==='hard'?250:900); };
       }
       if(phase==='res'){ newStep(); const [u,s]=iv(inf,tgt); g={mod:g.mod,win:null,u,s,vp:0,m:sc.mil};
@@ -4709,12 +4714,11 @@ function vSimOps(m){
           <div class="maptools"><button class="btn sec" id="ok">Apstiprināt</button></div>`;
         const wc=()=>chips($('#w',pn),[[true,'Jā, uzvara'],[false,'Nē']],g.win,v=>{g.win=v;wc();}); wc();
         for(const [k,mx,mn] of [['u',15,0],['s',15,0],['vp',5,0],['m',5,0]]) stp($('#'+k,pn),()=>g[k],v=>g[k]=v,mn,mx);
-        $('#ok',pn).onclick=()=>{ const want=iv(W.inf,tgt), mil=milAdd(sc.mil,2), issues=[];
+        $('#ok',pn).onclick=()=>{ const want=iv(W.inf,tgt), mil=milAdd(sc.mil,2);
           const res=`${roll} − ${W.mods.length} = ${W.tot}. ${W.ok?`Tas ir 4–6: uzvara! +2 VP, un visa pretinieka ietekme (${W.moved}) tiek aizstāta ar tavu.`:'Tas nav 4–6: zaudējums. Ietekme un VP nemainās.'}`;
-          if(g.win!==W.ok) issues.push({f:'Uzvara',why:res});
-          if(g.u!==want[0]||g.s!==want[1]) issues.push({f:'Ietekme',why:`Pareizi: ASV ${want[0]}, PSRS ${want[1]}.`});
-          if(g.vp!==W.vp) issues.push({f:'VP',why:W.ok?'Uzvarot +2 VP.':'Zaudējot VP nav.'});
-          if(g.m!==mil) issues.push({f:'Militārās op.',why:`Kara notikums dod +2 militārās op. vienmēr, arī zaudējot: ${sc.mil} + 2 = ${mil}.`});
+          const yn=b=>b===null?'nav izvēlēts':b?'uzvara':'zaudējums';
+          const issues=[RW('Uzvara?',yn(g.win),yn(W.ok),res), RW(`ASV ietekme valstī ${nmPlain(tgt)}`,g.u,want[0],''), RW(`PSRS ietekme valstī ${nmPlain(tgt)}`,g.s,want[1],''),
+            RW('Tu saņem VP',g.vp,W.vp,W.ok?'Uzvarot +2 VP.':'Zaudējot VP nav.'), RW('Tavas militārās op.',g.m,mil,`Kara notikums dod +2 militārās op. vienmēr, arī zaudējot: ${sc.mil} + 2 = ${mil}.`)];
           if(!judge(fb,`Kara rezultāts (${nmPlain(tgt)}, metiens ${roll})`,issues,`${res} Militārās op.: ${mil}.`)) return;
           inf[tgt]=[g.u,g.s]; sc.mil=g.m; redraw(); onMap=null; summary(''); };
       }
@@ -4730,7 +4734,7 @@ function vSimOps(m){
     $('#pn',card).innerHTML=''; $('#tl',card).innerHTML=''; $('#st',card).innerHTML='';
     const f=$('#fb',card); f.hidden=false; f.className='res '+(clean?'ok':'no');
     f.innerHTML=`<div style="font-size:22px">${clean?'🏆 Viss pareizi!':`Pareizi ${ok} no ${all} soļiem${k==='hard'?'':' (ar pirmo mēģinājumu)'}`}</div>${note?`<div>${note}</div>`:''}
-      <ol class="so-log">${log.map(x=>`<li>${x.ok?'<i class=mk-ok></i>':'<i class=mk-no></i>'} <b>${x.t}</b><br><span>${x.why}</span></li>`).join('')}</ol>`;
+      <ol class="so-log">${log.map(x=>`<li>${x.ok?'<i class=mk-ok></i>':'<i class=mk-no></i>'} <b>${x.t}</b><table class="so-tab"><tr><th></th><th>Tu</th><th>Pareizi</th><th></th></tr>${x.rows.map(r=>`<tr class="${r.mine===r.want?'y':'n'}"><td>${r.f}</td><td>${r.mine}</td><td><b>${r.want}</b></td><td>${r.mine===r.want?'<i class=mk-ok></i>':'<i class=mk-no></i>'}</td></tr>`).join('')}</table><span>Kāpēc: ${x.why}</span></li>`).join('')}</ol>`;
     const fin=$('#fin',card); fin.innerHTML=''; fin.append(btn('🎲 Jauna situācija','btn pri',newScenario));
     drawSetup();
   }
